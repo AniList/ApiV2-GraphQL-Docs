@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>Comment</title>
+    <title>ThreadComment</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -235,11 +235,6 @@
                 AiringSchedulePage
             </a>
         </li>
-        <li  title="Category">
-            <a href="category.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                Category
-            </a>
-        </li>
         <li  title="Character">
             <a href="character.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Character
@@ -258,16 +253,6 @@
         <li  title="CharacterPage">
             <a href="characterpage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 CharacterPage
-            </a>
-        </li>
-        <li class="slds-is-active" title="Comment">
-            <a href="comment.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                Comment
-            </a>
-        </li>
-        <li  title="CommentPage">
-            <a href="commentpage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                CommentPage
             </a>
         </li>
         <li  title="FollowingNotification">
@@ -385,6 +370,21 @@
                 Thread
             </a>
         </li>
+        <li  title="ThreadCategory">
+            <a href="threadcategory.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ThreadCategory
+            </a>
+        </li>
+        <li class="slds-is-active" title="ThreadComment">
+            <a href="threadcomment.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ThreadComment
+            </a>
+        </li>
+        <li  title="ThreadCommentPage">
+            <a href="threadcommentpage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ThreadCommentPage
+            </a>
+        </li>
         <li  title="ThreadPage">
             <a href="threadpage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ThreadPage
@@ -471,7 +471,7 @@
     </div>
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
-        <h1 class="slds-text-heading--large">Comment</h1>
+        <h1 class="slds-text-heading--large">ThreadComment</h1>
         <div class="slds-text-body--regular"><p>Forum Thread Comment</p>
 </div>
     </div>
@@ -484,7 +484,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Comment</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The id of the comment</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The user id of the comment's owner</span></span></li><li><span class="tab"><span class="meta">userId</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The id of thread the comment belongs to</span></span></li><li><span class="tab"><span class="meta">threadId</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The text content of the comment</span></span></li><li><span class="tab"><span class="meta">comment</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The time of the comments creation</span></span></li><li><span class="tab"><span class="meta">createdAt</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The time of the comments last update</span></span></li><li><span class="tab"><span class="meta">updatedAt</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The user who created the comment</span></span></li><li><span class="tab"><span class="meta">user</span>: <a class="support type" href="user.doc.html">User</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The comment's child reply comments</span></span></li><li><span class="tab"><span class="meta">childComments</span>: <a class="support type" href="json.doc.html">Json</a> </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">ThreadComment</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The id of the comment</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The user id of the comment's owner</span></span></li><li><span class="tab"><span class="meta">userId</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The id of thread the comment belongs to</span></span></li><li><span class="tab"><span class="meta">threadId</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The text content of the comment</span></span></li><li><span class="tab"><span class="meta">comment</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The time of the comments creation</span></span></li><li><span class="tab"><span class="meta">createdAt</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The time of the comments last update</span></span></li><li><span class="tab"><span class="meta">updatedAt</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The user who created the comment</span></span></li><li><span class="tab"><span class="meta">user</span>: <a class="support type" href="user.doc.html">User</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The comment's child reply comments</span></span></li><li><span class="tab"><span class="meta">childComments</span>: <a class="support type" href="json.doc.html">Json</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -495,7 +495,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="commentpage.doc.html" title="CommentPage - Comments Paginated">CommentPage<em>Comments Paginated</em></a><li><li><a href="query.doc.html" title="Query - ">Query<em>null</em></a><li></ul>
+        <ul class="require-by"><li><a href="query.doc.html" title="Query - ">Query<em>null</em></a><li><li><a href="threadcommentpage.doc.html" title="ThreadCommentPage - Comments Paginated">ThreadCommentPage<em>Comments Paginated</em></a><li></ul>
     </div>
 </section>
 <footer>

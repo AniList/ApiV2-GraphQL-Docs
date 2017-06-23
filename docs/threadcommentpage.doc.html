@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>Category</title>
+    <title>ThreadCommentPage</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -235,11 +235,6 @@
                 AiringSchedulePage
             </a>
         </li>
-        <li class="slds-is-active" title="Category">
-            <a href="category.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                Category
-            </a>
-        </li>
         <li  title="Character">
             <a href="character.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Character
@@ -258,16 +253,6 @@
         <li  title="CharacterPage">
             <a href="characterpage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 CharacterPage
-            </a>
-        </li>
-        <li  title="Comment">
-            <a href="comment.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                Comment
-            </a>
-        </li>
-        <li  title="CommentPage">
-            <a href="commentpage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                CommentPage
             </a>
         </li>
         <li  title="FollowingNotification">
@@ -385,6 +370,21 @@
                 Thread
             </a>
         </li>
+        <li  title="ThreadCategory">
+            <a href="threadcategory.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ThreadCategory
+            </a>
+        </li>
+        <li  title="ThreadComment">
+            <a href="threadcomment.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ThreadComment
+            </a>
+        </li>
+        <li class="slds-is-active" title="ThreadCommentPage">
+            <a href="threadcommentpage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ThreadCommentPage
+            </a>
+        </li>
         <li  title="ThreadPage">
             <a href="threadpage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ThreadPage
@@ -471,8 +471,8 @@
     </div>
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
-        <h1 class="slds-text-heading--large">Category</h1>
-        <div class="slds-text-body--regular"><p>A forum thread category</p>
+        <h1 class="slds-text-heading--large">ThreadCommentPage</h1>
+        <div class="slds-text-body--regular"><p>Comments Paginated</p>
 </div>
     </div>
 </section>
@@ -484,7 +484,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">Category</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The id of the category or media is of the media category</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The name of the category</span></span></li><li><span class="tab"><span class="meta">name</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">ThreadCommentPage</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The pagination information</span></span></li><li><span class="tab"><span class="meta">pageInfo</span>: <a class="support type" href="pageinfo.doc.html">PageInfo</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The data array</span></span></li><li><span class="tab"><span class="meta">data</span>: [<a class="support type" href="threadcomment.doc.html">ThreadComment</a>] </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -495,7 +495,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="thread.doc.html" title="Thread - Forum Thread">Thread<em>Forum Thread</em></a><li></ul>
+        <ul class="require-by"><li><a href="query.doc.html" title="Query - ">Query<em>null</em></a><li></ul>
     </div>
 </section>
 <footer>

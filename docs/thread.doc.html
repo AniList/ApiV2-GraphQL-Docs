@@ -235,11 +235,6 @@
                 AiringSchedulePage
             </a>
         </li>
-        <li  title="Category">
-            <a href="category.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                Category
-            </a>
-        </li>
         <li  title="Character">
             <a href="character.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Character
@@ -258,16 +253,6 @@
         <li  title="CharacterPage">
             <a href="characterpage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 CharacterPage
-            </a>
-        </li>
-        <li  title="Comment">
-            <a href="comment.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                Comment
-            </a>
-        </li>
-        <li  title="CommentPage">
-            <a href="commentpage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                CommentPage
             </a>
         </li>
         <li  title="FollowingNotification">
@@ -385,6 +370,21 @@
                 Thread
             </a>
         </li>
+        <li  title="ThreadCategory">
+            <a href="threadcategory.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ThreadCategory
+            </a>
+        </li>
+        <li  title="ThreadComment">
+            <a href="threadcomment.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ThreadComment
+            </a>
+        </li>
+        <li  title="ThreadCommentPage">
+            <a href="threadcommentpage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ThreadCommentPage
+            </a>
+        </li>
         <li  title="ThreadPage">
             <a href="threadpage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ThreadPage
@@ -484,7 +484,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Thread</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The id of the thread</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The title of the thread</span></span></li><li><span class="tab"><span class="meta">title</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The text body of the thread</span></span></li><li><span class="tab"><span class="meta">body</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The id of the thread owner user</span></span></li><li><span class="tab"><span class="meta">userId</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The id of the user who most recently commented on the thread</span></span></li><li><span class="tab"><span class="meta">replyUserId</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The id of the most recent comment on the thread</span></span></li><li><span class="tab"><span class="meta">replyCommentId</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The number of comments on the thread</span></span></li><li><span class="tab"><span class="meta">replyCount</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The number of times users have viewed the thread</span></span></li><li><span class="tab"><span class="meta">viewCount</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   If the thread is locked and can receive comments</span></span></li><li><span class="tab"><span class="meta">isLocked</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   If the thread is stickied and should be displayed at the top of the page</span></span></li><li><span class="tab"><span class="meta">isSticky</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   If the currently authenticated user is subscribed to the thread</span></span></li><li><span class="tab"><span class="meta">isSubscribed</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The time of the last reply</span></span></li><li><span class="tab"><span class="meta">repliedAt</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The time of the thread creation</span></span></li><li><span class="tab"><span class="meta">createdAt</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The time of the thread last update</span></span></li><li><span class="tab"><span class="meta">updatedAt</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The owner of the thread</span></span></li><li><span class="tab"><span class="meta">user</span>: <a class="support type" href="user.doc.html">User</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The user to last reply to the thread</span></span></li><li><span class="tab"><span class="meta">replyUser</span>: <a class="support type" href="user.doc.html">User</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The categories of the thread</span></span></li><li><span class="tab"><span class="meta">categories</span>: [<a class="support type" href="category.doc.html">Category</a>] </span></li><li></li><li><span class="tab"><span class="comment line">#   The media categories of the thread</span></span></li><li><span class="tab"><span class="meta">mediaCategories</span>: [<a class="support type" href="media.doc.html">Media</a>] </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Thread</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The id of the thread</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The title of the thread</span></span></li><li><span class="tab"><span class="meta">title</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The text body of the thread</span></span></li><li><span class="tab"><span class="meta">body</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The id of the thread owner user</span></span></li><li><span class="tab"><span class="meta">userId</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The id of the user who most recently commented on the thread</span></span></li><li><span class="tab"><span class="meta">replyUserId</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The id of the most recent comment on the thread</span></span></li><li><span class="tab"><span class="meta">replyCommentId</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The number of comments on the thread</span></span></li><li><span class="tab"><span class="meta">replyCount</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The number of times users have viewed the thread</span></span></li><li><span class="tab"><span class="meta">viewCount</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   If the thread is locked and can receive comments</span></span></li><li><span class="tab"><span class="meta">isLocked</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   If the thread is stickied and should be displayed at the top of the page</span></span></li><li><span class="tab"><span class="meta">isSticky</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   If the currently authenticated user is subscribed to the thread</span></span></li><li><span class="tab"><span class="meta">isSubscribed</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The time of the last reply</span></span></li><li><span class="tab"><span class="meta">repliedAt</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The time of the thread creation</span></span></li><li><span class="tab"><span class="meta">createdAt</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The time of the thread last update</span></span></li><li><span class="tab"><span class="meta">updatedAt</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The owner of the thread</span></span></li><li><span class="tab"><span class="meta">user</span>: <a class="support type" href="user.doc.html">User</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The user to last reply to the thread</span></span></li><li><span class="tab"><span class="meta">replyUser</span>: <a class="support type" href="user.doc.html">User</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The categories of the thread</span></span></li><li><span class="tab"><span class="meta">categories</span>: [<a class="support type" href="threadcategory.doc.html">ThreadCategory</a>] </span></li><li></li><li><span class="tab"><span class="comment line">#   The media categories of the thread</span></span></li><li><span class="tab"><span class="meta">mediaCategories</span>: [<a class="support type" href="media.doc.html">Media</a>] </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
