@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
+    <title>Query</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
+</head>
+<body class="slds-scrollable--y">
+    <nav class="slds-grid slds-grid--vertical slds-col--rule-right">
+        <header class="slds-p-around--medium slds-col slds-shrik slds-grow-none">
+            <button class="slds-button slds-button--icon slds-float--right js-toggle-navigation less-than-medium">
+                <i class="material-icons">close</i>
+            </button>
+                <h3 class="slds-text-heading--medium"><a href="./">GraphQL Schema</a></h3>
+            <div class="slds-p-top--small">
+                <input id="type-search" type="text" placeholder="Search a type" autofocus="" class="slds-input" />
+            </div>
+        </header>
+        <div id="navication-scroll" class="slds-scrollable--y slds-col slds-grow">
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Schema</h4>
+    <ul>
+        <li class="slds-is-active" title="Query">
+            <a href="query.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Query
+            </a>
+        </li>
+        <li  title="Mutation">
+            <a href="mutation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Mutation
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Scalars</h4>
+    <ul>
+        <li  title="Boolean">
+            <a href="boolean.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Boolean
+            </a>
+        </li>
+        <li  title="Float">
+            <a href="float.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Float
+            </a>
+        </li>
+        <li  title="FuzzyDateInt">
+            <a href="fuzzydateint.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FuzzyDateInt
+            </a>
+        </li>
+        <li  title="ID">
+            <a href="id.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ID
+            </a>
+        </li>
+        <li  title="Int">
+            <a href="int.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Int
+            </a>
+        </li>
+        <li  title="Json">
+            <a href="json.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Json
+            </a>
+        </li>
+        <li  title="String">
+            <a href="string.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                String
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Enums</h4>
+    <ul>
+        <li  title="ActivitySort">
+            <a href="activitysort.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActivitySort
+            </a>
+        </li>
+        <li  title="ActivityType">
+            <a href="activitytype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActivityType
+            </a>
+        </li>
+        <li  title="AiringSort">
+            <a href="airingsort.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AiringSort
+            </a>
+        </li>
+        <li  title="MediaFormat">
+            <a href="mediaformat.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaFormat
+            </a>
+        </li>
+        <li  title="MediaListSort">
+            <a href="medialistsort.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaListSort
+            </a>
+        </li>
+        <li  title="MediaListStatus">
+            <a href="medialiststatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaListStatus
+            </a>
+        </li>
+        <li  title="MediaRelation">
+            <a href="mediarelation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaRelation
+            </a>
+        </li>
+        <li  title="MediaSeason">
+            <a href="mediaseason.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaSeason
+            </a>
+        </li>
+        <li  title="MediaSort">
+            <a href="mediasort.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaSort
+            </a>
+        </li>
+        <li  title="MediaSource">
+            <a href="mediasource.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaSource
+            </a>
+        </li>
+        <li  title="MediaStatus">
+            <a href="mediastatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaStatus
+            </a>
+        </li>
+        <li  title="MediaType">
+            <a href="mediatype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaType
+            </a>
+        </li>
+        <li  title="NotificationType">
+            <a href="notificationtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NotificationType
+            </a>
+        </li>
+        <li  title="ScoreFormat">
+            <a href="scoreformat.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ScoreFormat
+            </a>
+        </li>
+        <li  title="StaffLanguage">
+            <a href="stafflanguage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StaffLanguage
+            </a>
+        </li>
+        <li  title="StudioSort">
+            <a href="studiosort.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StudioSort
+            </a>
+        </li>
+        <li  title="ThreadSort">
+            <a href="threadsort.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ThreadSort
+            </a>
+        </li>
+        <li  title="UserSort">
+            <a href="usersort.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserSort
+            </a>
+        </li>
+        <li  title="UserTitleLanguage">
+            <a href="usertitlelanguage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserTitleLanguage
+            </a>
+        </li>
+        <li  title="__DirectiveLocation">
+            <a href="directivelocation.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __DirectiveLocation
+            </a>
+        </li>
+        <li  title="__TypeKind">
+            <a href="typekind.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __TypeKind
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Unions</h4>
+    <ul>
+        <li  title="NotificationUnionType">
+            <a href="notificationuniontype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NotificationUnionType
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Objects</h4>
+    <ul>
+        <li  title="Activity">
+            <a href="activity.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Activity
+            </a>
+        </li>
+        <li  title="ActivityMentionNotification">
+            <a href="activitymentionnotification.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActivityMentionNotification
+            </a>
+        </li>
+        <li  title="ActivityPage">
+            <a href="activitypage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActivityPage
+            </a>
+        </li>
+        <li  title="ActivityReplyNotification">
+            <a href="activityreplynotification.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActivityReplyNotification
+            </a>
+        </li>
+        <li  title="AiringNotification">
+            <a href="airingnotification.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AiringNotification
+            </a>
+        </li>
+        <li  title="AiringSchedule">
+            <a href="airingschedule.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AiringSchedule
+            </a>
+        </li>
+        <li  title="AiringSchedulePage">
+            <a href="airingschedulepage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AiringSchedulePage
+            </a>
+        </li>
+        <li  title="Category">
+            <a href="category.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Category
+            </a>
+        </li>
+        <li  title="Character">
+            <a href="character.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Character
+            </a>
+        </li>
+        <li  title="CharacterImage">
+            <a href="characterimage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CharacterImage
+            </a>
+        </li>
+        <li  title="CharacterName">
+            <a href="charactername.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CharacterName
+            </a>
+        </li>
+        <li  title="CharacterPage">
+            <a href="characterpage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CharacterPage
+            </a>
+        </li>
+        <li  title="Comment">
+            <a href="comment.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Comment
+            </a>
+        </li>
+        <li  title="CommentPage">
+            <a href="commentpage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CommentPage
+            </a>
+        </li>
+        <li  title="FollowingNotification">
+            <a href="followingnotification.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FollowingNotification
+            </a>
+        </li>
+        <li  title="ForumMentionNotification">
+            <a href="forummentionnotification.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ForumMentionNotification
+            </a>
+        </li>
+        <li  title="ForumReplyNotification">
+            <a href="forumreplynotification.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ForumReplyNotification
+            </a>
+        </li>
+        <li  title="ForumSubscribedNotification">
+            <a href="forumsubscribednotification.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ForumSubscribedNotification
+            </a>
+        </li>
+        <li  title="FuzzyDate">
+            <a href="fuzzydate.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FuzzyDate
+            </a>
+        </li>
+        <li  title="Media">
+            <a href="media.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Media
+            </a>
+        </li>
+        <li  title="MediaCoverImage">
+            <a href="mediacoverimage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaCoverImage
+            </a>
+        </li>
+        <li  title="MediaExternalLink">
+            <a href="mediaexternallink.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaExternalLink
+            </a>
+        </li>
+        <li  title="MediaList">
+            <a href="medialist.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaList
+            </a>
+        </li>
+        <li  title="MediaListCollection">
+            <a href="medialistcollection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaListCollection
+            </a>
+        </li>
+        <li  title="MediaListPage">
+            <a href="medialistpage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaListPage
+            </a>
+        </li>
+        <li  title="MediaPage">
+            <a href="mediapage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaPage
+            </a>
+        </li>
+        <li  title="MediaTitle">
+            <a href="mediatitle.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaTitle
+            </a>
+        </li>
+        <li  title="MessageNotification">
+            <a href="messagenotification.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MessageNotification
+            </a>
+        </li>
+        <li  title="NotificationPage">
+            <a href="notificationpage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NotificationPage
+            </a>
+        </li>
+        <li  title="PageInfo">
+            <a href="pageinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PageInfo
+            </a>
+        </li>
+        <li  title="Staff">
+            <a href="staff.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Staff
+            </a>
+        </li>
+        <li  title="StaffImage">
+            <a href="staffimage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StaffImage
+            </a>
+        </li>
+        <li  title="StaffName">
+            <a href="staffname.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StaffName
+            </a>
+        </li>
+        <li  title="StaffPage">
+            <a href="staffpage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StaffPage
+            </a>
+        </li>
+        <li  title="Studio">
+            <a href="studio.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Studio
+            </a>
+        </li>
+        <li  title="StudioPage">
+            <a href="studiopage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StudioPage
+            </a>
+        </li>
+        <li  title="Thread">
+            <a href="thread.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Thread
+            </a>
+        </li>
+        <li  title="ThreadPage">
+            <a href="threadpage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ThreadPage
+            </a>
+        </li>
+        <li  title="User">
+            <a href="user.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                User
+            </a>
+        </li>
+        <li  title="UserAvatar">
+            <a href="useravatar.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserAvatar
+            </a>
+        </li>
+        <li  title="UserPage">
+            <a href="userpage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserPage
+            </a>
+        </li>
+        <li  title="__Directive">
+            <a href="directive.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Directive
+            </a>
+        </li>
+        <li  title="__EnumValue">
+            <a href="enumvalue.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __EnumValue
+            </a>
+        </li>
+        <li  title="__Field">
+            <a href="field.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Field
+            </a>
+        </li>
+        <li  title="__InputValue">
+            <a href="inputvalue.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __InputValue
+            </a>
+        </li>
+        <li  title="__Schema">
+            <a href="schema.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Schema
+            </a>
+        </li>
+        <li  title="__Type">
+            <a href="type.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Type
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Directives</h4>
+    <ul>
+        <li  title="deprecated">
+            <a href="deprecated.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                deprecated
+            </a>
+        </li>
+        <li  title="include">
+            <a href="include.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                include
+            </a>
+        </li>
+        <li  title="skip">
+            <a href="skip.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                skip
+            </a>
+        </li>
+    </ul>
+</div>
+        </div>
+    </nav>
+    <main><section class="title slds-theme--inverse">
+    <div class="container slds-grid">
+        <div>
+        <button class="slds-button js-toggle-navigation less-than-medium">
+            <i class="material-icons slds-button__icon slds-button__icon--left">menu</i>
+            <span class="slds-text-title--caps">Types<span>
+        </button>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
+        <h1 class="slds-text-heading--large">Query</h1>
+        <div class="slds-text-body--regular"></div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 id="graphql-schema-definition" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#graphql-schema-definition">
+                <i class="material-icons">link</i>
+            </a>
+            GraphQL Schema definition
+        </h2>
+        <code class="highlight"><ul class="code" style="padding-left:56px"><li><span class="keyword operator ts">type</span> <span class="identifier">Query</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Media query</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: Filter by the media id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>startDate</strong>: Filter by the start date of the media</span></span></li><li><span class="tab"><span class="comment line">#   <strong>endDate</strong>: Filter by the end date of the media</span></span></li><li><span class="tab"><span class="comment line">#   <strong>season</strong>: Filter by the season the media was released in</span></span></li><li><span class="tab"><span class="comment line">#   <strong>type</strong>: Filter by the media's type</span></span></li><li><span class="tab"><span class="comment line">#   <strong>format</strong>: Filter by the media's format</span></span></li><li><span class="tab"><span class="comment line">#   <strong>status</strong>: Filter by the media's current release status</span></span></li><li><span class="tab"><span class="comment line">#   <strong>episodes</strong>: Filter by amount of episodes the media has</span></span></li><li><span class="tab"><span class="comment line">#   <strong>duration</strong>: Filter by the media's episode length</span></span></li><li><span class="tab"><span class="comment line">#   <strong>chapters</strong>: Filter by the media's chapter count</span></span></li><li><span class="tab"><span class="comment line">#   <strong>volumes</strong>: Filter by the media's volume count</span></span></li><li><span class="tab"><span class="comment line">#   <strong>genre_in</strong>: Filter by the media's genres</span></span></li><li><span class="tab"><span class="comment line">#   <strong>genre_not_in</strong>: Filter by the media's genres</span></span></li><li><span class="tab"><span class="comment line">#   <strong>search</strong>: Filter by search query</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_not</strong>: Filter by the media id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_in</strong>: Filter by the media id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_not_in</strong>: Filter by the media id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>startDate_greater</strong>: Filter by the start date of the media</span></span></li><li><span class="tab"><span class="comment line">#   <strong>startDate_lesser</strong>: Filter by the start date of the media</span></span></li><li><span class="tab"><span class="comment line">#   <strong>startDate_like</strong>: Filter by the start date of the media</span></span></li><li><span class="tab"><span class="comment line">#   <strong>endDate_greater</strong>: Filter by the end date of the media</span></span></li><li><span class="tab"><span class="comment line">#   <strong>endDate_lesser</strong>: Filter by the end date of the media</span></span></li><li><span class="tab"><span class="comment line">#   <strong>endDate_like</strong>: Filter by the end date of the media</span></span></li><li><span class="tab"><span class="comment line">#   <strong>episodes_greater</strong>: Filter by amount of episodes the media has</span></span></li><li><span class="tab"><span class="comment line">#   <strong>episodes_lesser</strong>: Filter by amount of episodes the media has</span></span></li><li><span class="tab"><span class="comment line">#   <strong>duration_greater</strong>: Filter by the media's episode length</span></span></li><li><span class="tab"><span class="comment line">#   <strong>duration_lesser</strong>: Filter by the media's episode length</span></span></li><li><span class="tab"><span class="comment line">#   <strong>chapters_greater</strong>: Filter by the media's chapter count</span></span></li><li><span class="tab"><span class="comment line">#   <strong>chapters_lesser</strong>: Filter by the media's chapter count</span></span></li><li><span class="tab"><span class="comment line">#   <strong>volumes_greater</strong>: Filter by the media's volume count</span></span></li><li><span class="tab"><span class="comment line">#   <strong>volumes_lesser</strong>: Filter by the media's volume count</span></span></li><li><span class="tab"><span class="comment line">#   <strong>sort</strong>: The order the results will be returned in</span></span></li><li><span class="tab"><span class="meta">Media</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">startDate</span>: <a class="support type" href="fuzzydateint.doc.html">FuzzyDateInt</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">endDate</span>: <a class="support type" href="fuzzydateint.doc.html">FuzzyDateInt</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">season</span>: <a class="support type" href="mediaseason.doc.html">MediaSeason</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">type</span>: <a class="support type" href="mediatype.doc.html">MediaType</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">format</span>: <a class="support type" href="mediaformat.doc.html">MediaFormat</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">status</span>: <a class="support type" href="mediastatus.doc.html">MediaStatus</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">episodes</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">duration</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">chapters</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">volumes</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">genre_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">genre_not_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">search</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_not</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_not_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">startDate_greater</span>: <a class="support type" href="fuzzydateint.doc.html">FuzzyDateInt</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">startDate_lesser</span>: <a class="support type" href="fuzzydateint.doc.html">FuzzyDateInt</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">startDate_like</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">endDate_greater</span>: <a class="support type" href="fuzzydateint.doc.html">FuzzyDateInt</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">endDate_lesser</span>: <a class="support type" href="fuzzydateint.doc.html">FuzzyDateInt</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">endDate_like</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">episodes_greater</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">episodes_lesser</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">duration_greater</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">duration_lesser</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">chapters_greater</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">chapters_lesser</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">volumes_greater</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">volumes_lesser</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">sort</span>: <a class="support type" href="mediasort.doc.html">MediaSort</a></span></span></li><li><span class="tab">): <a class="support type" href="media.doc.html">Media</a> </span></li><li></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: Filter by the media id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>startDate</strong>: Filter by the start date of the media</span></span></li><li><span class="tab"><span class="comment line">#   <strong>endDate</strong>: Filter by the end date of the media</span></span></li><li><span class="tab"><span class="comment line">#   <strong>season</strong>: Filter by the season the media was released in</span></span></li><li><span class="tab"><span class="comment line">#   <strong>type</strong>: Filter by the media's type</span></span></li><li><span class="tab"><span class="comment line">#   <strong>format</strong>: Filter by the media's format</span></span></li><li><span class="tab"><span class="comment line">#   <strong>status</strong>: Filter by the media's current release status</span></span></li><li><span class="tab"><span class="comment line">#   <strong>episodes</strong>: Filter by amount of episodes the media has</span></span></li><li><span class="tab"><span class="comment line">#   <strong>duration</strong>: Filter by the media's episode length</span></span></li><li><span class="tab"><span class="comment line">#   <strong>chapters</strong>: Filter by the media's chapter count</span></span></li><li><span class="tab"><span class="comment line">#   <strong>volumes</strong>: Filter by the media's volume count</span></span></li><li><span class="tab"><span class="comment line">#   <strong>genre_in</strong>: Filter by the media's genres</span></span></li><li><span class="tab"><span class="comment line">#   <strong>genre_not_in</strong>: Filter by the media's genres</span></span></li><li><span class="tab"><span class="comment line">#   <strong>search</strong>: Filter by search query</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_not</strong>: Filter by the media id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_in</strong>: Filter by the media id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_not_in</strong>: Filter by the media id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>startDate_greater</strong>: Filter by the start date of the media</span></span></li><li><span class="tab"><span class="comment line">#   <strong>startDate_lesser</strong>: Filter by the start date of the media</span></span></li><li><span class="tab"><span class="comment line">#   <strong>startDate_like</strong>: Filter by the start date of the media</span></span></li><li><span class="tab"><span class="comment line">#   <strong>endDate_greater</strong>: Filter by the end date of the media</span></span></li><li><span class="tab"><span class="comment line">#   <strong>endDate_lesser</strong>: Filter by the end date of the media</span></span></li><li><span class="tab"><span class="comment line">#   <strong>endDate_like</strong>: Filter by the end date of the media</span></span></li><li><span class="tab"><span class="comment line">#   <strong>episodes_greater</strong>: Filter by amount of episodes the media has</span></span></li><li><span class="tab"><span class="comment line">#   <strong>episodes_lesser</strong>: Filter by amount of episodes the media has</span></span></li><li><span class="tab"><span class="comment line">#   <strong>duration_greater</strong>: Filter by the media's episode length</span></span></li><li><span class="tab"><span class="comment line">#   <strong>duration_lesser</strong>: Filter by the media's episode length</span></span></li><li><span class="tab"><span class="comment line">#   <strong>chapters_greater</strong>: Filter by the media's chapter count</span></span></li><li><span class="tab"><span class="comment line">#   <strong>chapters_lesser</strong>: Filter by the media's chapter count</span></span></li><li><span class="tab"><span class="comment line">#   <strong>volumes_greater</strong>: Filter by the media's volume count</span></span></li><li><span class="tab"><span class="comment line">#   <strong>volumes_lesser</strong>: Filter by the media's volume count</span></span></li><li><span class="tab"><span class="comment line">#   <strong>sort</strong>: The order the results will be returned in</span></span></li><li><span class="tab"><span class="comment line">#   <strong>page</strong>: The page</span></span></li><li><span class="tab"><span class="comment line">#   <strong>perPage</strong>: The amount of entries per page, max 50</span></span></li><li><span class="tab"><span class="meta">MediaPage</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">startDate</span>: <a class="support type" href="fuzzydateint.doc.html">FuzzyDateInt</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">endDate</span>: <a class="support type" href="fuzzydateint.doc.html">FuzzyDateInt</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">season</span>: <a class="support type" href="mediaseason.doc.html">MediaSeason</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">type</span>: <a class="support type" href="mediatype.doc.html">MediaType</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">format</span>: <a class="support type" href="mediaformat.doc.html">MediaFormat</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">status</span>: <a class="support type" href="mediastatus.doc.html">MediaStatus</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">episodes</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">duration</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">chapters</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">volumes</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">genre_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">genre_not_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">search</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_not</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_not_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">startDate_greater</span>: <a class="support type" href="fuzzydateint.doc.html">FuzzyDateInt</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">startDate_lesser</span>: <a class="support type" href="fuzzydateint.doc.html">FuzzyDateInt</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">startDate_like</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">endDate_greater</span>: <a class="support type" href="fuzzydateint.doc.html">FuzzyDateInt</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">endDate_lesser</span>: <a class="support type" href="fuzzydateint.doc.html">FuzzyDateInt</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">endDate_like</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">episodes_greater</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">episodes_lesser</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">duration_greater</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">duration_lesser</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">chapters_greater</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">chapters_lesser</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">volumes_greater</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">volumes_lesser</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">sort</span>: <a class="support type" href="mediasort.doc.html">MediaSort</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">page</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">perPage</span>: <a class="support type" href="int.doc.html">Int</a></span></span></li><li><span class="tab">): <a class="support type" href="mediapage.doc.html">MediaPage</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Airing schedule query</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: Filter by the id of the airing schedule item</span></span></li><li><span class="tab"><span class="comment line">#   <strong>mediaId</strong>: Filter by the id of associated media</span></span></li><li><span class="tab"><span class="comment line">#   <strong>episode</strong>: Filter by the airing episode number</span></span></li><li><span class="tab"><span class="comment line">#   <strong>time</strong>: Filter by the time of airing</span></span></li><li><span class="tab"><span class="comment line">#   <strong>notYetAired</strong>: Filter to episodes that have not yet aired</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_not</strong>: Filter by the id of the airing schedule item</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_in</strong>: Filter by the id of the airing schedule item</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_not_in</strong>: Filter by the id of the airing schedule item</span></span></li><li><span class="tab"><span class="comment line">#   <strong>mediaId_not</strong>: Filter by the id of associated media</span></span></li><li><span class="tab"><span class="comment line">#   <strong>mediaId_in</strong>: Filter by the id of associated media</span></span></li><li><span class="tab"><span class="comment line">#   <strong>mediaId_not_in</strong>: Filter by the id of associated media</span></span></li><li><span class="tab"><span class="comment line">#   <strong>episode_not</strong>: Filter by the airing episode number</span></span></li><li><span class="tab"><span class="comment line">#   <strong>episode_in</strong>: Filter by the airing episode number</span></span></li><li><span class="tab"><span class="comment line">#   <strong>episode_not_in</strong>: Filter by the airing episode number</span></span></li><li><span class="tab"><span class="comment line">#   <strong>episode_greater</strong>: Filter by the airing episode number</span></span></li><li><span class="tab"><span class="comment line">#   <strong>episode_lesser</strong>: Filter by the airing episode number</span></span></li><li><span class="tab"><span class="comment line">#   <strong>time_greater</strong>: Filter by the time of airing</span></span></li><li><span class="tab"><span class="comment line">#   <strong>time_lesser</strong>: Filter by the time of airing</span></span></li><li><span class="tab"><span class="comment line">#   <strong>sort</strong>: The order the results will be returned in</span></span></li><li><span class="tab"><span class="meta">AiringSchedule</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">mediaId</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">episode</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">time</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">notYetAired</span>: <a class="support type" href="boolean.doc.html">Boolean</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_not</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_not_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">mediaId_not</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">mediaId_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">mediaId_not_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">episode_not</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">episode_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">episode_not_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">episode_greater</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">episode_lesser</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">time_greater</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">time_lesser</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">sort</span>: <a class="support type" href="airingsort.doc.html">AiringSort</a></span></span></li><li><span class="tab">): <a class="support type" href="airingschedule.doc.html">AiringSchedule</a> </span></li><li></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: Filter by the id of the airing schedule item</span></span></li><li><span class="tab"><span class="comment line">#   <strong>mediaId</strong>: Filter by the id of associated media</span></span></li><li><span class="tab"><span class="comment line">#   <strong>episode</strong>: Filter by the airing episode number</span></span></li><li><span class="tab"><span class="comment line">#   <strong>time</strong>: Filter by the time of airing</span></span></li><li><span class="tab"><span class="comment line">#   <strong>notYetAired</strong>: Filter to episodes that have not yet aired</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_not</strong>: Filter by the id of the airing schedule item</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_in</strong>: Filter by the id of the airing schedule item</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_not_in</strong>: Filter by the id of the airing schedule item</span></span></li><li><span class="tab"><span class="comment line">#   <strong>mediaId_not</strong>: Filter by the id of associated media</span></span></li><li><span class="tab"><span class="comment line">#   <strong>mediaId_in</strong>: Filter by the id of associated media</span></span></li><li><span class="tab"><span class="comment line">#   <strong>mediaId_not_in</strong>: Filter by the id of associated media</span></span></li><li><span class="tab"><span class="comment line">#   <strong>episode_not</strong>: Filter by the airing episode number</span></span></li><li><span class="tab"><span class="comment line">#   <strong>episode_in</strong>: Filter by the airing episode number</span></span></li><li><span class="tab"><span class="comment line">#   <strong>episode_not_in</strong>: Filter by the airing episode number</span></span></li><li><span class="tab"><span class="comment line">#   <strong>episode_greater</strong>: Filter by the airing episode number</span></span></li><li><span class="tab"><span class="comment line">#   <strong>episode_lesser</strong>: Filter by the airing episode number</span></span></li><li><span class="tab"><span class="comment line">#   <strong>time_greater</strong>: Filter by the time of airing</span></span></li><li><span class="tab"><span class="comment line">#   <strong>time_lesser</strong>: Filter by the time of airing</span></span></li><li><span class="tab"><span class="comment line">#   <strong>sort</strong>: The order the results will be returned in</span></span></li><li><span class="tab"><span class="comment line">#   <strong>page</strong>: The page</span></span></li><li><span class="tab"><span class="comment line">#   <strong>perPage</strong>: The amount of entries per page, max 50</span></span></li><li><span class="tab"><span class="meta">AiringSchedulePage</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">mediaId</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">episode</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">time</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">notYetAired</span>: <a class="support type" href="boolean.doc.html">Boolean</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_not</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_not_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">mediaId_not</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">mediaId_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">mediaId_not_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">episode_not</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">episode_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">episode_not_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">episode_greater</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">episode_lesser</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">time_greater</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">time_lesser</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">sort</span>: <a class="support type" href="airingsort.doc.html">AiringSort</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">page</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">perPage</span>: <a class="support type" href="int.doc.html">Int</a></span></span></li><li><span class="tab">): <a class="support type" href="airingschedulepage.doc.html">AiringSchedulePage</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Character query</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: Filter by character id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>search</strong>: Filter by search query</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_not</strong>: Filter by character id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_in</strong>: Filter by character id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_not_in</strong>: Filter by character id</span></span></li><li><span class="tab"><span class="meta">Character</span>(<span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">search</span>: <a class="support type" href="string.doc.html">String</a>, <span class="meta">id_not</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">id_in</span>: <a class="support type" href="string.doc.html">String</a>, <span class="meta">id_not_in</span>: <a class="support type" href="string.doc.html">String</a>): <a class="support type" href="character.doc.html">Character</a> </span></li><li></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: Filter by character id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>search</strong>: Filter by search query</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_not</strong>: Filter by character id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_in</strong>: Filter by character id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_not_in</strong>: Filter by character id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>page</strong>: The page</span></span></li><li><span class="tab"><span class="comment line">#   <strong>perPage</strong>: The amount of entries per page, max 50</span></span></li><li><span class="tab"><span class="meta">CharacterPage</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">search</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_not</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_not_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">page</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">perPage</span>: <a class="support type" href="int.doc.html">Int</a></span></span></li><li><span class="tab">): <a class="support type" href="characterpage.doc.html">CharacterPage</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Staff query</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: Filter by the staff id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>search</strong>: Filter by search query</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_not</strong>: Filter by the staff id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_in</strong>: Filter by the staff id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_not_in</strong>: Filter by the staff id</span></span></li><li><span class="tab"><span class="meta">Staff</span>(<span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">search</span>: <a class="support type" href="string.doc.html">String</a>, <span class="meta">id_not</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">id_in</span>: <a class="support type" href="string.doc.html">String</a>, <span class="meta">id_not_in</span>: <a class="support type" href="string.doc.html">String</a>): <a class="support type" href="staff.doc.html">Staff</a> </span></li><li></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: Filter by the staff id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>search</strong>: Filter by search query</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_not</strong>: Filter by the staff id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_in</strong>: Filter by the staff id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_not_in</strong>: Filter by the staff id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>page</strong>: The page</span></span></li><li><span class="tab"><span class="comment line">#   <strong>perPage</strong>: The amount of entries per page, max 50</span></span></li><li><span class="tab"><span class="meta">StaffPage</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">search</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_not</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_not_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">page</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">perPage</span>: <a class="support type" href="int.doc.html">Int</a></span></span></li><li><span class="tab">): <a class="support type" href="staffpage.doc.html">StaffPage</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Media list query</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userId</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>type</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>status</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>mediaId</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>sort</strong>: The order the results will be returned in</span></span></li><li><span class="tab"><span class="meta">MediaList</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">userId</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">type</span>: <a class="support type" href="mediatype.doc.html">MediaType</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">status</span>: <a class="support type" href="medialiststatus.doc.html">MediaListStatus</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">mediaId</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">sort</span>: <a class="support type" href="medialistsort.doc.html">MediaListSort</a></span></span></li><li><span class="tab">): <a class="support type" href="medialist.doc.html">MediaList</a> </span></li><li></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userId</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>type</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>status</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>mediaId</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>sort</strong>: The order the results will be returned in</span></span></li><li><span class="tab"><span class="comment line">#   <strong>page</strong>: The page</span></span></li><li><span class="tab"><span class="comment line">#   <strong>perPage</strong>: The amount of entries per page, max 50</span></span></li><li><span class="tab"><span class="meta">MediaListPage</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">userId</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">type</span>: <a class="support type" href="mediatype.doc.html">MediaType</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">status</span>: <a class="support type" href="medialiststatus.doc.html">MediaListStatus</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">mediaId</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">sort</span>: <a class="support type" href="medialistsort.doc.html">MediaListSort</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">page</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">perPage</span>: <a class="support type" href="int.doc.html">Int</a></span></span></li><li><span class="tab">): <a class="support type" href="medialistpage.doc.html">MediaListPage</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Media list collection query</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userId</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>type</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>sort</strong>: The order the results will be returned in</span></span></li><li><span class="tab"><span class="meta">MediaListCollection</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">userId</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">type</span>: <a class="support type" href="mediatype.doc.html">MediaType</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">sort</span>: <a class="support type" href="medialistsort.doc.html">MediaListSort</a></span></span></li><li><span class="tab">): <a class="support type" href="medialistcollection.doc.html">MediaListCollection</a> </span></li><li></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: Filter by the user id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>name</strong>: Filter by the name of the user</span></span></li><li><span class="tab"><span class="comment line">#   <strong>search</strong>: Filter by search query</span></span></li><li><span class="tab"><span class="comment line">#   <strong>sort</strong>: The order the results will be returned in</span></span></li><li><span class="tab"><span class="meta">User</span>(<span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">name</span>: <a class="support type" href="string.doc.html">String</a>, <span class="meta">search</span>: <a class="support type" href="string.doc.html">String</a>, <span class="meta">sort</span>: <a class="support type" href="usersort.doc.html">UserSort</a>): <a class="support type" href="user.doc.html">User</a> </span></li><li></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: Filter by the user id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>name</strong>: Filter by the name of the user</span></span></li><li><span class="tab"><span class="comment line">#   <strong>search</strong>: Filter by search query</span></span></li><li><span class="tab"><span class="comment line">#   <strong>sort</strong>: The order the results will be returned in</span></span></li><li><span class="tab"><span class="comment line">#   <strong>page</strong>: The page</span></span></li><li><span class="tab"><span class="comment line">#   <strong>perPage</strong>: The amount of entries per page, max 50</span></span></li><li><span class="tab"><span class="meta">UserPage</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">name</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">search</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">sort</span>: <a class="support type" href="usersort.doc.html">UserSort</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">page</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">perPage</span>: <a class="support type" href="int.doc.html">Int</a></span></span></li><li><span class="tab">): <a class="support type" href="userpage.doc.html">UserPage</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Notification query</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>type</strong>: Filter by the type of notifications</span></span></li><li><span class="tab"><span class="meta">Notification</span>(<span class="meta">type</span>: <a class="support type" href="notificationtype.doc.html">NotificationType</a>): <a class="support type" href="notificationuniontype.doc.html">NotificationUnionType</a> </span></li><li></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>type</strong>: Filter by the type of notifications</span></span></li><li><span class="tab"><span class="comment line">#   <strong>page</strong>: The page</span></span></li><li><span class="tab"><span class="comment line">#   <strong>perPage</strong>: The amount of entries per page, max 50</span></span></li><li><span class="tab"><span class="meta">NotificationPage</span>(<span class="meta">type</span>: <a class="support type" href="notificationtype.doc.html">NotificationType</a>, <span class="meta">page</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">perPage</span>: <a class="support type" href="int.doc.html">Int</a>): <a class="support type" href="notificationpage.doc.html">NotificationPage</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Studio query</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: Filter by the studio id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>search</strong>: Filter by search query</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_not</strong>: Filter by the studio id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_in</strong>: Filter by the studio id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_not_in</strong>: Filter by the studio id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>sort</strong>: The order the results will be returned in</span></span></li><li><span class="tab"><span class="meta">Studio</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">search</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_not</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_not_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">sort</span>: <a class="support type" href="studiosort.doc.html">StudioSort</a></span></span></li><li><span class="tab">): <a class="support type" href="studio.doc.html">Studio</a> </span></li><li></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: Filter by the studio id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>search</strong>: Filter by search query</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_not</strong>: Filter by the studio id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_in</strong>: Filter by the studio id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_not_in</strong>: Filter by the studio id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>sort</strong>: The order the results will be returned in</span></span></li><li><span class="tab"><span class="comment line">#   <strong>page</strong>: The page</span></span></li><li><span class="tab"><span class="comment line">#   <strong>perPage</strong>: The amount of entries per page, max 50</span></span></li><li><span class="tab"><span class="meta">StudioPage</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">search</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_not</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_not_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">sort</span>: <a class="support type" href="studiosort.doc.html">StudioSort</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">page</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">perPage</span>: <a class="support type" href="int.doc.html">Int</a></span></span></li><li><span class="tab">): <a class="support type" href="studiopage.doc.html">StudioPage</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Activity query</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userId</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>messengerId</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>type</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>following</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>groupActivity</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_not</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_in</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_not_in</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userId_not</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userId_in</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userId_not_in</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>messengerId_not</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>messengerId_in</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>messengerId_not_in</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>type_not</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>type_in</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>type_not_in</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>sort</strong>: The order the results will be returned in</span></span></li><li><span class="tab"><span class="meta">Activity</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">userId</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">messengerId</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">type</span>: <a class="support type" href="activitytype.doc.html">ActivityType</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">following</span>: <a class="support type" href="boolean.doc.html">Boolean</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">groupActivity</span>: <a class="support type" href="boolean.doc.html">Boolean</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_not</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_not_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">userId_not</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">userId_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">userId_not_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">messengerId_not</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">messengerId_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">messengerId_not_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">type_not</span>: <a class="support type" href="activitytype.doc.html">ActivityType</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">type_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">type_not_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">sort</span>: <a class="support type" href="activitysort.doc.html">ActivitySort</a></span></span></li><li><span class="tab">): <a class="support type" href="activity.doc.html">Activity</a> </span></li><li></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userId</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>messengerId</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>type</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>following</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>groupActivity</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_not</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_in</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_not_in</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userId_not</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userId_in</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userId_not_in</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>messengerId_not</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>messengerId_in</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>messengerId_not_in</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>type_not</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>type_in</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>type_not_in</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>sort</strong>: The order the results will be returned in</span></span></li><li><span class="tab"><span class="comment line">#   <strong>page</strong>: The page</span></span></li><li><span class="tab"><span class="comment line">#   <strong>perPage</strong>: The amount of entries per page, max 50</span></span></li><li><span class="tab"><span class="meta">ActivityPage</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">userId</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">messengerId</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">type</span>: <a class="support type" href="activitytype.doc.html">ActivityType</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">following</span>: <a class="support type" href="boolean.doc.html">Boolean</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">groupActivity</span>: <a class="support type" href="boolean.doc.html">Boolean</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_not</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_not_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">userId_not</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">userId_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">userId_not_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">messengerId_not</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">messengerId_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">messengerId_not_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">type_not</span>: <a class="support type" href="activitytype.doc.html">ActivityType</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">type_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">type_not_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">sort</span>: <a class="support type" href="activitysort.doc.html">ActivitySort</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">page</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">perPage</span>: <a class="support type" href="int.doc.html">Int</a></span></span></li><li><span class="tab">): <a class="support type" href="activitypage.doc.html">ActivityPage</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Follow query</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userId</strong>: User id of the follower/followed</span></span></li><li><span class="tab"><span class="comment line">#   <strong>sort</strong>: The order the results will be returned in</span></span></li><li><span class="tab"><span class="meta">Following</span>(<span class="meta">userId</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">sort</span>: <a class="support type" href="usersort.doc.html">UserSort</a>): <a class="support type" href="user.doc.html">User</a> </span></li><li></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userId</strong>: User id of the follower/followed</span></span></li><li><span class="tab"><span class="comment line">#   <strong>sort</strong>: The order the results will be returned in</span></span></li><li><span class="tab"><span class="comment line">#   <strong>page</strong>: The page</span></span></li><li><span class="tab"><span class="comment line">#   <strong>perPage</strong>: The amount of entries per page, max 50</span></span></li><li><span class="tab"><span class="meta">FollowingPage</span>(<span class="meta">userId</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">sort</span>: <a class="support type" href="usersort.doc.html">UserSort</a>, <span class="meta">page</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">perPage</span>: <a class="support type" href="int.doc.html">Int</a>): <a class="support type" href="userpage.doc.html">UserPage</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Follow query</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userId</strong>: User id of the follower/followed</span></span></li><li><span class="tab"><span class="comment line">#   <strong>sort</strong>: The order the results will be returned in</span></span></li><li><span class="tab"><span class="meta">Follower</span>(<span class="meta">userId</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">sort</span>: <a class="support type" href="usersort.doc.html">UserSort</a>): <a class="support type" href="user.doc.html">User</a> </span></li><li></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userId</strong>: User id of the follower/followed</span></span></li><li><span class="tab"><span class="comment line">#   <strong>sort</strong>: The order the results will be returned in</span></span></li><li><span class="tab"><span class="comment line">#   <strong>page</strong>: The page</span></span></li><li><span class="tab"><span class="comment line">#   <strong>perPage</strong>: The amount of entries per page, max 50</span></span></li><li><span class="tab"><span class="meta">FollowerPage</span>(<span class="meta">userId</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">sort</span>: <a class="support type" href="usersort.doc.html">UserSort</a>, <span class="meta">page</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">perPage</span>: <a class="support type" href="int.doc.html">Int</a>): <a class="support type" href="userpage.doc.html">UserPage</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Thread query</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: Filter by the thread id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userId</strong>: Filter by the user id of the thread's creator</span></span></li><li><span class="tab"><span class="comment line">#   <strong>replyUserId</strong>: Filter by the user id of the last user to comment </span></span></li><li><span class="tab"><span class="comment line">#   on the thread</span></span></li><li><span class="tab"><span class="comment line">#   <strong>subscribed</strong>: Filter by if the currently authenticated user's </span></span></li><li><span class="tab"><span class="comment line">#   subscribed threads</span></span></li><li><span class="tab"><span class="comment line">#   <strong>stickySort</strong>: Return all stickied threads first</span></span></li><li><span class="tab"><span class="comment line">#   <strong>category</strong>: Filter by thread category</span></span></li><li><span class="tab"><span class="comment line">#   <strong>mediaCategory</strong>: Filter by thread media category</span></span></li><li><span class="tab"><span class="comment line">#   <strong>search</strong>: Filter by search query</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_in</strong>: Filter by the thread id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>sort</strong>: The order the results will be returned in</span></span></li><li><span class="tab"><span class="meta">Thread</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">userId</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">replyUserId</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">subscribed</span>: <a class="support type" href="boolean.doc.html">Boolean</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">stickySort</span>: <a class="support type" href="boolean.doc.html">Boolean</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">category</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">mediaCategory</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">search</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">sort</span>: <a class="support type" href="threadsort.doc.html">ThreadSort</a></span></span></li><li><span class="tab">): <a class="support type" href="thread.doc.html">Thread</a> </span></li><li></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: Filter by the thread id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userId</strong>: Filter by the user id of the thread's creator</span></span></li><li><span class="tab"><span class="comment line">#   <strong>replyUserId</strong>: Filter by the user id of the last user to comment </span></span></li><li><span class="tab"><span class="comment line">#   on the thread</span></span></li><li><span class="tab"><span class="comment line">#   <strong>subscribed</strong>: Filter by if the currently authenticated user's </span></span></li><li><span class="tab"><span class="comment line">#   subscribed threads</span></span></li><li><span class="tab"><span class="comment line">#   <strong>stickySort</strong>: Return all stickied threads first</span></span></li><li><span class="tab"><span class="comment line">#   <strong>category</strong>: Filter by thread category</span></span></li><li><span class="tab"><span class="comment line">#   <strong>mediaCategory</strong>: Filter by thread media category</span></span></li><li><span class="tab"><span class="comment line">#   <strong>search</strong>: Filter by search query</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id_in</strong>: Filter by the thread id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>sort</strong>: The order the results will be returned in</span></span></li><li><span class="tab"><span class="comment line">#   <strong>page</strong>: The page</span></span></li><li><span class="tab"><span class="comment line">#   <strong>perPage</strong>: The amount of entries per page, max 50</span></span></li><li><span class="tab"><span class="meta">ThreadPage</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">userId</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">replyUserId</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">subscribed</span>: <a class="support type" href="boolean.doc.html">Boolean</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">stickySort</span>: <a class="support type" href="boolean.doc.html">Boolean</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">category</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">mediaCategory</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">search</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">id_in</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">sort</span>: <a class="support type" href="threadsort.doc.html">ThreadSort</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">page</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">perPage</span>: <a class="support type" href="int.doc.html">Int</a></span></span></li><li><span class="tab">): <a class="support type" href="threadpage.doc.html">ThreadPage</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Comment query</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: Filter by the comment id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>threadId</strong>: Filter by the thread id</span></span></li><li><span class="tab"><span class="meta">Comment</span>(<span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">threadId</span>: <a class="support type" href="int.doc.html">Int</a>): [<a class="support type" href="comment.doc.html">Comment</a>] </span></li><li></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: Filter by the comment id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>threadId</strong>: Filter by the thread id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>page</strong>: The page</span></span></li><li><span class="tab"><span class="comment line">#   <strong>perPage</strong>: The amount of entries per page, max 50</span></span></li><li><span class="tab"><span class="meta">CommentPage</span>(<span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">threadId</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">page</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">perPage</span>: <a class="support type" href="int.doc.html">Int</a>): <a class="support type" href="commentpage.doc.html">CommentPage</a> </span></li><li>}</li></ul></code>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 id="require-by" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#require-by">
+                <i class="material-icons">link</i>
+            </a>
+            Require by
+        </h2>
+        <div class="require-by anyone">This element is not required by anyone</div>
+    </div>
+</section>
+<footer>
+<div class="container slds-p-around--large">
+    <p class="slds-text-align--right slds-text-title--caps">
+        Generated with <a href="https://github.com/2fd/graphdoc#readme" target="_blank">graphdoc 2.3.0</a>
+    </p>
+</div>
+</footer>
+</main>
+    <script src="./scripts/focus-active.js"></script>
+    <script src="./scripts/filter-types.js"></script>
+    <script src="./scripts/toggle-navigation.js"></script>
+</body>
