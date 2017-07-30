@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
+    <title>ParsedMarkdown</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
+</head>
+<body class="slds-scrollable--y">
+    <nav class="slds-grid slds-grid--vertical slds-col--rule-right">
+        <header class="slds-p-around--medium slds-col slds-shrik slds-grow-none">
+            <button class="slds-button slds-button--icon slds-float--right js-toggle-navigation less-than-medium">
+                <i class="material-icons">close</i>
+            </button>
+                <h3 class="slds-text-heading--medium"><a href="./">GraphQL Schema</a></h3>
+            <div class="slds-p-top--small">
+                <input id="type-search" type="text" placeholder="Search a type" autofocus="" class="slds-input" />
+            </div>
+        </header>
+        <div id="navication-scroll" class="slds-scrollable--y slds-col slds-grow">
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Schema</h4>
+    <ul>
+        <li  title="Query">
+            <a href="query.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Query
+            </a>
+        </li>
+        <li  title="Mutation">
+            <a href="mutation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Mutation
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Scalars</h4>
+    <ul>
+        <li  title="Boolean">
+            <a href="boolean.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Boolean
+            </a>
+        </li>
+        <li  title="Float">
+            <a href="float.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Float
+            </a>
+        </li>
+        <li  title="FuzzyDateInt">
+            <a href="fuzzydateint.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FuzzyDateInt
+            </a>
+        </li>
+        <li  title="ID">
+            <a href="id.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ID
+            </a>
+        </li>
+        <li  title="Int">
+            <a href="int.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Int
+            </a>
+        </li>
+        <li  title="Json">
+            <a href="json.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Json
+            </a>
+        </li>
+        <li  title="String">
+            <a href="string.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                String
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Enums</h4>
+    <ul>
+        <li  title="ActivitySort">
+            <a href="activitysort.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActivitySort
+            </a>
+        </li>
+        <li  title="ActivityType">
+            <a href="activitytype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActivityType
+            </a>
+        </li>
+        <li  title="AiringSort">
+            <a href="airingsort.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AiringSort
+            </a>
+        </li>
+        <li  title="CharacterRole">
+            <a href="characterrole.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CharacterRole
+            </a>
+        </li>
+        <li  title="CharacterSort">
+            <a href="charactersort.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CharacterSort
+            </a>
+        </li>
+        <li  title="LikeableType">
+            <a href="likeabletype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                LikeableType
+            </a>
+        </li>
+        <li  title="MediaFormat">
+            <a href="mediaformat.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaFormat
+            </a>
+        </li>
+        <li  title="MediaListSort">
+            <a href="medialistsort.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaListSort
+            </a>
+        </li>
+        <li  title="MediaListStatus">
+            <a href="medialiststatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaListStatus
+            </a>
+        </li>
+        <li  title="MediaRankType">
+            <a href="mediaranktype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaRankType
+            </a>
+        </li>
+        <li  title="MediaRelation">
+            <a href="mediarelation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaRelation
+            </a>
+        </li>
+        <li  title="MediaSeason">
+            <a href="mediaseason.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaSeason
+            </a>
+        </li>
+        <li  title="MediaSort">
+            <a href="mediasort.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaSort
+            </a>
+        </li>
+        <li  title="MediaSource">
+            <a href="mediasource.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaSource
+            </a>
+        </li>
+        <li  title="MediaStatus">
+            <a href="mediastatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaStatus
+            </a>
+        </li>
+        <li  title="MediaType">
+            <a href="mediatype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaType
+            </a>
+        </li>
+        <li  title="NotificationType">
+            <a href="notificationtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NotificationType
+            </a>
+        </li>
+        <li  title="ReviewSort">
+            <a href="reviewsort.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ReviewSort
+            </a>
+        </li>
+        <li  title="ScoreFormat">
+            <a href="scoreformat.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ScoreFormat
+            </a>
+        </li>
+        <li  title="StaffLanguage">
+            <a href="stafflanguage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StaffLanguage
+            </a>
+        </li>
+        <li  title="StaffSort">
+            <a href="staffsort.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StaffSort
+            </a>
+        </li>
+        <li  title="StudioSort">
+            <a href="studiosort.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StudioSort
+            </a>
+        </li>
+        <li  title="ThreadSort">
+            <a href="threadsort.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ThreadSort
+            </a>
+        </li>
+        <li  title="UserSort">
+            <a href="usersort.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserSort
+            </a>
+        </li>
+        <li  title="UserTitleLanguage">
+            <a href="usertitlelanguage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserTitleLanguage
+            </a>
+        </li>
+        <li  title="__DirectiveLocation">
+            <a href="directivelocation.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __DirectiveLocation
+            </a>
+        </li>
+        <li  title="__TypeKind">
+            <a href="typekind.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __TypeKind
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Unions</h4>
+    <ul>
+        <li  title="ActivityUnion">
+            <a href="activityunion.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActivityUnion
+            </a>
+        </li>
+        <li  title="NotificationUnion">
+            <a href="notificationunion.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NotificationUnion
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Objects</h4>
+    <ul>
+        <li  title="ActivityLikeNotification">
+            <a href="activitylikenotification.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActivityLikeNotification
+            </a>
+        </li>
+        <li  title="ActivityMentionNotification">
+            <a href="activitymentionnotification.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActivityMentionNotification
+            </a>
+        </li>
+        <li  title="ActivityMessageNotification">
+            <a href="activitymessagenotification.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActivityMessageNotification
+            </a>
+        </li>
+        <li  title="ActivityReply">
+            <a href="activityreply.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActivityReply
+            </a>
+        </li>
+        <li  title="ActivityReplyLikeNotification">
+            <a href="activityreplylikenotification.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActivityReplyLikeNotification
+            </a>
+        </li>
+        <li  title="ActivityReplyNotification">
+            <a href="activityreplynotification.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActivityReplyNotification
+            </a>
+        </li>
+        <li  title="AiringNotification">
+            <a href="airingnotification.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AiringNotification
+            </a>
+        </li>
+        <li  title="AiringSchedule">
+            <a href="airingschedule.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AiringSchedule
+            </a>
+        </li>
+        <li  title="Character">
+            <a href="character.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Character
+            </a>
+        </li>
+        <li  title="CharacterImage">
+            <a href="characterimage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CharacterImage
+            </a>
+        </li>
+        <li  title="CharacterName">
+            <a href="charactername.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CharacterName
+            </a>
+        </li>
+        <li  title="Deleted">
+            <a href="deleted.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Deleted
+            </a>
+        </li>
+        <li  title="Favourites">
+            <a href="favourites.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Favourites
+            </a>
+        </li>
+        <li  title="FollowingNotification">
+            <a href="followingnotification.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FollowingNotification
+            </a>
+        </li>
+        <li  title="FuzzyDate">
+            <a href="fuzzydate.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FuzzyDate
+            </a>
+        </li>
+        <li  title="ListActivity">
+            <a href="listactivity.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ListActivity
+            </a>
+        </li>
+        <li  title="Media">
+            <a href="media.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Media
+            </a>
+        </li>
+        <li  title="MediaCoverImage">
+            <a href="mediacoverimage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaCoverImage
+            </a>
+        </li>
+        <li  title="MediaExternalLink">
+            <a href="mediaexternallink.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaExternalLink
+            </a>
+        </li>
+        <li  title="MediaList">
+            <a href="medialist.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaList
+            </a>
+        </li>
+        <li  title="MediaListCollection">
+            <a href="medialistcollection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaListCollection
+            </a>
+        </li>
+        <li  title="MediaRank">
+            <a href="mediarank.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaRank
+            </a>
+        </li>
+        <li  title="MediaTag">
+            <a href="mediatag.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaTag
+            </a>
+        </li>
+        <li  title="MediaTitle">
+            <a href="mediatitle.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaTitle
+            </a>
+        </li>
+        <li  title="MessageActivity">
+            <a href="messageactivity.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MessageActivity
+            </a>
+        </li>
+        <li  title="Page">
+            <a href="page.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Page
+            </a>
+        </li>
+        <li  title="PageInfo">
+            <a href="pageinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PageInfo
+            </a>
+        </li>
+        <li class="slds-is-active" title="ParsedMarkdown">
+            <a href="parsedmarkdown.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ParsedMarkdown
+            </a>
+        </li>
+        <li  title="Review">
+            <a href="review.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Review
+            </a>
+        </li>
+        <li  title="Staff">
+            <a href="staff.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Staff
+            </a>
+        </li>
+        <li  title="StaffImage">
+            <a href="staffimage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StaffImage
+            </a>
+        </li>
+        <li  title="StaffName">
+            <a href="staffname.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StaffName
+            </a>
+        </li>
+        <li  title="Studio">
+            <a href="studio.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Studio
+            </a>
+        </li>
+        <li  title="TextActivity">
+            <a href="textactivity.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TextActivity
+            </a>
+        </li>
+        <li  title="Thread">
+            <a href="thread.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Thread
+            </a>
+        </li>
+        <li  title="ThreadCategory">
+            <a href="threadcategory.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ThreadCategory
+            </a>
+        </li>
+        <li  title="ThreadComment">
+            <a href="threadcomment.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ThreadComment
+            </a>
+        </li>
+        <li  title="ThreadCommentLikeNotification">
+            <a href="threadcommentlikenotification.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ThreadCommentLikeNotification
+            </a>
+        </li>
+        <li  title="ThreadCommentMentionNotification">
+            <a href="threadcommentmentionnotification.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ThreadCommentMentionNotification
+            </a>
+        </li>
+        <li  title="ThreadCommentReplyNotification">
+            <a href="threadcommentreplynotification.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ThreadCommentReplyNotification
+            </a>
+        </li>
+        <li  title="ThreadCommentSubscribedNotification">
+            <a href="threadcommentsubscribednotification.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ThreadCommentSubscribedNotification
+            </a>
+        </li>
+        <li  title="ThreadLikeNotification">
+            <a href="threadlikenotification.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ThreadLikeNotification
+            </a>
+        </li>
+        <li  title="User">
+            <a href="user.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                User
+            </a>
+        </li>
+        <li  title="UserAvatar">
+            <a href="useravatar.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserAvatar
+            </a>
+        </li>
+        <li  title="__Directive">
+            <a href="directive.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Directive
+            </a>
+        </li>
+        <li  title="__EnumValue">
+            <a href="enumvalue.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __EnumValue
+            </a>
+        </li>
+        <li  title="__Field">
+            <a href="field.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Field
+            </a>
+        </li>
+        <li  title="__InputValue">
+            <a href="inputvalue.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __InputValue
+            </a>
+        </li>
+        <li  title="__Schema">
+            <a href="schema.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Schema
+            </a>
+        </li>
+        <li  title="__Type">
+            <a href="type.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Type
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Input Objects</h4>
+    <ul>
+        <li  title="MediaTitleInput">
+            <a href="mediatitleinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaTitleInput
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Directives</h4>
+    <ul>
+        <li  title="deprecated">
+            <a href="deprecated.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                deprecated
+            </a>
+        </li>
+        <li  title="include">
+            <a href="include.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                include
+            </a>
+        </li>
+        <li  title="skip">
+            <a href="skip.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                skip
+            </a>
+        </li>
+    </ul>
+</div>
+        </div>
+    </nav>
+    <main><section class="title slds-theme--inverse">
+    <div class="container slds-grid">
+        <div>
+        <button class="slds-button js-toggle-navigation less-than-medium">
+            <i class="material-icons slds-button__icon slds-button__icon--left">menu</i>
+            <span class="slds-text-title--caps">Types<span>
+        </button>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
+        <h1 class="slds-text-heading--large">ParsedMarkdown</h1>
+        <div class="slds-text-body--regular"><p>Provides the parsed markdown as html</p>
+</div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 id="graphql-schema-definition" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#graphql-schema-definition">
+                <i class="material-icons">link</i>
+            </a>
+            GraphQL Schema definition
+        </h2>
+        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">ParsedMarkdown</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The parsed markdown as html</span></span></li><li><span class="tab"><span class="meta">html</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li>}</li></ul></code>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 id="require-by" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#require-by">
+                <i class="material-icons">link</i>
+            </a>
+            Require by
+        </h2>
+        <ul class="require-by"><li><a href="query.doc.html" title="Query - ">Query<em>null</em></a><li></ul>
+    </div>
+</section>
+<footer>
+<div class="container slds-p-around--large">
+    <p class="slds-text-align--right slds-text-title--caps">
+        Generated with <a href="https://github.com/2fd/graphdoc#readme" target="_blank">graphdoc 2.3.0</a>
+    </p>
+</div>
+</footer>
+</main>
+    <script src="./scripts/focus-active.js"></script>
+    <script src="./scripts/filter-types.js"></script>
+    <script src="./scripts/toggle-navigation.js"></script>
+</body>
