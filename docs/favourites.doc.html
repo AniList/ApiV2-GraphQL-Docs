@@ -275,9 +275,29 @@
                 AiringSchedule
             </a>
         </li>
+        <li  title="AiringScheduleConnection">
+            <a href="airingscheduleconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AiringScheduleConnection
+            </a>
+        </li>
+        <li  title="AiringScheduleEdge">
+            <a href="airingscheduleedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AiringScheduleEdge
+            </a>
+        </li>
         <li  title="Character">
             <a href="character.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Character
+            </a>
+        </li>
+        <li  title="CharacterConnection">
+            <a href="characterconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CharacterConnection
+            </a>
+        </li>
+        <li  title="CharacterEdge">
+            <a href="characteredge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CharacterEdge
             </a>
         </li>
         <li  title="CharacterImage">
@@ -310,6 +330,11 @@
                 FuzzyDate
             </a>
         </li>
+        <li  title="InternalPage">
+            <a href="internalpage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InternalPage
+            </a>
+        </li>
         <li  title="ListActivity">
             <a href="listactivity.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ListActivity
@@ -320,9 +345,19 @@
                 Media
             </a>
         </li>
+        <li  title="MediaConnection">
+            <a href="mediaconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaConnection
+            </a>
+        </li>
         <li  title="MediaCoverImage">
             <a href="mediacoverimage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 MediaCoverImage
+            </a>
+        </li>
+        <li  title="MediaEdge">
+            <a href="mediaedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaEdge
             </a>
         </li>
         <li  title="MediaExternalLink">
@@ -380,9 +415,29 @@
                 Review
             </a>
         </li>
+        <li  title="ReviewConnection">
+            <a href="reviewconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ReviewConnection
+            </a>
+        </li>
+        <li  title="ReviewEdge">
+            <a href="reviewedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ReviewEdge
+            </a>
+        </li>
         <li  title="Staff">
             <a href="staff.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Staff
+            </a>
+        </li>
+        <li  title="StaffConnection">
+            <a href="staffconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StaffConnection
+            </a>
+        </li>
+        <li  title="StaffEdge">
+            <a href="staffedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StaffEdge
             </a>
         </li>
         <li  title="StaffImage">
@@ -398,6 +453,16 @@
         <li  title="Studio">
             <a href="studio.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Studio
+            </a>
+        </li>
+        <li  title="StudioConnection">
+            <a href="studioconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StudioConnection
+            </a>
+        </li>
+        <li  title="StudioEdge">
+            <a href="studioedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StudioEdge
             </a>
         </li>
         <li  title="TextActivity">
@@ -544,7 +609,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Favourites</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Favourite anime</span></span></li><li><span class="tab"><span class="meta">anime</span>: [<a class="support type" href="media.doc.html">Media</a>] </span></li><li></li><li><span class="tab"><span class="comment line">#   Favourite manga</span></span></li><li><span class="tab"><span class="meta">manga</span>: [<a class="support type" href="media.doc.html">Media</a>] </span></li><li></li><li><span class="tab"><span class="comment line">#   Favourite characters</span></span></li><li><span class="tab"><span class="meta">characters</span>: [<a class="support type" href="character.doc.html">Character</a>] </span></li><li></li><li><span class="tab"><span class="comment line">#   Favourite staff</span></span></li><li><span class="tab"><span class="meta">staff</span>: [<a class="support type" href="staff.doc.html">Staff</a>] </span></li><li></li><li><span class="tab"><span class="comment line">#   Favourite studios</span></span></li><li><span class="tab"><span class="meta">studios</span>: [<a class="support type" href="staff.doc.html">Staff</a>] </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Favourites</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Favourite anime</span></span></li><li><span class="tab"><span class="meta">anime</span>: <a class="support type" href="mediaconnection.doc.html">MediaConnection</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Favourite manga</span></span></li><li><span class="tab"><span class="meta">manga</span>: <a class="support type" href="mediaconnection.doc.html">MediaConnection</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Favourite characters</span></span></li><li><span class="tab"><span class="meta">characters</span>: <a class="support type" href="characterconnection.doc.html">CharacterConnection</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Favourite staff</span></span></li><li><span class="tab"><span class="meta">staff</span>: <a class="support type" href="staffconnection.doc.html">StaffConnection</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Favourite studios</span></span></li><li><span class="tab"><span class="meta">studios</span>: <a class="support type" href="studioconnection.doc.html">StudioConnection</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
