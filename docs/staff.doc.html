@@ -165,6 +165,11 @@
                 NotificationType
             </a>
         </li>
+        <li  title="ReviewRating">
+            <a href="reviewrating.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ReviewRating
+            </a>
+        </li>
         <li  title="ReviewSort">
             <a href="reviewsort.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ReviewSort
@@ -375,9 +380,24 @@
                 MediaListCollection
             </a>
         </li>
+        <li  title="MediaListOptions">
+            <a href="medialistoptions.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaListOptions
+            </a>
+        </li>
+        <li  title="MediaListTypeOptions">
+            <a href="medialisttypeoptions.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaListTypeOptions
+            </a>
+        </li>
         <li  title="MediaRank">
             <a href="mediarank.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 MediaRank
+            </a>
+        </li>
+        <li  title="MediaStats">
+            <a href="mediastats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaStats
             </a>
         </li>
         <li  title="MediaTag">
@@ -520,6 +540,16 @@
                 UserAvatar
             </a>
         </li>
+        <li  title="UserOptions">
+            <a href="useroptions.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserOptions
+            </a>
+        </li>
+        <li  title="UserStats">
+            <a href="userstats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserStats
+            </a>
+        </li>
         <li  title="__Directive">
             <a href="directive.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 __Directive
@@ -555,6 +585,11 @@
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Input Objects</h4>
     <ul>
+        <li  title="FuzzyDateInput">
+            <a href="fuzzydateinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FuzzyDateInput
+            </a>
+        </li>
         <li  title="MediaTitleInput">
             <a href="mediatitleinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 MediaTitleInput
@@ -609,7 +644,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Staff</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The id of the staff member</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The names of the staff member</span></span></li><li><span class="tab"><span class="meta">name</span>: <a class="support type" href="staffname.doc.html">StaffName</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The primary language of the staff member</span></span></li><li><span class="tab"><span class="meta">language</span>: <a class="support type" href="stafflanguage.doc.html">StaffLanguage</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The staff images</span></span></li><li><span class="tab"><span class="meta">image</span>: <a class="support type" href="staffimage.doc.html">StaffImage</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   A general description of the staff member</span></span></li><li><span class="tab"><span class="meta">description</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Media where the staff member has a production role</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>page</strong>: The page</span></span></li><li><span class="tab"><span class="comment line">#   <strong>perPage</strong>: The amount of entries per page, max 25</span></span></li><li><span class="tab"><span class="meta">staffMedia</span>(<span class="meta">page</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">perPage</span>: <a class="support type" href="int.doc.html">Int</a>): <a class="support type" href="mediaconnection.doc.html">MediaConnection</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Characters voiced by the actor</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>page</strong>: The page</span></span></li><li><span class="tab"><span class="comment line">#   <strong>perPage</strong>: The amount of entries per page, max 25</span></span></li><li><span class="tab"><span class="meta">characters</span>(<span class="meta">page</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">perPage</span>: <a class="support type" href="int.doc.html">Int</a>): <a class="support type" href="characterconnection.doc.html">CharacterConnection</a> </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Staff</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The id of the staff member</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The names of the staff member</span></span></li><li><span class="tab"><span class="meta">name</span>: <a class="support type" href="staffname.doc.html">StaffName</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The primary language of the staff member</span></span></li><li><span class="tab"><span class="meta">language</span>: <a class="support type" href="stafflanguage.doc.html">StaffLanguage</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The staff images</span></span></li><li><span class="tab"><span class="meta">image</span>: <a class="support type" href="staffimage.doc.html">StaffImage</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   A general description of the staff member</span></span></li><li><span class="tab"><span class="meta">description</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The url for the staff page on the AniList website</span></span></li><li><span class="tab"><span class="meta">siteUrl</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Media where the staff member has a production role</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>page</strong>: The page</span></span></li><li><span class="tab"><span class="comment line">#   <strong>perPage</strong>: The amount of entries per page, max 25</span></span></li><li><span class="tab"><span class="meta">staffMedia</span>(<span class="meta">page</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">perPage</span>: <a class="support type" href="int.doc.html">Int</a>): <a class="support type" href="mediaconnection.doc.html">MediaConnection</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Characters voiced by the actor</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>page</strong>: The page</span></span></li><li><span class="tab"><span class="comment line">#   <strong>perPage</strong>: The amount of entries per page, max 25</span></span></li><li><span class="tab"><span class="meta">characters</span>(<span class="meta">page</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">perPage</span>: <a class="support type" href="int.doc.html">Int</a>): <a class="support type" href="characterconnection.doc.html">CharacterConnection</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>

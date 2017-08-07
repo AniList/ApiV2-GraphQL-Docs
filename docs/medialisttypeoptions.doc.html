@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>MessageActivity</title>
+    <title>MediaListTypeOptions</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -385,7 +385,7 @@
                 MediaListOptions
             </a>
         </li>
-        <li  title="MediaListTypeOptions">
+        <li class="slds-is-active" title="MediaListTypeOptions">
             <a href="medialisttypeoptions.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 MediaListTypeOptions
             </a>
@@ -410,7 +410,7 @@
                 MediaTitle
             </a>
         </li>
-        <li class="slds-is-active" title="MessageActivity">
+        <li  title="MessageActivity">
             <a href="messageactivity.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 MessageActivity
             </a>
@@ -631,8 +631,8 @@
     </div>
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
-        <h1 class="slds-text-heading--large">MessageActivity</h1>
-        <div class="slds-text-body--regular"><p>User activity</p>
+        <h1 class="slds-text-heading--large">MediaListTypeOptions</h1>
+        <div class="slds-text-body--regular"><p>A user&#39;s list options for anime or manga lists</p>
 </div>
     </div>
 </section>
@@ -644,7 +644,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">MessageActivity</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The id of the activity</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The user id of the activity's recipient</span></span></li><li><span class="tab"><span class="meta">recipientId</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The user id of the activity's sender</span></span></li><li><span class="tab"><span class="meta">messengerId</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The type of the activity</span></span></li><li><span class="tab"><span class="meta">type</span>: <a class="support type" href="activitytype.doc.html">ActivityType</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The number of reply comments</span></span></li><li><span class="tab"><span class="meta">replyCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The message text (Markdown)</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>asHtml</strong>: Return the string in pre-parsed html instead of </span></span></li><li><span class="tab"><span class="comment line">#   markdown</span></span></li><li><span class="tab"><span class="meta">message</span>(<span class="meta">asHtml</span>: <a class="support type" href="boolean.doc.html">Boolean</a>): <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The url for the activity page on the AniList website</span></span></li><li><span class="tab"><span class="meta">siteUrl</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The time of the activity was created</span></span></li><li><span class="tab"><span class="meta">createdAt</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The user who the activity message the was sent to</span></span></li><li><span class="tab"><span class="meta">recipient</span>: <a class="support type" href="user.doc.html">User</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The user who sent the activity message</span></span></li><li><span class="tab"><span class="meta">messenger</span>: <a class="support type" href="user.doc.html">User</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The written replies to the activity</span></span></li><li><span class="tab"><span class="meta">replies</span>: [<a class="support type" href="activityreply.doc.html">ActivityReply</a>] </span></li><li></li><li><span class="tab"><span class="comment line">#   The users who liked the activity</span></span></li><li><span class="tab"><span class="meta">likes</span>: [<a class="support type" href="user.doc.html">User</a>] </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">MediaListTypeOptions</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The order each list should be displayed in</span></span></li><li><span class="tab"><span class="meta">sectionOrder</span>: [<a class="support type" href="string.doc.html">String</a>] </span></li><li></li><li><span class="tab"><span class="comment line">#   If the completed sections of the list should be separated by type</span></span></li><li><span class="tab"><span class="meta">splitCompletedSectionByType</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The list theme options</span></span></li><li><span class="tab"><span class="meta">theme</span>: <a class="support type" href="json.doc.html">Json</a> <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"This field has not yet been fully implemented and may change without warning" </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   The names of the user's custom lists</span></span></li><li><span class="tab"><span class="meta">customLists</span>: [<a class="support type" href="string.doc.html">String</a>] </span></li><li></li><li><span class="tab"><span class="comment line">#   The names of the user's advanced scoring sections</span></span></li><li><span class="tab"><span class="meta">advancedScoring</span>: [<a class="support type" href="string.doc.html">String</a>] </span></li><li></li><li><span class="tab"><span class="comment line">#   If advanced scoring is enabled</span></span></li><li><span class="tab"><span class="meta">advancedScoringEnabled</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -655,7 +655,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="activityunion.doc.html" title="ActivityUnion - Activity union type">ActivityUnion<em>Activity union type</em></a><li><li><a href="mutation.doc.html" title="Mutation - ">Mutation<em>null</em></a><li></ul>
+        <ul class="require-by"><li><a href="medialistoptions.doc.html" title="MediaListOptions - A user's list options">MediaListOptions<em>A user's list options</em></a><li></ul>
     </div>
 </section>
 <footer>

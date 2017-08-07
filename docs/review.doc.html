@@ -165,6 +165,11 @@
                 NotificationType
             </a>
         </li>
+        <li  title="ReviewRating">
+            <a href="reviewrating.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ReviewRating
+            </a>
+        </li>
         <li  title="ReviewSort">
             <a href="reviewsort.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ReviewSort
@@ -375,9 +380,24 @@
                 MediaListCollection
             </a>
         </li>
+        <li  title="MediaListOptions">
+            <a href="medialistoptions.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaListOptions
+            </a>
+        </li>
+        <li  title="MediaListTypeOptions">
+            <a href="medialisttypeoptions.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaListTypeOptions
+            </a>
+        </li>
         <li  title="MediaRank">
             <a href="mediarank.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 MediaRank
+            </a>
+        </li>
+        <li  title="MediaStats">
+            <a href="mediastats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaStats
             </a>
         </li>
         <li  title="MediaTag">
@@ -520,6 +540,16 @@
                 UserAvatar
             </a>
         </li>
+        <li  title="UserOptions">
+            <a href="useroptions.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserOptions
+            </a>
+        </li>
+        <li  title="UserStats">
+            <a href="userstats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserStats
+            </a>
+        </li>
         <li  title="__Directive">
             <a href="directive.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 __Directive
@@ -555,6 +585,11 @@
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Input Objects</h4>
     <ul>
+        <li  title="FuzzyDateInput">
+            <a href="fuzzydateinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FuzzyDateInput
+            </a>
+        </li>
         <li  title="MediaTitleInput">
             <a href="mediatitleinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 MediaTitleInput
@@ -609,7 +644,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Review</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The id of the review</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The id of the review's creator</span></span></li><li><span class="tab"><span class="meta">userId</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The id of the review's media</span></span></li><li><span class="tab"><span class="meta">mediaId</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   For which type of media the review is for</span></span></li><li><span class="tab"><span class="meta">mediaType</span>: <a class="support type" href="mediatype.doc.html">MediaType</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   A short summary of the review</span></span></li><li><span class="tab"><span class="meta">summary</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The main review body text</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>asHtml</strong>: Return the string in pre-parsed html instead of </span></span></li><li><span class="tab"><span class="comment line">#   markdown</span></span></li><li><span class="tab"><span class="meta">body</span>(<span class="meta">asHtml</span>: <a class="support type" href="boolean.doc.html">Boolean</a>): <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The current user rating of the review</span></span></li><li><span class="tab"><span class="meta">rating</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The amount of user ratings of the review</span></span></li><li><span class="tab"><span class="meta">ratingAmount</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The review score of the media</span></span></li><li><span class="tab"><span class="meta">score</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   If the review is not yet publicly published and is only viewable by creator</span></span></li><li><span class="tab"><span class="meta">private</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The time of the thread creation</span></span></li><li><span class="tab"><span class="meta">createdAt</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The time of the thread last update</span></span></li><li><span class="tab"><span class="meta">updatedAt</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The creator of the review</span></span></li><li><span class="tab"><span class="meta">user</span>: <a class="support type" href="user.doc.html">User</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The media the review is of</span></span></li><li><span class="tab"><span class="meta">media</span>: <a class="support type" href="media.doc.html">Media</a> </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Review</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The id of the review</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The id of the review's creator</span></span></li><li><span class="tab"><span class="meta">userId</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The id of the review's media</span></span></li><li><span class="tab"><span class="meta">mediaId</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   For which type of media the review is for</span></span></li><li><span class="tab"><span class="meta">mediaType</span>: <a class="support type" href="mediatype.doc.html">MediaType</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   A short summary of the review</span></span></li><li><span class="tab"><span class="meta">summary</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The main review body text</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>asHtml</strong>: Return the string in pre-parsed html instead of </span></span></li><li><span class="tab"><span class="comment line">#   markdown</span></span></li><li><span class="tab"><span class="meta">body</span>(<span class="meta">asHtml</span>: <a class="support type" href="boolean.doc.html">Boolean</a>): <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The total user rating of the review</span></span></li><li><span class="tab"><span class="meta">rating</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The amount of user ratings of the review</span></span></li><li><span class="tab"><span class="meta">ratingAmount</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The rating of the review by currently authenticated user</span></span></li><li><span class="tab"><span class="meta">userRating</span>: <a class="support type" href="reviewrating.doc.html">ReviewRating</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The review score of the media</span></span></li><li><span class="tab"><span class="meta">score</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   If the review is not yet publicly published and is only viewable by creator</span></span></li><li><span class="tab"><span class="meta">private</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The url for the review page on the AniList website</span></span></li><li><span class="tab"><span class="meta">siteUrl</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The time of the thread creation</span></span></li><li><span class="tab"><span class="meta">createdAt</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The time of the thread last update</span></span></li><li><span class="tab"><span class="meta">updatedAt</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The creator of the review</span></span></li><li><span class="tab"><span class="meta">user</span>: <a class="support type" href="user.doc.html">User</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The media the review is of</span></span></li><li><span class="tab"><span class="meta">media</span>: <a class="support type" href="media.doc.html">Media</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
