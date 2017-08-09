@@ -1,0 +1,13 @@
+.flash {
+    padding: 10px;
+    font-weight: 600;
+    color: #fff;
+    background: #64B5F6;
+    border-radius: 3px;
+    line-height: 2;
+}
+
+.flash a {
+    color: #fff !important;
+    text-decoration: underline;
+}
