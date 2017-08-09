@@ -3,7 +3,7 @@
 ## ApiV2-GraphQL-Docs
 
 <h3 align="center">
-  <a href='https://joshstar.gitbooks.io/anilist-apiv2-docs/'>Api Documentation</a> | 
+  <a href='https://anilist.gitbooks.io/anilist-apiv2-docs/'>Api Documentation</a> | 
   <a href='https://anilist.github.io/ApiV2-GraphQL-Docs/'>GraphQL API Reference Docs</a> | 
   <a href='https://anilist.co/graphiql'>GraphiQL Interactive Editor</a>
  </h3>
