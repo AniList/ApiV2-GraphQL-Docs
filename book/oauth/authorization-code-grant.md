@@ -34,7 +34,7 @@ echo "<a href='$url'>Login with Anilist</a>";
 Once the user has been redirected they will be asked to approve your client's permissions. 
 If the user is not logged in they will first be taken to the standard login page and then automatically redirected to the client approval page.
 
-Once the user has approved your client they will be redirected to your redirect uri, included in url parameters will be a `code` parameter that includes the Authorization Code. 
+Once the user has approved your client they will be redirected to your redirect URI, included in URL parameters will be a `code` parameter that includes the Authorization Code. 
 You'll exchange this code for an access token in the next step.
 
 {% method -%}
