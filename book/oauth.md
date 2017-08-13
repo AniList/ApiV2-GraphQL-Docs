@@ -13,7 +13,7 @@ If your client is in an environment where these credentials can be securely stor
 ### Using OAuth
 To use OAuth you must first create an AniList API v2 client.
 
-Go to https://anilist.co/settings/developer and click the "View Api v2 clients" button in the top right. Then click "Create New Api v2 client" and enter your client name and redirect URI. After clicking Save you'll receive your client id and secret.
+Go to https://anilist.co/settings/developer and click the "View Api v2 clients" button in the top right. Then click "Create New Api v2 client" and enter your client name and redirect URI. After clicking Save you'll receive your client ID and secret.
 
 Your client name will appear to the user when asking for approval, so ensure it corresponds to your client application name.
 
