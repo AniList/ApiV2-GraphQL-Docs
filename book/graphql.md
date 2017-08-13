@@ -17,7 +17,7 @@ When you make a request you'll need to include 2 payload objects, `query`, and `
 * query: contains your query or mutation strings.
 * variables: contains the variable values used within your query.
 
-You can omit the variables object and instead hard code your values inside your query, however, this is not recommended past the simplest of queries.
+You can omit the variables object and instead hard-code your values inside your query, however, this is not recommended past the simplest of queries.
 
 
 {% method -%}
@@ -264,7 +264,7 @@ $response = $http->post('https://graphql.anilist.co', [
 {% endmethod %}
 
 <div class='flash'>
-Note that we've left the $id variable in the query but not included it in our variables array. <br>
+Note that we've left the $id variable in the query but have not included it in our variables array. <br>
 This is valid and the AniList GraphQL server will simply ignore any variables in the query that are not included in the variables object. <br>
 This can allow you to make more complex and flexible queries without the need to modify the query string directly. 
 </div>
@@ -273,7 +273,7 @@ This can allow you to make more complex and flexible queries without the need to
 
 ### What's Next
 
-Now you have a basic idea of how GraphQL requests work you should test writing your own queries using our [interactive GraphiQL editor](https://anilist.co/graphiql), all the available queries, fields and types are visible on the right side of the page. 
+Now you have a basic idea of how GraphQL requests work, you should test writing your own queries using our [interactive GraphiQL editor](https://anilist.co/graphiql). All the available queries, fields and types are visible on the right side of the page. 
 
 You can also view our [API reference documentation](https://anilist.github.io/ApiV2-GraphQL-Docs/) for the same information in a nicer view.
 
