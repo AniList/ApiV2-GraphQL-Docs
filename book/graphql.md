@@ -1,23 +1,23 @@
 # GraphQL
 
 <div class='flash'>
-Before using the AniList GraphQL Api it is highly recommended you familiarise yourself with GraphQL. 
+Before using the AniList GraphQL API it is highly recommended you familiarize yourself with GraphQL. 
 <br> Reading the <a href='http://graphql.org/learn/queries/' target='_blank'>official GraphQL documentation</a> should be enough to get you started.
 </div>
 
-### Making a GraphQL Api Request
+### Making a GraphQL API Request
 
 <div class='flash' style='margin-bottom:15px;'>
-All requests made to the AniList GraphQL Api must be made as a POST request to 'https://graphql.anilist.co'.
+All requests made to the AniList GraphQL API must be made as a POST request to 'https://graphql.anilist.co'.
 </div>
 
-When you make a request you'll need to include 2 payload objects, `query` and `variables`.
+When you make a request you'll need to include 2 payload objects, `query`, and `variables`.
 <br>
 
 * query: contains your query or mutation strings.
 * variables: contains the variable values used within your query.
 
-You can omit the variables object and instead hard code your values inside your query, however this is not recommended past the simplest of queries.
+You can omit the variables object and instead hard code your values inside your query, however, this is not recommended past the simplest of queries.
 
 
 {% method -%}
