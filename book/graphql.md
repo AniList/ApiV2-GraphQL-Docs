@@ -138,7 +138,7 @@ This request will return the following JSON response:
 ```
 
 {% sample lang="python" -%}
-```
+```python
 query = '''
 query ($id: Int) {
   Media (id: $id, type: ANIME) {
@@ -189,7 +189,7 @@ query ($id: Int, $page: Int, $search: String) {
       total
       currentPage
       lastPage
-      hastNextPage
+      hasNextPage
       perPage
     }
     media (id: $id, search: $search) {
@@ -240,8 +240,11 @@ var url = 'https://graphql.anilist.co',
         })
     };
     
-fetch(url, options).then(handleResponse, handleError);
+fetch(url, options).then(handleResponse)
+                   .then(handleData)
+                   .catch(handleError);
 ```
+This request will return [this JSON response](https://hastebin.com/enisafovoq.json). 
 
 {% sample lang="php" -%}
 ```php
@@ -252,7 +255,7 @@ query ($id: Int, $page: Int, $search: String) {
       total
       currentPage
       lastPage
-      hastNextPage
+      hasNextPage
       perPage
     }
     media (id: $id, search: $search) {
@@ -299,10 +302,12 @@ $response = $http->post('https://graphql.anilist.co', [
 ]);
 
 ```
+This request will return [this JSON response](https://hastebin.com/enisafovoq.json). 
+
 
 {% sample lang="python" -%}
 
-```
+```python
 query = '''
 query ($id: Int, $page: Int, $search: String) {
     Page (page: $page) {
@@ -310,7 +315,7 @@ query ($id: Int, $page: Int, $search: String) {
             total
             currentPage
             lastPage
-            hastNextPage
+            hasNextPage
             perPage
         }
         media (id: $id, search: $search) {
@@ -351,6 +356,7 @@ url = 'https://graphql.anilist.co'
 response = requests.post(url, json={'query': query, 'variables': variables})
 
 ```
+This request will return [this JSON response](https://hastebin.com/enisafovoq.json). 
 
 {% endmethod %}
 
