@@ -136,6 +136,45 @@ This request will return the following JSON response:
   }
 }
 ```
+
+{% sample lang="python" -%}
+```
+query = '''
+query ($id: Int) {
+  Media (id: $id, type: ANIME) {
+    id
+    title {
+      romaji
+      english
+      native
+    }
+  }
+}
+'''
+
+variables = {
+    'id': 15125
+}
+url = 'https://graphql.anilist.co'
+
+response = requests.post(url, json={'query': query, 'variables': variables})
+
+```
+
+This request will return the following JSON response:
+```
+"data": {
+    "Media": {
+        "id": 15125,
+        "title": {
+            "romaji": "Teekyuu",
+            "english": null,
+            "native": "てーきゅう"
+        }
+    }
+  }
+}
+```
 {% endmethod %}
 
 {% method -%}
@@ -258,6 +297,58 @@ $response = $http->post('https://graphql.anilist.co', [
         'variables' => $variables,
     ]
 ]);
+
+```
+
+{% sample lang="python" -%}
+
+```
+query = '''
+query ($id: Int, $page: Int, $search: String) {
+    Page (page: $page) {
+        pageInfo {
+            total
+            currentPage
+            lastPage
+            hastNextPage
+            perPage
+        }
+        media (id: $id, search: $search) {
+            id
+            title {
+                romaji
+            }
+            genres
+            characters (role: MAIN) {
+                edges {
+                    node {
+                        id
+                        name {
+                            first
+                            last
+                        }
+                    }
+                    role
+                    voiceActors {
+                        id
+                        name {
+                            first
+                            last
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+'''
+variables = {
+    'search': 'Fate/Zero',
+    'page': 1
+}
+url = 'https://graphql.anilist.co'
+
+response = requests.post(url, json={'query': query, 'variables': variables})
 
 ```
 
