@@ -11,11 +11,11 @@ X-RateLimit-Limit: 60
 X-RateLimit-Remaining: 59
 ```
 
-If you go over the rate limit you'll receive a 1 minute time-out, any further requests in this time-out period will also include the `Retry-After` and `X-RateLimit-Reset` response headers. 
+If you go over the rate limit you'll receive a 1-minute timeout, any further requests in this timeout period will also include the `Retry-After` and `X-RateLimit-Reset` response headers. 
 
 `Retry-After` contains the number of seconds before you can make another accepted request. 
 
-`X-RateLimit-Reset` contains the unix timestamp of when you can make another accepted request. 
+`X-RateLimit-Reset` contains the Unix timestamp of when you can make another accepted request. 
 
 ```
 HTTP/1.1 429 Too Many Requests

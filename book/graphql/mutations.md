@@ -1,18 +1,18 @@
 # Mutations
 Mutations allow you create, update, and delete data. 
 
-As they require User authentication they also require OAuth.
+As they require user authentication they also require OAuth.
 
 The majority our mutations have the following prefixes:
 
 * __Save__ - Create or Update. We usually determine if you would like to create or update data depending on if you provide a valid `id` argument.
-* __Delete__ - Delete. This will usually return a `Deleted` object type, however some mutations will return an updated version of the sibling data if this is more useful.
+* __Delete__ - Delete. This will usually return a `Deleted` object type, however, some mutations will return an updated version of the sibling data if this is more useful.
 * __Toggle__ - Toggle a boolean state, such as following or unfollowing a user.
 
 Like a query, mutations allow you to specify which fields you would like to be returned from the updated object.
 
 {% method -%}
-#### Lets create a mutation to add an anime to the user's anime list. We'll use Cowboy Bebop (Id 1) in this example.
+#### Let's create a mutation to add an anime to the user's anime list. We'll use Cowboy Bebop (id: 1) in this example.
 You'll also need to include your Authorization header with the user's access token, but we'll skip that for these examples.
 
 {% sample lang="php" -%}
