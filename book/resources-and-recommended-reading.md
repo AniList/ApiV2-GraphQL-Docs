@@ -9,7 +9,7 @@
 ## GraphQL Client Libraries
 A number of client libraries are available to help ease your application development.
 
-__If there is not a client available for language or platform, remember you can still make normal post requests as you would any normal HTTP request.__
+__If there is not a client available for your language or platform, remember you can still make normal post requests as you would any normal HTTP request.__
 
 * [Apollo - ES6](http://dev.apollodata.com/core/)
 * [Apollo - React & React Native](http://dev.apollodata.com/react/)
