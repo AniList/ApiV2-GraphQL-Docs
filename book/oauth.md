@@ -18,7 +18,13 @@ Go to https://anilist.co/settings/developer and click the "View Api v2 clients" 
 Your client name will appear to the user when asking for approval, so ensure it corresponds to your client application name.
 
 Follow the guides for your grant type to learn how to request access tokens and how to use them to make authenticated requests:
-### [Authorization Code Grant](/oauth/authorization-code-grant.md)
+#### [Authorization Code Grant](/oauth/authorization-code-grant.md)
 
-### [Implicit Grant](/oauth/implicit-grant.md)
+#### [Implicit Grant](/oauth/implicit-grant.md)
 
+### Auth Pin
+If you are absolutely unable to have a Http or application URI scheme redirection you can use the Auth Pin redirect URL. After the user has authorized your application they will be redirected to a page requesting them to manually copy & paste the code/token into your application.
+
+To enable this, on your AniList v2 client page, set your Client Redirect Uri to `https://anilist.co/api/v2/oauth/pin`.
+
+This can be used with any available grant type.

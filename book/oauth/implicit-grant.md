@@ -35,7 +35,7 @@ Once the user has been redirected they will be asked to approve your client's pe
 If the user is not logged in they will first be taken to the standard login page and then automatically redirected to the client approval page.
 
 ### Retrieving the Access Token
-Once the user has approved your client they will be redirected to your redirect URI, included in URL parameters will be a `access_token` parameter that includes the JWT access token used to make requests on their behalf. 
+Once the user has approved your client they will be redirected to your redirect URI, included in the URL __fragment__ will be an `access_token` parameter that includes the JWT access token used to make requests on their behalf. 
 
 {% method -%}
 ### Making Authenticated Requests
