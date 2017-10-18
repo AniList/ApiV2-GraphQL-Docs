@@ -6,7 +6,7 @@ All GraphQL Api requests should be made as a POST request to `https://graphql.an
 
 ### Migration Queries
 
-We've created a collection of Api v2 queries that aim to replicate the REST routes of Api v1 as closely as possible. You can view them [here]().
+We've created a collection of Api v2 queries that aim to replicate the REST routes of Api v1 as closely as possible. You can view them [here](https://github.com/AniList/ApiV2-GraphQL-Docs/tree/master/migration).
 
 ### OAuth
 
