@@ -46,6 +46,8 @@
         id
         userId
         type
+        status
+        progress
         replyCount
         createdAt
         user {
