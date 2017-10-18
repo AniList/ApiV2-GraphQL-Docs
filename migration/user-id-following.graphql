@@ -1,0 +1,11 @@
+query ($id: Int!) {
+  Page {
+    following(userId: $id) {
+      id
+      name
+      avatar {
+        large
+      }
+    }
+  }
+}

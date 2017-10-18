@@ -1,0 +1,12 @@
+query ($query: String) {
+  Page {
+    users(search: $query) {
+      id
+      name
+      avatar {
+        medium
+        large
+      }
+    }
+  }
+}

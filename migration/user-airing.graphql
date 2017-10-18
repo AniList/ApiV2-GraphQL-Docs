@@ -1,0 +1,15 @@
+{
+  Page {
+    media (onList: true, status: RELEASING) {
+      id
+      title {
+        userPreferred
+      }
+      nextAiringEpisode {
+        airingAt
+        timeUntilAiring
+        episode
+      }
+    }
+  }
+}

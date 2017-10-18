@@ -44,12 +44,13 @@ For applications running on a server (such as a discord bot) the current rate li
 To do this send an email joshstar [a-t] mail [do-t] com with the follow details:
 
 Title: Rate Limit Raise {App Name}
+
 Body
 - Your AniList username.
 - The IP address you wish to have the rate limit raised for.
 - The rate limit (max number of requests per minute) you would prefer to have.
 - A short description of your application.
 - Any relevant links, such as the app's website, github or app store page.
-- Some form evidence that your application requires a rate limit raise to function properly.
+- Some form of evidence that your application requires a rate limit raise to function properly.
 
-Please bare in mind depending on the past and current standing of your account, and application reputation we may not always be able to provide you with your prefered rate limit raise.
+Please bare in mind depending on the past and current standing of your account, and application reputation we may not always be able to provide you with your preferred rate limit raise.

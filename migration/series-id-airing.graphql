@@ -1,0 +1,29 @@
+query ($mediaId: Int!) {
+  AiringSchedule(mediaId: $mediaId) {
+    id
+    airingAt
+    timeUntilAiring
+    episode
+    media {
+      id
+      # ...
+    }
+  }
+}
+
+# Alternative
+
+query ($id: Int!, $type: MediaType) {
+  Media(id: $id, type: $type) {
+    id
+    # ...
+    airingSchedule {
+      nodes {
+        id
+        airingAt
+        timeUntilAiring
+        episode
+      }
+    }
+  }
+}
