@@ -29,6 +29,11 @@ All fields are now in camelCase instead of snake\_case.
 
 If you would like to have the fields in snake case we recommend not using GraphQL aliasing for this, as you need to apply it to every requested field. Instead it would be better to automatically handle the conversion on your client after you have received the data.
 
+### Media Titles
+In Api v1 when we didn't have any data for an anime or manga's English or Japanese titles AniList would supply the romaji title in its place instead of a null value. This allowed client developers to easily implement the user's preferred title language without needing to check if the title in the preferred language  was available. 
+
+In Api v2 this is no longer the case, we now provide a `userPreferred` title field that automatically returns the title in the authenticated user's preferred title language, or if no user is authenticated it will return the romaji title as a default. As such when we don't have any data for the English or Japanese (now `native`) version of the title these fields will return `null`.
+
 ### Aliasing
 
 If you would prefer field names to be more similar to their Api v1 counterparts, you can use the Alias feature GraphQL.
