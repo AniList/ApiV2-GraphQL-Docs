@@ -17,3 +17,7 @@
     margin: 0 auto;
     padding-bottom: 80px;
 }
+
+.book-header a:not(.lang-switcher).pull-right {
+    display: none;
+}
