@@ -5,14 +5,14 @@
 The AniList [GraphQL](http://graphql.org/) Api provides quick and powerful access to over 500k anime and manga entries, including character, staff, and live airing data. The [AniList](https://anilist.co) & [AniChart](http://anichart.net) websites themselves run on the Api, so everything you can do on the sites, you can do via the Api.
 
 ### <a href='https://anilist.gitbooks.io/anilist-apiv2-docs/'>Api Documentation</a>
-> Written documention for getting started with the Api.
+> Written documentation for getting started with the Api.
 
 
 ### <a href='https://anilist.github.io/ApiV2-GraphQL-Docs/'>GraphQL Api Reference Docs</a>
-> Documention for all queries, mutations, types, and objects the Api provides.
+> Documentation for all queries, mutations, types, and objects the Api provides.
 
 ### <a href='https://anilist.co/graphiql'>GraphiQL Interactive Editor</a>
-> Easily expore and test out GraphQL queries against the AniList Api. (AniList login required)
+> Easily explore and test out GraphQL queries against the AniList Api. (AniList login required)
 
 <hr>
 
