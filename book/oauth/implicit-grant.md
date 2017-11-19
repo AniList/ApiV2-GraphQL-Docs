@@ -71,8 +71,9 @@ $http = new GuzzleHttp\Client;
 
 $response = $http->request('POST', 'https://graphql.anilist.co', [
     'headers' => [
-        'Accept' => 'application/json',
         'Authorization' => 'Bearer ' . $accessToken,
+        'Accept' => 'application/json',
+        'Content-Type': 'application/json',
     ],
 ]);
 ```
