@@ -8,7 +8,7 @@ The AniList [GraphQL](http://graphql.org/) Api provides quick and powerful acces
 > Written documention for getting started with the Api.
 
 
-### <a href='https://anilist.github.io/ApiV2-GraphQL-Docs/'>GraphQL API Reference Docs</a>
+### <a href='https://anilist.github.io/ApiV2-GraphQL-Docs/'>GraphQL Api Reference Docs</a>
 > Documention for all queries, mutations, types, and objects the Api provides.
 
 ### <a href='https://anilist.co/graphiql'>GraphiQL Interactive Editor</a>
