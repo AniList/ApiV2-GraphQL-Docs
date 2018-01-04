@@ -9,6 +9,7 @@
 
 ## Tools
 
+* [Insomnia](https://insomnia.rest/)
 * [Chrome GraphQL Dev Tools Extension](https://chrome.google.com/webstore/detail/graphql-network/igbmhmnkobkjalekgiehijefpkdemocm)
 * [ESLint GraphQL](https://github.com/apollographql/eslint-plugin-graphql)
 * [GraphQL IntelliJ Plugin](https://github.com/jimkyndemeyer/js-graphql-intellij-plugin/)
