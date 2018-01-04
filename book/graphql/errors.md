@@ -7,7 +7,7 @@ When you make an invalid request you'll receive a response with an `errors` obje
   "data": null,
   "errors": [
     {
-      "message": "Cannot query field \"exampleField\" on type \"MediaList\".",
+      "message": "Cannot query field \"nonexistentField\" on type \"MediaList\".",
       "status": 400,
       "locations": [
         {
@@ -22,7 +22,7 @@ When you make an invalid request you'll receive a response with an `errors` obje
 
 ### Validation Errors
 
-When you make a __mutation__ request that doesn't pass our validation checks, you'll receive a similar response to above but with an additional `validation` object within the errors object. 
+When you make a **mutation** request that doesn't pass our validation checks, you'll receive a similar response to above but with an additional `validation` object within the errors object.
 
 You may display these validation error messages directly to the user if you wish.
 
@@ -51,3 +51,6 @@ You may display these validation error messages directly to the user if you wish
   ]
 }
 ```
+
+
+
