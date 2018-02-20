@@ -345,6 +345,11 @@
                 FuzzyDate
             </a>
         </li>
+        <li  title="InternalPage">
+            <a href="internalpage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InternalPage
+            </a>
+        </li>
         <li  title="ListActivity">
             <a href="listactivity.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ListActivity
@@ -383,6 +388,11 @@
         <li class="slds-is-active" title="MediaListCollection">
             <a href="medialistcollection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 MediaListCollection
+            </a>
+        </li>
+        <li  title="MediaListGroup">
+            <a href="medialistgroup.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaListGroup
             </a>
         </li>
         <li  title="MediaListOptions">
@@ -674,7 +684,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">MediaListCollection</span> {</li><li></li><li><span class="tab"><span class="comment line">#   A map of media list entry arrays grouped by status</span></span></li><li><span class="tab"><span class="meta">statusLists</span>: [[<a class="support type" href="medialist.doc.html">MediaList</a>]] </span></li><li></li><li><span class="tab"><span class="comment line">#   A map of media list entry arrays grouped by custom lists</span></span></li><li><span class="tab"><span class="meta">customLists</span>: [[<a class="support type" href="medialist.doc.html">MediaList</a>]] </span></li><li></li><li><span class="tab"><span class="comment line">#   The owner of the list</span></span></li><li><span class="tab"><span class="meta">user</span>: <a class="support type" href="user.doc.html">User</a> </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">MediaListCollection</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Grouped media list entries</span></span></li><li><span class="tab"><span class="meta">lists</span>: [<a class="support type" href="medialistgroup.doc.html">MediaListGroup</a>] </span></li><li></li><li><span class="tab"><span class="comment line">#   A map of media list entry arrays grouped by status</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>asArray</strong>: Return the list sections in grouped arrays instead of </span></span></li><li><span class="tab"><span class="comment line">#   a map</span></span></li><li><span class="tab"><span class="meta">statusLists</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">asArray</span>: <a class="support type" href="boolean.doc.html">Boolean</a></span></span></li><li><span class="tab">): [[<a class="support type" href="medialist.doc.html">MediaList</a>]] <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"Not GraphQL spec compliant, use lists field instead." </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   A map of media list entry arrays grouped by custom lists</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>asArray</strong>: Return the list sections in grouped arrays instead of </span></span></li><li><span class="tab"><span class="comment line">#   a map</span></span></li><li><span class="tab"><span class="meta">customLists</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">asArray</span>: <a class="support type" href="boolean.doc.html">Boolean</a></span></span></li><li><span class="tab">): [[<a class="support type" href="medialist.doc.html">MediaList</a>]] <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"Not GraphQL spec compliant, use lists field instead." </span> )</span></li><li></li><li><span class="tab"><span class="comment line">#   The owner of the list</span></span></li><li><span class="tab"><span class="meta">user</span>: <a class="support type" href="user.doc.html">User</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>

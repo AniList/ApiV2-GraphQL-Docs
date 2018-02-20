@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>Character</title>
+    <title>MediaListGroup</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -300,7 +300,7 @@
                 AiringScheduleEdge
             </a>
         </li>
-        <li class="slds-is-active" title="Character">
+        <li  title="Character">
             <a href="character.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Character
             </a>
@@ -390,7 +390,7 @@
                 MediaListCollection
             </a>
         </li>
-        <li  title="MediaListGroup">
+        <li class="slds-is-active" title="MediaListGroup">
             <a href="medialistgroup.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 MediaListGroup
             </a>
@@ -671,8 +671,8 @@
     </div>
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
-        <h1 class="slds-text-heading--large">Character</h1>
-        <div class="slds-text-body--regular"><p>A character that features in an anime or manga</p>
+        <h1 class="slds-text-heading--large">MediaListGroup</h1>
+        <div class="slds-text-body--regular"><p>List group of anime or manga entries</p>
 </div>
     </div>
 </section>
@@ -684,7 +684,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Character</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The id of the character</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The names of the character</span></span></li><li><span class="tab"><span class="meta">name</span>: <a class="support type" href="charactername.doc.html">CharacterName</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Character images</span></span></li><li><span class="tab"><span class="meta">image</span>: <a class="support type" href="characterimage.doc.html">CharacterImage</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   A general description of the character</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>asHtml</strong>: Return the string in pre-parsed html instead of </span></span></li><li><span class="tab"><span class="comment line">#   markdown</span></span></li><li><span class="tab"><span class="meta">description</span>(<span class="meta">asHtml</span>: <a class="support type" href="boolean.doc.html">Boolean</a>): <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   If the character is marked as favourite by the currently authenticated user</span></span></li><li><span class="tab"><span class="meta">isFavourite</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The url for the character page on the AniList website</span></span></li><li><span class="tab"><span class="meta">siteUrl</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Media that includes the character</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>sort</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>type</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>page</strong>: The page</span></span></li><li><span class="tab"><span class="comment line">#   <strong>perPage</strong>: The amount of entries per page, max 25</span></span></li><li><span class="tab"><span class="meta">media</span>(<span class="meta">sort</span>: [<a class="support type" href="mediasort.doc.html">MediaSort</a>], <span class="meta">type</span>: <a class="support type" href="mediatype.doc.html">MediaType</a>, <span class="meta">page</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">perPage</span>: <a class="support type" href="int.doc.html">Int</a>): <a class="support type" href="mediaconnection.doc.html">MediaConnection</a> </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">MediaListGroup</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Media list entries</span></span></li><li><span class="tab"><span class="meta">entries</span>: [<a class="support type" href="medialist.doc.html">MediaList</a>] </span></li><li></li><li><span class="tab"><span class="meta">name</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">isCustomList</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="meta">isSplitCompletedList</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -695,7 +695,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="characterconnection.doc.html" title="CharacterConnection - ">CharacterConnection<em>null</em></a><li><li><a href="characteredge.doc.html" title="CharacterEdge - Character connection edge">CharacterEdge<em>Character connection edge</em></a><li><li><a href="internalpage.doc.html" title="InternalPage - Page of data (Used for internal use only)">InternalPage<em>Page of data (Used for internal use only)</em></a><li><li><a href="mediaedge.doc.html" title="MediaEdge - Media connection edge">MediaEdge<em>Media connection edge</em></a><li><li><a href="page.doc.html" title="Page - Page of data">Page<em>Page of data</em></a><li><li><a href="query.doc.html" title="Query - ">Query<em>null</em></a><li></ul>
+        <ul class="require-by"><li><a href="medialistcollection.doc.html" title="MediaListCollection - List of anime or manga">MediaListCollection<em>List of anime or manga</em></a><li></ul>
     </div>
 </section>
 <footer>
