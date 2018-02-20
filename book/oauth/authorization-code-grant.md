@@ -49,6 +49,10 @@ var request = require('request');
 var options = {
   uri: 'https://anilist.co/api/v2/oauth/token',
   method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+  },
   json: {
     'grant_type': 'authorization_code',
     'client_id': '{client_id}',
@@ -79,6 +83,10 @@ $response = $http->post('https://anilist.co/api/v2/oauth/token', [
         'redirect_uri' => '{redirect_uri}', // http://example.com/callback
         'code' => '{code}', // The Authorization code received previously
     ],
+    'headers' => [
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+    ]
 ]);
 
 return json_decode($response->getBody())->access_token;
@@ -100,10 +108,11 @@ To make authenticated requests you'll need to add the `Authorization` header, wi
 var options = {
   uri: 'https://graphql.anilist.co',
   method: 'POST',
-  headers: [{
-    name: 'Authorization',
-    value: 'Bearer ' + accessToken
-  }],
+  headers: {
+    'Authorization': 'Bearer ' + accessToken,
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+  },
   json: {
     'query': query,
   }
@@ -120,8 +129,9 @@ request(options, function (error, response, body) {
 ```php
 $response = $http->request('POST', 'https://graphql.anilist.co', [
     'headers' => [
-        'Accept' => 'application/json',
         'Authorization' => 'Bearer ' . $accessToken,
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
     ],
 ]);
 ```

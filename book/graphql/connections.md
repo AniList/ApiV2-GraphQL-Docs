@@ -2,7 +2,7 @@
 
 ## Connections
 
-Connections allow you paginate through one-to-many or many-to-many relation, as well as access any intermediate data.
+Connections fields allow you to paginate through one-to-many or many-to-many relation, as well as access any intermediate data.
 All connections have 3 root fields `pageInfo`, `edges`, and `nodes`.
 
 We'll be using the media (anime) character relation in these examples. 
