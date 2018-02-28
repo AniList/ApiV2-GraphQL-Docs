@@ -340,9 +340,19 @@
                 FollowingNotification
             </a>
         </li>
+        <li  title="FormatStats">
+            <a href="formatstats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FormatStats
+            </a>
+        </li>
         <li  title="FuzzyDate">
             <a href="fuzzydate.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 FuzzyDate
+            </a>
+        </li>
+        <li  title="GenreStats">
+            <a href="genrestats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GenreStats
             </a>
         </li>
         <li  title="InternalPage">
@@ -353,6 +363,11 @@
         <li  title="ListActivity">
             <a href="listactivity.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ListActivity
+            </a>
+        </li>
+        <li  title="ListScoreStats">
+            <a href="listscorestats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ListScoreStats
             </a>
         </li>
         <li  title="Media">
@@ -500,6 +515,11 @@
                 StaffName
             </a>
         </li>
+        <li  title="StaffStats">
+            <a href="staffstats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StaffStats
+            </a>
+        </li>
         <li  title="StatusDistribution">
             <a href="statusdistribution.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 StatusDistribution
@@ -518,6 +538,16 @@
         <li  title="StudioEdge">
             <a href="studioedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 StudioEdge
+            </a>
+        </li>
+        <li  title="StudioStats">
+            <a href="studiostats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StudioStats
+            </a>
+        </li>
+        <li  title="TagStats">
+            <a href="tagstats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TagStats
             </a>
         </li>
         <li  title="TextActivity">
@@ -588,6 +618,11 @@
         <li class="slds-is-active" title="UserStats">
             <a href="userstats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 UserStats
+            </a>
+        </li>
+        <li  title="YearStats">
+            <a href="yearstats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                YearStats
             </a>
         </li>
         <li  title="__Directive">
@@ -684,7 +719,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">UserStats</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The amount of anime the user has watched in minutes</span></span></li><li><span class="tab"><span class="meta">watchedTime</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The amount of manga chapters the user has read</span></span></li><li><span class="tab"><span class="meta">chaptersRead</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="meta">activityHistory</span>: [<a class="support type" href="useractivityhistory.doc.html">UserActivityHistory</a>] </span></li><li></li><li><span class="tab"><span class="meta">animeStatusDistribution</span>: [<a class="support type" href="statusdistribution.doc.html">StatusDistribution</a>] </span></li><li></li><li><span class="tab"><span class="meta">mangaStatusDistribution</span>: [<a class="support type" href="statusdistribution.doc.html">StatusDistribution</a>] </span></li><li></li><li><span class="tab"><span class="meta">animeScoreDistribution</span>: [<a class="support type" href="scoredistribution.doc.html">ScoreDistribution</a>] </span></li><li></li><li><span class="tab"><span class="meta">mangaScoreDistribution</span>: [<a class="support type" href="scoredistribution.doc.html">ScoreDistribution</a>] </span></li><li></li><li><span class="tab"><span class="meta">listScores</span>: <a class="support type" href="json.doc.html">Json</a> <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"This field has not yet been fully implemented and may change without warning" </span> )</span></li><li></li><li><span class="tab"><span class="meta">favouredGenresOverview</span>: <a class="support type" href="json.doc.html">Json</a> <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"This field has not yet been fully implemented and may change without warning" </span> )</span></li><li></li><li><span class="tab"><span class="meta">favouredGenres</span>: <a class="support type" href="json.doc.html">Json</a> <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"This field has not yet been fully implemented and may change without warning" </span> )</span></li><li></li><li><span class="tab"><span class="meta">favouredTags</span>: <a class="support type" href="json.doc.html">Json</a> <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"This field has not yet been fully implemented and may change without warning" </span> )</span></li><li></li><li><span class="tab"><span class="meta">favouredActors</span>: <a class="support type" href="json.doc.html">Json</a> <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"This field has not yet been fully implemented and may change without warning" </span> )</span></li><li></li><li><span class="tab"><span class="meta">favouredStaff</span>: <a class="support type" href="json.doc.html">Json</a> <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"This field has not yet been fully implemented and may change without warning" </span> )</span></li><li></li><li><span class="tab"><span class="meta">favouredStudios</span>: <a class="support type" href="json.doc.html">Json</a> <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"This field has not yet been fully implemented and may change without warning" </span> )</span></li><li></li><li><span class="tab"><span class="meta">favouredYears</span>: <a class="support type" href="json.doc.html">Json</a> <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"This field has not yet been fully implemented and may change without warning" </span> )</span></li><li></li><li><span class="tab"><span class="meta">favouredTypes</span>: <a class="support type" href="json.doc.html">Json</a> <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"This field has not yet been fully implemented and may change without warning" </span> )</span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">UserStats</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The amount of anime the user has watched in minutes</span></span></li><li><span class="tab"><span class="meta">watchedTime</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The amount of manga chapters the user has read</span></span></li><li><span class="tab"><span class="meta">chaptersRead</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="meta">activityHistory</span>: [<a class="support type" href="useractivityhistory.doc.html">UserActivityHistory</a>] </span></li><li></li><li><span class="tab"><span class="meta">animeStatusDistribution</span>: [<a class="support type" href="statusdistribution.doc.html">StatusDistribution</a>] </span></li><li></li><li><span class="tab"><span class="meta">mangaStatusDistribution</span>: [<a class="support type" href="statusdistribution.doc.html">StatusDistribution</a>] </span></li><li></li><li><span class="tab"><span class="meta">animeScoreDistribution</span>: [<a class="support type" href="scoredistribution.doc.html">ScoreDistribution</a>] </span></li><li></li><li><span class="tab"><span class="meta">mangaScoreDistribution</span>: [<a class="support type" href="scoredistribution.doc.html">ScoreDistribution</a>] </span></li><li></li><li><span class="tab"><span class="meta">animeListScores</span>: <a class="support type" href="listscorestats.doc.html">ListScoreStats</a> </span></li><li></li><li><span class="tab"><span class="meta">mangaListScores</span>: <a class="support type" href="listscorestats.doc.html">ListScoreStats</a> </span></li><li></li><li><span class="tab"><span class="meta">favouredGenresOverview</span>: [<a class="support type" href="genrestats.doc.html">GenreStats</a>] </span></li><li></li><li><span class="tab"><span class="meta">favouredGenres</span>: [<a class="support type" href="genrestats.doc.html">GenreStats</a>] </span></li><li></li><li><span class="tab"><span class="meta">favouredTags</span>: [<a class="support type" href="tagstats.doc.html">TagStats</a>] </span></li><li></li><li><span class="tab"><span class="meta">favouredActors</span>: [<a class="support type" href="staffstats.doc.html">StaffStats</a>] </span></li><li></li><li><span class="tab"><span class="meta">favouredStaff</span>: [<a class="support type" href="staffstats.doc.html">StaffStats</a>] </span></li><li></li><li><span class="tab"><span class="meta">favouredStudios</span>: [<a class="support type" href="studiostats.doc.html">StudioStats</a>] </span></li><li></li><li><span class="tab"><span class="meta">favouredYears</span>: [<a class="support type" href="yearstats.doc.html">YearStats</a>] </span></li><li></li><li><span class="tab"><span class="meta">favouredFormats</span>: [<a class="support type" href="formatstats.doc.html">FormatStats</a>] </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>

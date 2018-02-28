@@ -340,9 +340,19 @@
                 FollowingNotification
             </a>
         </li>
+        <li  title="FormatStats">
+            <a href="formatstats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FormatStats
+            </a>
+        </li>
         <li  title="FuzzyDate">
             <a href="fuzzydate.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 FuzzyDate
+            </a>
+        </li>
+        <li  title="GenreStats">
+            <a href="genrestats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GenreStats
             </a>
         </li>
         <li  title="InternalPage">
@@ -353,6 +363,11 @@
         <li  title="ListActivity">
             <a href="listactivity.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ListActivity
+            </a>
+        </li>
+        <li  title="ListScoreStats">
+            <a href="listscorestats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ListScoreStats
             </a>
         </li>
         <li  title="Media">
@@ -500,6 +515,11 @@
                 StaffName
             </a>
         </li>
+        <li  title="StaffStats">
+            <a href="staffstats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StaffStats
+            </a>
+        </li>
         <li  title="StatusDistribution">
             <a href="statusdistribution.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 StatusDistribution
@@ -518,6 +538,16 @@
         <li  title="StudioEdge">
             <a href="studioedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 StudioEdge
+            </a>
+        </li>
+        <li  title="StudioStats">
+            <a href="studiostats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StudioStats
+            </a>
+        </li>
+        <li  title="TagStats">
+            <a href="tagstats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TagStats
             </a>
         </li>
         <li  title="TextActivity">
@@ -588,6 +618,11 @@
         <li  title="UserStats">
             <a href="userstats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 UserStats
+            </a>
+        </li>
+        <li  title="YearStats">
+            <a href="yearstats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                YearStats
             </a>
         </li>
         <li  title="__Directive">
@@ -684,7 +719,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">User</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The id of the user</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The name of the user</span></span></li><li><span class="tab"><span class="meta">name</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The bio written by user (Markdown)</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>asHtml</strong>: Return the string in pre-parsed html instead of </span></span></li><li><span class="tab"><span class="comment line">#   markdown</span></span></li><li><span class="tab"><span class="meta">about</span>(<span class="meta">asHtml</span>: <a class="support type" href="boolean.doc.html">Boolean</a>): <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The user's avatar images</span></span></li><li><span class="tab"><span class="meta">avatar</span>: <a class="support type" href="useravatar.doc.html">UserAvatar</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The user's banner images</span></span></li><li><span class="tab"><span class="meta">bannerImage</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   If the authenticated user if following this user</span></span></li><li><span class="tab"><span class="meta">isFollowing</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The user's general options</span></span></li><li><span class="tab"><span class="meta">options</span>: <a class="support type" href="useroptions.doc.html">UserOptions</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The user's media list options</span></span></li><li><span class="tab"><span class="meta">mediaListOptions</span>: <a class="support type" href="medialistoptions.doc.html">MediaListOptions</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The users favourites</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>page</strong>: The page number</span></span></li><li><span class="tab"><span class="meta">favourites</span>(<span class="meta">page</span>: <a class="support type" href="int.doc.html">Int</a>): <a class="support type" href="favourites.doc.html">Favourites</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The user's statistics</span></span></li><li><span class="tab"><span class="meta">stats</span>: <a class="support type" href="userstats.doc.html">UserStats</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The number of unread notifications the user has</span></span></li><li><span class="tab"><span class="meta">unreadNotificationCount</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The url for the user page on the AniList website</span></span></li><li><span class="tab"><span class="meta">siteUrl</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The donation tier of the user</span></span></li><li><span class="tab"><span class="meta">donatorTier</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   When the user's data was last updated</span></span></li><li><span class="tab"><span class="meta">updatedAt</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">User</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The id of the user</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The name of the user</span></span></li><li><span class="tab"><span class="meta">name</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The bio written by user (Markdown)</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>asHtml</strong>: Return the string in pre-parsed html instead of </span></span></li><li><span class="tab"><span class="comment line">#   markdown</span></span></li><li><span class="tab"><span class="meta">about</span>(<span class="meta">asHtml</span>: <a class="support type" href="boolean.doc.html">Boolean</a>): <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The user's avatar images</span></span></li><li><span class="tab"><span class="meta">avatar</span>: <a class="support type" href="useravatar.doc.html">UserAvatar</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The user's banner images</span></span></li><li><span class="tab"><span class="meta">bannerImage</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   If the authenticated user if following this user</span></span></li><li><span class="tab"><span class="meta">isFollowing</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The user's general options</span></span></li><li><span class="tab"><span class="meta">options</span>: <a class="support type" href="useroptions.doc.html">UserOptions</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The user's media list options</span></span></li><li><span class="tab"><span class="meta">mediaListOptions</span>: <a class="support type" href="medialistoptions.doc.html">MediaListOptions</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The users favourites</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>page</strong>: Deprecated. Use page arguments on each favourite field </span></span></li><li><span class="tab"><span class="comment line">#   instead.</span></span></li><li><span class="tab"><span class="meta">favourites</span>(<span class="meta">page</span>: <a class="support type" href="int.doc.html">Int</a>): <a class="support type" href="favourites.doc.html">Favourites</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The user's statistics</span></span></li><li><span class="tab"><span class="meta">stats</span>: <a class="support type" href="userstats.doc.html">UserStats</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The number of unread notifications the user has</span></span></li><li><span class="tab"><span class="meta">unreadNotificationCount</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The url for the user page on the AniList website</span></span></li><li><span class="tab"><span class="meta">siteUrl</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The donation tier of the user</span></span></li><li><span class="tab"><span class="meta">donatorTier</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   When the user's data was last updated</span></span></li><li><span class="tab"><span class="meta">updatedAt</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>

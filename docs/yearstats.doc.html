@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>UserAvatar</title>
+    <title>YearStats</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -605,7 +605,7 @@
                 UserActivityHistory
             </a>
         </li>
-        <li class="slds-is-active" title="UserAvatar">
+        <li  title="UserAvatar">
             <a href="useravatar.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 UserAvatar
             </a>
@@ -620,7 +620,7 @@
                 UserStats
             </a>
         </li>
-        <li  title="YearStats">
+        <li class="slds-is-active" title="YearStats">
             <a href="yearstats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 YearStats
             </a>
@@ -706,8 +706,8 @@
     </div>
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
-        <h1 class="slds-text-heading--large">UserAvatar</h1>
-        <div class="slds-text-body--regular"><p>A user&#39;s avatars</p>
+        <h1 class="slds-text-heading--large">YearStats</h1>
+        <div class="slds-text-body--regular"><p>User&#39;s year statistics</p>
 </div>
     </div>
 </section>
@@ -719,7 +719,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">UserAvatar</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The avatar of user at its largest size</span></span></li><li><span class="tab"><span class="meta">large</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The avatar of user at medium size</span></span></li><li><span class="tab"><span class="meta">medium</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">YearStats</span> {</li><li></li><li><span class="tab"><span class="meta">year</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="meta">amount</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="meta">meanScore</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -730,7 +730,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="user.doc.html" title="User - A user">User<em>A user</em></a><li></ul>
+        <ul class="require-by"><li><a href="userstats.doc.html" title="UserStats - A user's statistics">UserStats<em>A user's statistics</em></a><li></ul>
     </div>
 </section>
 <footer>

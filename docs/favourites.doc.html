@@ -340,9 +340,19 @@
                 FollowingNotification
             </a>
         </li>
+        <li  title="FormatStats">
+            <a href="formatstats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FormatStats
+            </a>
+        </li>
         <li  title="FuzzyDate">
             <a href="fuzzydate.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 FuzzyDate
+            </a>
+        </li>
+        <li  title="GenreStats">
+            <a href="genrestats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GenreStats
             </a>
         </li>
         <li  title="InternalPage">
@@ -353,6 +363,11 @@
         <li  title="ListActivity">
             <a href="listactivity.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ListActivity
+            </a>
+        </li>
+        <li  title="ListScoreStats">
+            <a href="listscorestats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ListScoreStats
             </a>
         </li>
         <li  title="Media">
@@ -500,6 +515,11 @@
                 StaffName
             </a>
         </li>
+        <li  title="StaffStats">
+            <a href="staffstats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StaffStats
+            </a>
+        </li>
         <li  title="StatusDistribution">
             <a href="statusdistribution.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 StatusDistribution
@@ -518,6 +538,16 @@
         <li  title="StudioEdge">
             <a href="studioedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 StudioEdge
+            </a>
+        </li>
+        <li  title="StudioStats">
+            <a href="studiostats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StudioStats
+            </a>
+        </li>
+        <li  title="TagStats">
+            <a href="tagstats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TagStats
             </a>
         </li>
         <li  title="TextActivity">
@@ -588,6 +618,11 @@
         <li  title="UserStats">
             <a href="userstats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 UserStats
+            </a>
+        </li>
+        <li  title="YearStats">
+            <a href="yearstats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                YearStats
             </a>
         </li>
         <li  title="__Directive">
@@ -684,7 +719,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Favourites</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Favourite anime</span></span></li><li><span class="tab"><span class="meta">anime</span>: <a class="support type" href="mediaconnection.doc.html">MediaConnection</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Favourite manga</span></span></li><li><span class="tab"><span class="meta">manga</span>: <a class="support type" href="mediaconnection.doc.html">MediaConnection</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Favourite characters</span></span></li><li><span class="tab"><span class="meta">characters</span>: <a class="support type" href="characterconnection.doc.html">CharacterConnection</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Favourite staff</span></span></li><li><span class="tab"><span class="meta">staff</span>: <a class="support type" href="staffconnection.doc.html">StaffConnection</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Favourite studios</span></span></li><li><span class="tab"><span class="meta">studios</span>: <a class="support type" href="studioconnection.doc.html">StudioConnection</a> </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Favourites</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Favourite anime</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>page</strong>: The page number</span></span></li><li><span class="tab"><span class="comment line">#   <strong>perPage</strong>: The amount of entries per page, max 25</span></span></li><li><span class="tab"><span class="meta">anime</span>(<span class="meta">page</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">perPage</span>: <a class="support type" href="int.doc.html">Int</a>): <a class="support type" href="mediaconnection.doc.html">MediaConnection</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Favourite manga</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>page</strong>: The page number</span></span></li><li><span class="tab"><span class="comment line">#   <strong>perPage</strong>: The amount of entries per page, max 25</span></span></li><li><span class="tab"><span class="meta">manga</span>(<span class="meta">page</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">perPage</span>: <a class="support type" href="int.doc.html">Int</a>): <a class="support type" href="mediaconnection.doc.html">MediaConnection</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Favourite characters</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>page</strong>: The page number</span></span></li><li><span class="tab"><span class="comment line">#   <strong>perPage</strong>: The amount of entries per page, max 25</span></span></li><li><span class="tab"><span class="meta">characters</span>(<span class="meta">page</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">perPage</span>: <a class="support type" href="int.doc.html">Int</a>): <a class="support type" href="characterconnection.doc.html">CharacterConnection</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Favourite staff</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>page</strong>: The page number</span></span></li><li><span class="tab"><span class="comment line">#   <strong>perPage</strong>: The amount of entries per page, max 25</span></span></li><li><span class="tab"><span class="meta">staff</span>(<span class="meta">page</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">perPage</span>: <a class="support type" href="int.doc.html">Int</a>): <a class="support type" href="staffconnection.doc.html">StaffConnection</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Favourite studios</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>page</strong>: The page number</span></span></li><li><span class="tab"><span class="comment line">#   <strong>perPage</strong>: The amount of entries per page, max 25</span></span></li><li><span class="tab"><span class="meta">studios</span>(<span class="meta">page</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">perPage</span>: <a class="support type" href="int.doc.html">Int</a>): <a class="support type" href="studioconnection.doc.html">StudioConnection</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
