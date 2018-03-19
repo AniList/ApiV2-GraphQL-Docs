@@ -1,10 +1,12 @@
 query ($id: Int!, $listType: MediaType) {
   MediaListCollection (userId: $id, type: $listType) {
-    statusLists {
-      ... mediaListEntry
-    }
-    customLists {
-      ... mediaListEntry
+    lists {
+      name
+      isCustomList
+      isSplitCompletedList
+      entries {
+        ... mediaListEntry
+      }
     }
     user {
       id
