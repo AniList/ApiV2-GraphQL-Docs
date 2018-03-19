@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>StaffStats</title>
+    <title>MediaTrend</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -455,7 +455,7 @@
                 MediaTrailer
             </a>
         </li>
-        <li  title="MediaTrend">
+        <li class="slds-is-active" title="MediaTrend">
             <a href="mediatrend.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 MediaTrend
             </a>
@@ -535,7 +535,7 @@
                 StaffName
             </a>
         </li>
-        <li class="slds-is-active" title="StaffStats">
+        <li  title="StaffStats">
             <a href="staffstats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 StaffStats
             </a>
@@ -726,8 +726,8 @@
     </div>
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
-        <h1 class="slds-text-heading--large">StaffStats</h1>
-        <div class="slds-text-body--regular"><p>User&#39;s staff statistics</p>
+        <h1 class="slds-text-heading--large">MediaTrend</h1>
+        <div class="slds-text-body--regular"><p>Daily media statistics</p>
 </div>
     </div>
 </section>
@@ -739,7 +739,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">StaffStats</span> {</li><li></li><li><span class="tab"><span class="meta">staff</span>: <a class="support type" href="staff.doc.html">Staff</a> </span></li><li></li><li><span class="tab"><span class="meta">amount</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="meta">meanScore</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The amount of time in minutes the staff member has been watched by the user</span></span></li><li><span class="tab"><span class="meta">timeWatched</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">MediaTrend</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The id of the tag</span></span></li><li><span class="tab"><span class="meta">mediaId</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The day the data was recorded (timestamp)</span></span></li><li><span class="tab"><span class="meta">date</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The amount of media activity on the day</span></span></li><li><span class="tab"><span class="meta">trending</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   A weighted average score of all the user's scores of the media</span></span></li><li><span class="tab"><span class="meta">averageScore</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The number of users with the media on their list</span></span></li><li><span class="tab"><span class="meta">popularity</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   If the media was being released at this time</span></span></li><li><span class="tab"><span class="meta">releasing</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The episode number of the anime released on this day</span></span></li><li><span class="tab"><span class="meta">episode</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The related media</span></span></li><li><span class="tab"><span class="meta">media</span>: <a class="support type" href="media.doc.html">Media</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -750,7 +750,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="userstats.doc.html" title="UserStats - A user's statistics">UserStats<em>A user's statistics</em></a><li></ul>
+        <ul class="require-by"><li><a href="internalpage.doc.html" title="InternalPage - Page of data (Used for internal use only)">InternalPage<em>Page of data (Used for internal use only)</em></a><li><li><a href="mediatrendconnection.doc.html" title="MediaTrendConnection - ">MediaTrendConnection<em>null</em></a><li><li><a href="mediatrendedge.doc.html" title="MediaTrendEdge - Media trend connection edge">MediaTrendEdge<em>Media trend connection edge</em></a><li><li><a href="page.doc.html" title="Page - Page of data">Page<em>Page of data</em></a><li><li><a href="query.doc.html" title="Query - ">Query<em>null</em></a><li></ul>
     </div>
 </section>
 <footer>

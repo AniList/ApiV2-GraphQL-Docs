@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>StaffStats</title>
+    <title>MediaTrendEdge</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -465,7 +465,7 @@
                 MediaTrendConnection
             </a>
         </li>
-        <li  title="MediaTrendEdge">
+        <li class="slds-is-active" title="MediaTrendEdge">
             <a href="mediatrendedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 MediaTrendEdge
             </a>
@@ -535,7 +535,7 @@
                 StaffName
             </a>
         </li>
-        <li class="slds-is-active" title="StaffStats">
+        <li  title="StaffStats">
             <a href="staffstats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 StaffStats
             </a>
@@ -726,8 +726,8 @@
     </div>
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
-        <h1 class="slds-text-heading--large">StaffStats</h1>
-        <div class="slds-text-body--regular"><p>User&#39;s staff statistics</p>
+        <h1 class="slds-text-heading--large">MediaTrendEdge</h1>
+        <div class="slds-text-body--regular"><p>Media trend connection edge</p>
 </div>
     </div>
 </section>
@@ -739,7 +739,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">StaffStats</span> {</li><li></li><li><span class="tab"><span class="meta">staff</span>: <a class="support type" href="staff.doc.html">Staff</a> </span></li><li></li><li><span class="tab"><span class="meta">amount</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="meta">meanScore</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The amount of time in minutes the staff member has been watched by the user</span></span></li><li><span class="tab"><span class="meta">timeWatched</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">MediaTrendEdge</span> {</li><li></li><li><span class="tab"><span class="meta">node</span>: <a class="support type" href="mediatrend.doc.html">MediaTrend</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -750,7 +750,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="userstats.doc.html" title="UserStats - A user's statistics">UserStats<em>A user's statistics</em></a><li></ul>
+        <ul class="require-by"><li><a href="mediatrendconnection.doc.html" title="MediaTrendConnection - ">MediaTrendConnection<em>null</em></a><li></ul>
     </div>
 </section>
 <footer>
