@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>StudioSort</title>
+    <title>MediaListOptionsInput</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -200,7 +200,7 @@
                 StaffSort
             </a>
         </li>
-        <li class="slds-is-active" title="StudioSort">
+        <li  title="StudioSort">
             <a href="studiosort.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 StudioSort
             </a>
@@ -685,7 +685,7 @@
                 FuzzyDateInput
             </a>
         </li>
-        <li  title="MediaListOptionsInput">
+        <li class="slds-is-active" title="MediaListOptionsInput">
             <a href="medialistoptionsinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 MediaListOptionsInput
             </a>
@@ -730,9 +730,9 @@
         </div>
     </div>
     <div class="container">
-        <p class="slds-text-title--caps slds-text-color--weak">ENUM</p>
-        <h1 class="slds-text-heading--large">StudioSort</h1>
-        <div class="slds-text-body--regular"><p>Studio sort enums</p>
+        <p class="slds-text-title--caps slds-text-color--weak">INPUT_OBJECT</p>
+        <h1 class="slds-text-heading--large">MediaListOptionsInput</h1>
+        <div class="slds-text-body--regular"><p>A user&#39;s list options for anime or manga lists</p>
 </div>
     </div>
 </section>
@@ -744,7 +744,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">enum</span> <span class="identifier">StudioSort</span> {</li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">ID</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">ID_DESC</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">NAME</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">NAME_DESC</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">SEARCH_MATCH</span></span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">input</span> <span class="identifier">MediaListOptionsInput</span> {</li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The order each list should be displayed in</span></span></li><li><span class="tab"><span class="meta">sectionOrder</span>: [<a class="support type" href="string.doc.html">String</a>]</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   If the completed sections of the list should be separated by format</span></span></li><li><span class="tab"><span class="meta">splitCompletedSectionByFormat</span>: <a class="support type" href="boolean.doc.html">Boolean</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The names of the user's custom lists</span></span></li><li><span class="tab"><span class="meta">customLists</span>: [<a class="support type" href="string.doc.html">String</a>]</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The names of the user's advanced scoring sections</span></span></li><li><span class="tab"><span class="meta">advancedScoring</span>: [<a class="support type" href="string.doc.html">String</a>]</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   If advanced scoring is enabled</span></span></li><li><span class="tab"><span class="meta">advancedScoringEnabled</span>: <a class="support type" href="boolean.doc.html">Boolean</a></span></li></span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -755,7 +755,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="internalpage.doc.html" title="InternalPage - Page of data (Used for internal use only)">InternalPage<em>Page of data (Used for internal use only)</em></a><li><li><a href="media.doc.html" title="Media - Anime or Manga">Media<em>Anime or Manga</em></a><li><li><a href="page.doc.html" title="Page - Page of data">Page<em>Page of data</em></a><li><li><a href="query.doc.html" title="Query - ">Query<em>null</em></a><li></ul>
+        <ul class="require-by"><li><a href="mutation.doc.html" title="Mutation - ">Mutation<em>null</em></a><li></ul>
     </div>
 </section>
 <footer>
