@@ -1,35 +1,31 @@
-# Getting started with the AniList GraphQL API
+# Getting Started
 
-### What is GraphQL?
+## What is GraphQL?
 
 GraphQL is a strongly typed Api query language that provides an alternative to REST. It allows clients to define the structure of the data required, and exactly the same structure of the data is returned from the server. This avoids both the problems of over and under-fetching data, while also allowing for a more powerful and flexible Api.
 
-<div class='flash'>
-Before reading these docs and using the Api its highly recommended you familiarize yourself with GraphQL by reading the <a href='http://graphql.org/learn/queries/' target='_blank'>official GraphQL documentation</a>
-</div>
+ Before reading these docs and using the Api its highly recommended you familiarize yourself with GraphQL by reading the [official GraphQL documentation](http://graphql.org/learn/queries/)
 
-### Making a GraphQL API Request
+## Making a GraphQL API Request
 
-<div class='flash' style='margin-bottom:15px;'>
-All requests made to the AniList GraphQL API must be made as a POST request to 'https://graphql.anilist.co'.
-</div>
+{% hint style="info" %}
+#### All requests made to the AniList GraphQL API must be made as a POST request to 'https://graphql.anilist.co'.
+{% endhint %}
 
-When you make a request you'll need to include 2 payload objects, `query`, and `variables`.
-<br>
+When you make a request you'll need to include 2 payload objects, `query`, and `variables`. 
 
 * query: contains your query or mutation strings.
 * variables: contains the variable values used within your query.
 
 You can omit the variables object and instead hard-code your values inside your query, however, this is not recommended past the simplest of queries.
 
-
-{% method -%}
-#### Example Query Request
+### Example Query Request
 
 Let's write a simple query to get an anime by its id.
 
-{% sample lang="js" -%}
-```js
+{% tabs %}
+{% tab title="JavaScript" %}
+```javascript
 // Here we define our query as a multi-line string
 // Storing it in a separate .graphql/.gql file is also possible
 var query = `
@@ -86,7 +82,8 @@ function handleError(error) {
 ```
 
 This request will return the following JSON response:
-```
+
+```text
 "data": {
     "Media": {
         "id": 15125,
@@ -99,9 +96,9 @@ This request will return the following JSON response:
   }
 }
 ```
+{% endtab %}
 
-
-{% sample lang="php" -%}
+{% tab title="PHP" %}
 ```php
 // Here we define our query as a multi-line string
 $query = '
@@ -130,11 +127,11 @@ $response = $http->post('https://graphql.anilist.co', [
         'variables' => $variables,
     ]
 ]);
-
 ```
 
 This request will return the following JSON response:
-```
+
+```text
 "data": {
     "Media": {
         "id": 15125,
@@ -147,8 +144,9 @@ This request will return the following JSON response:
   }
 }
 ```
+{% endtab %}
 
-{% sample lang="python" -%}
+{% tab title="Python" %}
 ```python
 # Here we define our query as a multi-line string
 query = '''
@@ -173,11 +171,11 @@ url = 'https://graphql.anilist.co'
 
 # Make the HTTP Api request
 response = requests.post(url, json={'query': query, 'variables': variables})
-
 ```
 
 This request will return the following JSON response:
-```
+
+```text
 "data": {
     "Media": {
         "id": 15125,
@@ -190,6 +188,6 @@ This request will return the following JSON response:
   }
 }
 ```
-{% endmethod %}
-
+{% endtab %}
+{% endtabs %}
 

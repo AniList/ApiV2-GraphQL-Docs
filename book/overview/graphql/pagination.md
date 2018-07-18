@@ -6,11 +6,11 @@ For example your want a page of characters, the normal query type for this is `C
 
 The Page query also provides the `pageInfo` field which provides information about the current page and full result set.
 
-{% method -%}
 Let's write another query, this time a search query with a page of media data.
 
-{% sample lang="js" -%}
-```js
+{% tabs %}
+{% tab title="JavaScript" %}
+```javascript
 var query = `
 query ($id: Int, $page: Int, $perPage: Int, $search: String) {
   Page (page: $page, perPage: $perPage) {
@@ -49,14 +49,15 @@ var url = 'https://graphql.anilist.co',
             variables: variables
         })
     };
-    
+
 fetch(url, options).then(handleResponse)
                    .then(handleData)
                    .catch(handleError);
 ```
 
 This request will return the following JSON response:
-```
+
+```text
 {
   "data": {
     "Page": {
@@ -91,9 +92,9 @@ This request will return the following JSON response:
   }
 }
 ```
+{% endtab %}
 
-
-{% sample lang="php" -%}
+{% tab title="PHP" %}
 ```php
 $query = '
 query ($id: Int, $page: Int, $perPage: Int, $search: String) {
@@ -128,10 +129,11 @@ $response = $http->post('https://graphql.anilist.co', [
         'variables' => $variables,
     ]
 ]);
+```
 
-```
 This request will return the following JSON response:
-```
+
+```text
 {
   "data": {
     "Page": {
@@ -166,10 +168,9 @@ This request will return the following JSON response:
   }
 }
 ```
+{% endtab %}
 
-
-{% sample lang="python" -%}
-
+{% tab title="Python" %}
 ```python
 query = '''
 query ($id: Int, $page: Int, $perPage: Int, $search: String) {
@@ -198,10 +199,11 @@ variables = {
 url = 'https://graphql.anilist.co'
 
 response = requests.post(url, json={'query': query, 'variables': variables})
+```
 
-```
 This request will return the following JSON response:
-```
+
+```text
 {
   "data": {
     "Page": {
@@ -236,23 +238,16 @@ This request will return the following JSON response:
   }
 }
 ```
+{% endtab %}
+{% endtabs %}
 
-
-{% endmethod %}
-
-<div class='flash'>
-Note that we've left the $id variable from our previous example in this query but have not included it in our variables array. <br>
-This is valid and the AniList GraphQL server will simply ignore any variables in the query that are not included in the variables object. <br>
-This can allow you to make more complex and flexible queries without the need to modify the query string directly. 
-</div>
+{% hint style="info" %}
+Note that we've left the $id variable from our previous example in this query but have not included it in our variables array. This is valid and the AniList GraphQL server will simply ignore any variables in the query that are not included in the variables object. This can allow you to make more complex and flexible queries without the need to modify the query string directly.
+{% endhint %}
 
 ## Collections
-
 
 For some data sets you need to entire response at once and accessing them via pagination doesn't make much sense. For these edge cases we provide Collection queries.
 
 Examples of these are the `GenreCollection` which provides a small array of all the possible genres a media can have, or the `MediaListCollection` query which provides a more useful pre-formatted alternative the paginated MediaList query.
-
-<br><br><br>
-
 

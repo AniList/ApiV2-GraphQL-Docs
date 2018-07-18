@@ -14,7 +14,5 @@
 * [ESLint GraphQL](https://github.com/apollographql/eslint-plugin-graphql)
 * [GraphQL IntelliJ Plugin](https://github.com/jimkyndemeyer/js-graphql-intellij-plugin/)
 
-#### [**Check out Awesome-GraphQL for more tools & **](https://github.com/chentsulin/awesome-graphql)[**libraries**](https://github.com/chentsulin/awesome-graphql)[**.**](https://github.com/chentsulin/awesome-graphql)
-
-
+### [**Check out Awesome-GraphQL for more tools &** ](https://github.com/chentsulin/awesome-graphql)[**libraries**](https://github.com/chentsulin/awesome-graphql)[**.**](https://github.com/chentsulin/awesome-graphql)
 

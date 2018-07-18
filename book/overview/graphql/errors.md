@@ -1,8 +1,8 @@
-# GraphQL Errors
+# Errors
 
 When you make an invalid request you'll receive a response with an `errors` object.
 
-```
+```text
 {
   "data": null,
   "errors": [
@@ -20,13 +20,13 @@ When you make an invalid request you'll receive a response with an `errors` obje
 }
 ```
 
-### Validation Errors
+## Validation Errors
 
 When you make a **mutation** request that doesn't pass our validation checks, you'll receive a similar response to above but with an additional `validation` object within the errors object.
 
 You may display these validation error messages directly to the user if you wish.
 
-```
+```text
 {
   "data": null,
   "errors": [
@@ -51,6 +51,4 @@ You may display these validation error messages directly to the user if you wish
   ]
 }
 ```
-
-
 

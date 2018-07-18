@@ -2,18 +2,18 @@
 
 Once you've created your client, you can use your client ID and secret to request an authorization code and access token from AniList.
 
-
-{% method -%}
-### Redirecting For Authorization
+## Redirecting For Authorization
 
 First, your client should make a redirect request to `https://anilist.co/api/v2/oauth/authorize` with the required parameters, like so:
 
-{% sample lang="js" -%}
-```html
+{% tabs %}
+{% tab title="HTML" %}
+```markup
 <a href='https://anilist.co/api/v2/oauth/authorize?client_id={client_id}&redirect_uri={redirect_uri}&response_type=code'>Login with AniList</a>
 ```
+{% endtab %}
 
-{% sample lang="php" -%}
+{% tab title="PHP" %}
 ```php
 $query = [
     'client_id' => '{client_id}',
@@ -27,23 +27,22 @@ $url = 'https://anilist.co/api/v2/oauth/authorize?' . urldecode(http_build_query
 // ...
 echo "<a href='$url'>Login with Anilist</a>";
 ```
+{% endtab %}
+{% endtabs %}
 
-{% endmethod %}
+## User Approval
 
-### User Approval
-Once the user has been redirected they will be asked to approve your client's permissions. 
-If the user is not logged in they will first be taken to the standard login page and then automatically redirected to the client approval page.
+Once the user has been redirected they will be asked to approve your client's permissions. If the user is not logged in they will first be taken to the standard login page and then automatically redirected to the client approval page.
 
-Once the user has approved your client they will be redirected to your redirect URI, included in URL parameters will be a `code` parameter that includes the Authorization Code. 
-You'll exchange this code for an access token in the next step.
+Once the user has approved your client they will be redirected to your redirect URI, included in URL parameters will be a `code` parameter that includes the Authorization Code. You'll exchange this code for an access token in the next step.
 
-{% method -%}
-### Converting Authorization Codes To Access Tokens
-Your client should make a POST request to `https://anilist.co/api/v2/oauth/token`. 
-The request should include the authorization code that was issued by AniList, along with other required information about your client.
+## Converting Authorization Codes To Access Tokens
 
-{% sample lang="js" -%}
-```js
+Your client should make a POST request to `https://anilist.co/api/v2/oauth/token`. The request should include the authorization code that was issued by AniList, along with other required information about your client.
+
+{% tabs %}
+{% tab title="JavaScript" %}
+```javascript
 var request = require('request');
 
 var options = {
@@ -68,10 +67,11 @@ request(options, function (error, response, body) {
   }
 });
 ```
+
 This will return a JSON response containing the JWT `access_token`.
+{% endtab %}
 
-
-{% sample lang="php" -%}
+{% tab title="PHP" %}
 ```php
 $http = new GuzzleHttp\Client;
 
@@ -93,18 +93,16 @@ return json_decode($response->getBody())->access_token;
 ```
 
 This will return a JSON response containing the JWT `access_token`.
+{% endtab %}
+{% endtabs %}
 
-{% endmethod %}
-
-{% method -%}
-
-### Making Authenticated Requests
+## Making Authenticated Requests
 
 To make authenticated requests you'll need to add the `Authorization` header, with the value of "Bearer " plus the user's access token.
 
-
-{% sample lang="js" -%}
-```js
+{% tabs %}
+{% tab title="JavaScript" %}
+```javascript
 var options = {
   uri: 'https://graphql.anilist.co',
   method: 'POST',
@@ -124,8 +122,9 @@ request(options, function (error, response, body) {
   }
 });
 ```
+{% endtab %}
 
-{% sample lang="php" -%}
+{% tab title="PHP" %}
 ```php
 $response = $http->request('POST', 'https://graphql.anilist.co', [
     'headers' => [
@@ -135,7 +134,6 @@ $response = $http->request('POST', 'https://graphql.anilist.co', [
     ],
 ]);
 ```
-{% endmethod %}
-
-
+{% endtab %}
+{% endtabs %}
 

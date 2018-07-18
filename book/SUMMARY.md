@@ -1,20 +1,22 @@
-# Summary
+# Table of contents
+
+* [Introduction](README.md)
 
 ## Overview
 
-* [API Terms of Use](README.md)
-* [GraphQL](graphql.md)
-  * [Getting Started](graphql/getting-started.md)
-  * [Pagination](graphql/pagination.md)
-  * [Connections](graphql/connections.md)
-  * [Errors](graphql/errors.md)
-  * [Whats Next](graphql/whats-next.md)
-  * [Mutations](graphql/mutations.md)
-* [OAuth](oauth.md)
-  * [Getting Started](getting-started.md)
-  * [Authorization Code Grant](oauth/authorization-code-grant.md)
-  * [Implicit Grant](oauth/implicit-grant.md)
-* [Rate Limiting](rate-limiting.md)
-* [Resources](resources-and-recommended-reading.md)
-* [Migrating from API v1](migrating-from-apiv1.md)
+* [API Terms of Use](overview/readme.md)
+* [GraphQL](overview/graphql/README.md)
+  * [Getting Started](overview/graphql/getting-started.md)
+  * [Pagination](overview/graphql/pagination.md)
+  * [Connections](overview/graphql/connections.md)
+  * [Errors](overview/graphql/errors.md)
+  * [Whats Next](overview/graphql/whats-next.md)
+  * [Mutations](overview/graphql/mutations.md)
+* [OAuth](overview/oauth/README.md)
+  * [Getting Started](overview/oauth/getting-started.md)
+  * [Authorization Code Grant](overview/oauth/authorization-code-grant.md)
+  * [Implicit Grant](overview/oauth/implicit-grant.md)
+* [Rate Limiting](overview/rate-limiting.md)
+* [Resources](overview/resources-and-recommended-reading.md)
+* [Migrating from API v1](overview/migrating-from-apiv1.md)
 

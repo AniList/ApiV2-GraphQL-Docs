@@ -4,17 +4,18 @@ Once you've created your client, you can use your client ID to request an access
 
 The implicit grant is similar to the authorization code grant; however, the token is returned to the client without exchanging an authorization code. This grant is most commonly used for JavaScript or mobile applications where the client credentials can't be securely stored.
 
-{% method -%}
-### Redirecting For Authorization
+## Redirecting For Authorization
 
 First, your client should make a redirect request to `https://anilist.co/api/v2/oauth/authorize` with the required parameters, like so:
 
-{% sample lang="js" -%}
-```html
+{% tabs %}
+{% tab title="HTML" %}
+```markup
 <a href='https://anilist.co/api/v2/oauth/authorize?client_id={client_id}&response_type=token'>Login with AniList</a>
 ```
+{% endtab %}
 
-{% sample lang="php" -%}
+{% tab title="PHP" %}
 ```php
 $query = [
     'client_id' => '{client_id}',
@@ -27,24 +28,24 @@ $url = 'https://anilist.co/api/v2/oauth/authorize?' . urldecode(http_build_query
 // ...
 echo "<a href='$url'>Login with Anilist</a>";
 ```
+{% endtab %}
+{% endtabs %}
 
-{% endmethod %}
+## User Approval
 
-### User Approval
-Once the user has been redirected they will be asked to approve your client's permissions. 
-If the user is not logged in they will first be taken to the standard login page and then automatically redirected to the client approval page.
+Once the user has been redirected they will be asked to approve your client's permissions. If the user is not logged in they will first be taken to the standard login page and then automatically redirected to the client approval page.
 
-### Retrieving the Access Token
-Once the user has approved your client they will be redirected to your redirect URI, included in the URL __fragment__ will be an `access_token` parameter that includes the JWT access token used to make requests on their behalf. 
+## Retrieving the Access Token
 
-{% method -%}
-### Making Authenticated Requests
+Once the user has approved your client they will be redirected to your redirect URI, included in the URL **fragment** will be an `access_token` parameter that includes the JWT access token used to make requests on their behalf.
+
+## Making Authenticated Requests
 
 To make authenticated requests you'll need to add the `Authorization` header, with the value of "Bearer " plus the user's access token.
 
-
-{% sample lang="js" -%}
-```js
+{% tabs %}
+{% tab title="JavaScript" %}
+```javascript
 var url = 'https://graphql.anilist.co',
     options = {
         method: 'POST',
@@ -57,15 +58,16 @@ var url = 'https://graphql.anilist.co',
             query: query
         })
     };
-    
+
 fetch(url, options).then(handleResponse, handleError);
 
 function handleResponse (response) {
-	console.log(response);
+    console.log(response);
 }
 ```
+{% endtab %}
 
-{% sample lang="php" -%}
+{% tab title="PHP" %}
 ```php
 $http = new GuzzleHttp\Client;
 
@@ -77,6 +79,6 @@ $response = $http->request('POST', 'https://graphql.anilist.co', [
     ],
 ]);
 ```
-
-{% endmethod %}
+{% endtab %}
+{% endtabs %}
 
