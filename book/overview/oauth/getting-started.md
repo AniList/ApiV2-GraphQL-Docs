@@ -20,9 +20,9 @@ Your client name will appear to the user when asking for approval, so ensure it 
 
 Follow the guides for your grant type to learn how to request access tokens and how to use them to make authenticated requests:
 
-### [Authorization Code Grant](https://github.com/anilist/anilist-apiv2-docs/tree/e652e2f370ec3d52f21c943db7999763733b4cb2/oauth/authorization-code-grant.md)
+### [Authorization Code Grant](https://anilist.gitbook.io/anilist-apiv2-docs/overview/oauth/authorization-code-grant)
 
-### [Implicit Grant](https://github.com/anilist/anilist-apiv2-docs/tree/e652e2f370ec3d52f21c943db7999763733b4cb2/oauth/implicit-grant.md)
+### [Implicit Grant](https://anilist.gitbook.io/anilist-apiv2-docs/overview/oauth/implicit-grant)
 
 ## Auth Pin
 

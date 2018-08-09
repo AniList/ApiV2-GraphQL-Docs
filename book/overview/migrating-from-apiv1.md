@@ -21,7 +21,7 @@ Sadly the OAuth packages used for Api v1 have been deprecated and will stop rece
 * The `api/auth/authorize` route is now `api/v2/oauth/authorize`
 * The `api/auth/access_token` route is now `api/v2/oauth/token`
 
-[View the OAuth docs page for more info about getting OAuth setup for Api v2.](https://github.com/anilist/anilist-apiv2-docs/tree/e652e2f370ec3d52f21c943db7999763733b4cb2/oauth.md)
+[View the OAuth docs page for more info about getting OAuth setup for Api v2.](https://anilist.gitbook.io/anilist-apiv2-docs/overview/oauth)
 
 ## Snake Case to Camel Case
 
