@@ -4,7 +4,9 @@
 
 GraphQL is a strongly typed Api query language that provides an alternative to REST. It allows clients to define the structure of the data required, and exactly the same structure of the data is returned from the server. This avoids both the problems of over and under-fetching data, while also allowing for a more powerful and flexible Api.
 
- Before reading these docs and using the Api its highly recommended you familiarize yourself with GraphQL by reading the [official GraphQL documentation](http://graphql.org/learn/queries/)
+{% hint style="info" %}
+Before reading these docs and using the Api its highly recommended you familiarise yourself with GraphQL by reading the [official GraphQL documentation](http://graphql.org/learn/queries/)
+{% endhint %}
 
 ## Making a GraphQL API Request
 

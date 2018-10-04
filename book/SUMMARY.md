@@ -4,7 +4,7 @@
 
 ## Overview
 
-* [API Terms of Use](overview/readme.md)
+* [API Terms of Use](overview/overview.md)
 * [GraphQL](overview/graphql/README.md)
   * [Getting Started](overview/graphql/getting-started.md)
   * [Pagination](overview/graphql/pagination.md)
