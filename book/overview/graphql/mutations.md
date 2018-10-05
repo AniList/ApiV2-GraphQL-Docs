@@ -4,7 +4,7 @@ Mutations allow you create, update, and delete data.
 
 As they require user authentication they also require OAuth.
 
-The majority our mutations have the following prefixes:
+The majority of our mutations have the following prefixes:
 
 * **Save** - Create or Update. We usually determine if you would like to create or update data depending on if you provide a valid `id` argument.
 * **Delete** - Delete. This will usually return a `Deleted` object type, however, some mutations will return an updated version of the sibling data if this is more useful.

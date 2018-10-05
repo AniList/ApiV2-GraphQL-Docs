@@ -247,7 +247,7 @@ Note that we've left the $id variable from our previous example in this query bu
 
 ## Collections
 
-For some data sets you need to entire response at once and accessing them via pagination doesn't make much sense. For these edge cases we provide Collection queries.
+For some data sets you might need the entire response at once and accessing them via pagination doesn't make much sense. For these edge cases we provide Collection queries.
 
 Examples of these are the `GenreCollection` which provides a small array of all the possible genres a media can have, or the `MediaListCollection` query which provides a more useful pre-formatted alternative the paginated MediaList query.
 
