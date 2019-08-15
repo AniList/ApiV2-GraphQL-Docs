@@ -84,8 +84,8 @@ $response = $http->post('https://anilist.co/api/v2/oauth/token', [
         'code' => '{code}', // The Authorization code received previously
     ],
     'headers' => [
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
+        'Content-Type' => 'application/json',
+        'Accept' => 'application/json',
     ]
 ]);
 
@@ -129,8 +129,8 @@ request(options, function (error, response, body) {
 $response = $http->request('POST', 'https://graphql.anilist.co', [
     'headers' => [
         'Authorization' => 'Bearer ' . $accessToken,
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
+        'Content-Type' => 'application/json',
+        'Accept' => 'application/json',
     ],
 ]);
 ```
