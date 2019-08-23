@@ -84,8 +84,7 @@ $response = $http->post('https://anilist.co/api/v2/oauth/token', [
         'code' => '{code}', // The Authorization code received previously
     ],
     'headers' => [
-        'Content-Type' => 'application/json',
-        'Accept' => 'application/json',
+        'Accept' => 'application/json'
     ]
 ]);
 
