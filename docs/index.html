@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body {
+				background: hsl(210, 22%, 20%);
+				height: 100%;
+				margin: 0;
+				overflow: hidden;
+				padding: 60px 0;
+				width: 100%;
+			}
+			#graphiql {
+				height: 100vh;
+			}
+			#graphiql .graphiql-container,
+			#graphiql .graphiql-container button,
+			#graphiql .graphiql-container input {
+				font-size: 15px;
+				font-family: 'Roboto Mono', monospace;
+			}
+			.docExplorerWrap {
+				border-radius: 12px;
+				box-shadow: 0px 14px 30px rgba(20, 24, 35, 0.4), 0px 4px 4px rgba(20, 24, 35, 0.26) !important;
+				display: block !important;
+				margin: 0 auto;
+				margin-bottom: 120px;
+				max-width: 1000px;
+				overflow: hidden;
+				width: 60vw !important;
+			}
+			.historyPaneWrap,
+			.docExplorerShow,
+			.docExplorerHide,
+			.docExplorerResizer,
+			.editorWrap {
+				display: none !important;
+			}
+			#graphiql .graphiql-container .doc-explorer-contents {
+				padding: 50px 45px;
+				padding-right: 60px;
+			}
+			.docExplorerWrap .doc-category-item > .field-name + span:not([class]) > span:first-of-type {
+				display: inline-block !important;
+			}
+			.docExplorerWrap .doc-category-item > .field-name + span:not([class]) > span:first-of-type:after {
+				display: inline-block !important;
+				content: "...";
+			}
+			.docExplorerWrap .doc-category-item > span .arg {
+				margin-left: 1em !important;
+			}
+			.docExplorerWrap .doc-category-item > span .arg:first-of-type {
+				margin-left: 1px !important;
+			}
+			.docExplorerWrap .doc-category-item .field-name + span .arg {
+				display: none !important;
+			}
+			.docExplorerWrap .doc-category-item .field-name + span:hover .arg {
+				display: block !important;
+			}
+
+			@media (max-width: 1500px) {
+				.docExplorerWrap {
+					width: 80vw !important;
+				}
+			}
+			@media (max-width: 1000px) {
+				.docExplorerWrap {
+					width: 90vw !important;
+				}
+
+				#graphiql .graphiql-container .doc-explorer-contents {
+					padding: 30px 25px;
+					padding-right: 40px;
+				}
+			}
+		</style>
+		<link rel="stylesheet" href="https://unpkg.com/graphiql@^0.11.1/graphiql.css" />
+		<script src="https://unpkg.com/whatwg-fetch@0.11.1/fetch.js"></script>
+		<script src="https://unpkg.com/react@^15.0/dist/react.min.js"></script>
+		<script src="https://unpkg.com/react-dom@^15.0/dist/react-dom.min.js"></script>
+		<script src="https://unpkg.com/graphiql@0.11.1/graphiql.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div id="graphiql">Loading...</div>
+		<script>
+			// Defines a GraphQL fetcher using the fetch API.
+			function graphQLFetcher(graphQLParams) {
+				const url = "https://graphql.anilist.co";
+				const payload = {
+					method: 'post',
+					headers: {
+						'Accept': 'application/json',
+						'Content-Type': 'application/json',
+					},
+					body: JSON.stringify(graphQLParams),
+				};
+
+				return fetch(url, payload)
+					.then(response => response.text())
+					.then(responseBody => {
+						try {
+							return JSON.parse(responseBody);
+						} catch (error) {
+							return responseBody;
+						}
+					});
+			}
+
+			// Render <GraphiQL /> into the body.
+			ReactDOM.render(
+				React.createElement(GraphiQL, {
+					fetcher: graphQLFetcher
+				}),
+				document.getElementById('graphiql')
+			);
+		</script>
+	</body>
+</html>
