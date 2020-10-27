@@ -18,6 +18,10 @@
                 {
                     "lang": "python",
                     "name": "Python"
+                },
+                {
+                    "lang": "rust",
+                    "name": "Rust"
                 }
             ]
         }
