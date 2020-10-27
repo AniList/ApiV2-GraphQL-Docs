@@ -239,6 +239,104 @@ This request will return the following JSON response:
 }
 ```
 {% endtab %}
+
+{% tab title = "Rust" %}
+```rust
+// This example uses 3 crates serde_json, reqwest, tokio
+
+use serde_json::json;
+use reqwest::Client;
+
+// Query to use in request
+const QUERY: &str = "
+query ($id: Int, $page: Int, $perPage: Int, $search: String) {
+    Page (page: $page, perPage: $perPage) {
+        pageInfo {
+            total
+            currentPage
+            lastPage
+            hasNextPage
+            perPage
+        }
+        media (id: $id, search: $search) {
+            id
+            title {
+                romaji
+            }
+        }
+    }
+}
+";
+
+#[tokio::main]
+async fn main() {
+    let client = Client::new();
+    // Define query and variables
+    let json = json!(
+        {
+            "query": QUERY,
+            "variables": {
+                "search": "Fate/Zero",
+                "page": 1,
+                "perPage": 3
+            }
+        }
+    );
+    // Make HTTP post request 
+    let resp = client.post("https://graphql.anilist.co/")
+                .header("Content-Type", "application/json")
+                .header("Accept", "application/json")
+                .body(json.to_string())
+                .send()
+                .await
+                .unwrap()
+                .text()
+                .await;
+    // Get json output
+    let result: serde_json::Value = serde_json::from_str(&resp.unwrap()).unwrap();
+    println!("{:#?}", result);
+}
+```
+
+This request will return the following JSON response:
+
+```text
+{
+  "data": {
+    "Page": {
+      "pageInfo": {
+        "total": 7,
+        "currentPage": 1,
+        "lastPage": 3,
+        "hasNextPage": true,
+        "perPage": 3
+      },
+      "media": [
+        {
+          "id": 10087,
+          "title": {
+            "romaji": "Fate\/zero"
+          }
+        },
+        {
+          "id": 11741,
+          "title": {
+            "romaji": "Fate\/zero 2nd Season"
+          }
+        },
+        {
+          "id": 13183,
+          "title": {
+            "romaji": "Fate\/zero Remix"
+          }
+        }
+      ]
+    }
+  }
+}
+```
+
+{% endtab %}
 {% endtabs %}
 
 {% hint style="info" %}
