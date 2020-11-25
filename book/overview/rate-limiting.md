@@ -55,5 +55,5 @@ Body
 * Any relevant links, such as the app's website, github or app store page.
 * Some form of evidence that your application requires a rate limit raise to function properly.
 
-Please bare in mind depending on the past and current standing of your account, and application reputation we may not always be able to provide you with your preferred rate limit raise.
+Please bear in mind depending on the past and current standing of your account, and application reputation we may not always be able to provide you with your preferred rate limit raise.
 
