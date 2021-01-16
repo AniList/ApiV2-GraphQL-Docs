@@ -134,5 +134,19 @@ $response = $http->request('POST', 'https://graphql.anilist.co', [
 ]);
 ```
 {% endtab %}
+
+{% tab title="Python3" %}
+```py
+import requests
+
+headers = {
+    'Authorization': 'Bearer ' + accessToken,
+    'Content-Type': 'application/json',
+    'Accept': 'application/json'
+}
+url = 'https://graphql.anilist.co'
+
+response = requests.post(url, json={'query': query, 'variables': variables}, headers=headers)
+```
 {% endtabs %}
 
