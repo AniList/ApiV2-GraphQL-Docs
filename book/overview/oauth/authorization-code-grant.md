@@ -148,5 +148,5 @@ url = 'https://graphql.anilist.co'
 
 response = requests.post(url, json={'query': query, 'variables': variables}, headers=headers)
 ```
-{% endtabs %}
+{% endtab %} {% endtabs %}
 
