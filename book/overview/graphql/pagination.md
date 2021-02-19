@@ -1,6 +1,6 @@
 # Pagination
 
-By default the Api will return a single result object, if you want to receive a page with an array of objects, you'll need to use the Page query. You can usually wrap your normal query in a Page query with minimal changes to receives a page.
+By default the Api will return a single result object, if you want to receive a page with an array of objects, you'll need to use the Page query. You can usually wrap your normal query in a Page query with minimal changes to receive a page.
 
 For example your want a page of characters, the normal query type for this is `Character`, to receive the pagination version of this you would wrap your inner query with the Page query and change `Character` to `characters`, lowercase and plural.
 
