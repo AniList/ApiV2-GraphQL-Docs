@@ -2,7 +2,7 @@
 
 **API Terms of Use**
 
-1. Free for non-commercial use. 
+1. Free for non-commercial use. (See commercial usage below)
 2. Using the AniList API as a backup or data storage service is strictly prohibited. 
 3. ‘Hoarding’ or mass collection of data from the AniList API is strictly prohibited. 
 4. Applications or services must comply with our naming guidelines.
@@ -25,7 +25,10 @@ We also cannot ensure the data provided by our users will always be non-adult \(
 
 We recommend you do additional checks and limit the data shown on your client to comply with the standards of any services you may be using.
 
- **Request API use for commercial clients**
+ **Commercial usage**
 
-If you would like to use the AniList API in a commercial client \(this includes ads or in-app purchases\), just drop me an email joshstar \[a-t\] mail \[do-t\] com or send me a tweet @J0shStar if you would like a quicker reply. With the current usage of the API, it is rather unlikely that any kind of profit cut etc. will be necessary.
+The AniList API may be used within commercial applications or services operating at less than $150 of revenue per month free of charge, no express permission required.
+
+Applications or services opperationing at greater than $150 of revenue per month will need to acquire a commercial license.
+To acquire a commercial license or for further enquiries regarding commercial API usage please email api-license@anilist.co.
 
