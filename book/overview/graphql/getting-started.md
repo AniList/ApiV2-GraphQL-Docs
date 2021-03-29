@@ -178,17 +178,26 @@ response = requests.post(url, json={'query': query, 'variables': variables})
 This request will return the following JSON response:
 
 ```text
-"data": {
-    "Media": {
-        "id": 15125,
-        "title": {
-            "romaji": "Teekyuu",
-            "english": null,
-            "native": "てーきゅう"
-        }
-    }
-  }
-}
+Object({
+    "data": Object({
+        "Media": Object({
+            "id": Number(
+                1,
+            ),
+            "title": Object({
+                "english": String(
+                    "Cowboy Bebop",
+                ),
+                "native": String(
+                    "カウボーイビバップ",
+                ),
+                "romaji": String(
+                    "Cowboy Bebop",
+                ),
+            }),
+        }),
+    }),
+})
 ```
 {% endtab %}
 
