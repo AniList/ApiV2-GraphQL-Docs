@@ -62,7 +62,7 @@ This request will return the following JSON response:
   "data": {
     "Page": {
       "pageInfo": {
-        "total": 7,
+        "total": 8,
         "currentPage": 1,
         "lastPage": 3,
         "hasNextPage": true,
@@ -72,19 +72,19 @@ This request will return the following JSON response:
         {
           "id": 10087,
           "title": {
-            "romaji": "Fate\/zero"
+            "romaji": "Fate/Zero"
           }
         },
         {
-          "id": 11741,
+          "id": 55191,
           "title": {
-            "romaji": "Fate\/zero 2nd Season"
+            "romaji": "Fate/Zero"
           }
         },
         {
-          "id": 13183,
+          "id": 33649,
           "title": {
-            "romaji": "Fate\/zero Remix"
+            "romaji": "Fate/Zero"
           }
         }
       ]
@@ -138,7 +138,7 @@ This request will return the following JSON response:
   "data": {
     "Page": {
       "pageInfo": {
-        "total": 7,
+        "total": 8,
         "currentPage": 1,
         "lastPage": 3,
         "hasNextPage": true,
@@ -148,19 +148,19 @@ This request will return the following JSON response:
         {
           "id": 10087,
           "title": {
-            "romaji": "Fate\/zero"
+            "romaji": "Fate/Zero"
           }
         },
         {
-          "id": 11741,
+          "id": 55191,
           "title": {
-            "romaji": "Fate\/zero 2nd Season"
+            "romaji": "Fate/Zero"
           }
         },
         {
-          "id": 13183,
+          "id": 33649,
           "title": {
-            "romaji": "Fate\/zero Remix"
+            "romaji": "Fate/Zero"
           }
         }
       ]
@@ -208,7 +208,7 @@ This request will return the following JSON response:
   "data": {
     "Page": {
       "pageInfo": {
-        "total": 7,
+        "total": 8,
         "currentPage": 1,
         "lastPage": 3,
         "hasNextPage": true,
@@ -218,19 +218,19 @@ This request will return the following JSON response:
         {
           "id": 10087,
           "title": {
-            "romaji": "Fate\/zero"
+            "romaji": "Fate/Zero"
           }
         },
         {
-          "id": 11741,
+          "id": 55191,
           "title": {
-            "romaji": "Fate\/zero 2nd Season"
+            "romaji": "Fate/Zero"
           }
         },
         {
-          "id": 13183,
+          "id": 33649,
           "title": {
-            "romaji": "Fate\/zero Remix"
+            "romaji": "Fate/Zero"
           }
         }
       ]
@@ -305,7 +305,7 @@ This request will return the following JSON response:
   "data": {
     "Page": {
       "pageInfo": {
-        "total": 7,
+        "total": 8,
         "currentPage": 1,
         "lastPage": 3,
         "hasNextPage": true,
@@ -315,19 +315,19 @@ This request will return the following JSON response:
         {
           "id": 10087,
           "title": {
-            "romaji": "Fate\/zero"
+            "romaji": "Fate/Zero"
           }
         },
         {
-          "id": 11741,
+          "id": 55191,
           "title": {
-            "romaji": "Fate\/zero 2nd Season"
+            "romaji": "Fate/Zero"
           }
         },
         {
-          "id": 13183,
+          "id": 33649,
           "title": {
-            "romaji": "Fate\/zero Remix"
+            "romaji": "Fate/Zero"
           }
         }
       ]
