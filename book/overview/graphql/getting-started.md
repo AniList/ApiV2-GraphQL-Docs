@@ -91,7 +91,7 @@ This request will return the following JSON response:
         "id": 15125,
         "title": {
             "romaji": "Teekyuu",
-            "english": null,
+            "english": "Teekyuu",
             "native": "てーきゅう"
         }
     }
@@ -139,7 +139,7 @@ This request will return the following JSON response:
         "id": 15125,
         "title": {
             "romaji": "Teekyuu",
-            "english": null,
+            "english": "Teekyuu",
             "native": "てーきゅう"
         }
     }
@@ -178,26 +178,17 @@ response = requests.post(url, json={'query': query, 'variables': variables})
 This request will return the following JSON response:
 
 ```text
-Object({
-    "data": Object({
-        "Media": Object({
-            "id": Number(
-                1,
-            ),
-            "title": Object({
-                "english": String(
-                    "Cowboy Bebop",
-                ),
-                "native": String(
-                    "カウボーイビバップ",
-                ),
-                "romaji": String(
-                    "Cowboy Bebop",
-                ),
-            }),
-        }),
-    }),
-})
+"data": {
+    "Media": {
+        "id": 15125,
+        "title": {
+            "romaji": "Teekyuu",
+            "english": "Teekyuu",
+            "native": "てーきゅう"
+        }
+    }
+  }
+}
 ```
 {% endtab %}
 
@@ -250,7 +241,7 @@ This request will return the following JSON response:
         "id": 15125,
         "title": {
             "romaji": "Teekyuu",
-            "english": null,
+            "english": "Teekyuu",
             "native": "てーきゅう"
         }
     }
