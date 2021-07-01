@@ -93,6 +93,49 @@ return json_decode($response->getBody())->access_token;
 
 This will return a JSON response containing the JWT `access_token`.
 {% endtab %}
+
+{% tab title="C#" %}
+```cs
+using Flurl;
+using Flurl.Http;
+
+namespace YourApplication
+{
+    class AuthorizationResult
+    {
+        public string token_type { get; set; }
+        public int expires_in { get; set; }
+        public string access_token { get; set; }
+        public string refresh_token { get; set; }
+    }
+
+    class Program
+    {
+        private static string Url = "https://anilist.co/api/v2/oauth/token";
+
+        public static async Task<string> GetBearerToken()
+        {
+            var result = await Url
+                .PostJsonAsync(new
+                {
+                    grant_type = "authorization_code",
+                    client_id = "{client_id}",
+                    client_secret = "{client_secret}",
+                    redirect_uri = "{redirect_uri}",
+                    code = "{code}"
+                })
+                .ReceiveJson<AuthorizationResult>();
+
+            return result.access_token;
+        }
+    }
+}
+
+```
+
+This will return a JSON response containing the JWT `access_token`.
+{% endtab %}
+
 {% endtabs %}
 
 ## Making Authenticated Requests
