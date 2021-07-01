@@ -86,7 +86,7 @@ $response = $http->request('POST', 'https://graphql.anilist.co', [
 using Flurl;
 using Flurl.Http;
 
-public static async Task<string> GetUserId()
+public static async Task<string> GetQueryResult()
 {
     var result = await "https://graphql.anilist.co"
         .WithOAuthBearerToken({YOUR BEARER TOKEN HERE})
