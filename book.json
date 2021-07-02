@@ -22,6 +22,10 @@
                 {
                     "lang": "rust",
                     "name": "Rust"
+                },
+                {
+                    "lang": "cs",
+                    "name": "C#"
                 }
             ]
         }
