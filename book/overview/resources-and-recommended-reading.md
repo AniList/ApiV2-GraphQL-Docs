@@ -4,7 +4,7 @@
 
 * [GraphiQL](https://anilist.co/graphiql) - An in-browser IDE for exploring the AniList GraphQL API.
 * [API Reference Docs](https://anilist.github.io/ApiV2-GraphQL-Docs/) - The same information available in the GraphiQL sidebar, just laid out nicer.
-* [Discord](https://discord.me/anilist) - Ask for help in the \#programming channel.
+* [Discord](https://discord.gg/anilist) - Ask for help in the \#programming channel.
 * [API Github Issues](https://github.com/AniList/ApiV2-GraphQL-Docs/issues) - Ask for help or report bugs.
 
 ## Tools
