@@ -178,32 +178,26 @@ response = requests.post(url, json={'query': query, 'variables': variables})
 This request will return the following JSON response:
 
 ```text
-Object({
-    "data": Object({
-        "Media": Object({
-            "id": Number(
-                1,
-            ),
-            "title": Object({
-                "english": String(
-                    "Cowboy Bebop",
-                ),
-                "native": String(
-                    "カウボーイビバップ",
-                ),
-                "romaji": String(
-                    "Cowboy Bebop",
-                ),
-            }),
-        }),
-    }),
-})
+"data": {
+    "Media": {
+        "id": 15125,
+        "title": {
+            "romaji": "Teekyuu",
+            "english": null,
+            "native": "てーきゅう"
+        }
+    }
+  }
+}
 ```
 {% endtab %}
 
 {% tab title="Rust" %}
 ```rust
-// This example uses 3 crates serde_json, reqwest, tokio
+// This example uses the following crates:
+// serde_json = "1.0"
+// reqwest = "0.11.8"
+// tokio = { version = "1.0", features = ["macros", "rt-multi-thread"] }
 
 use serde_json::json;
 use reqwest::Client;
@@ -226,7 +220,7 @@ query ($id: Int) { # Define which variables will be used in the query (id)
 async fn main() {
     let client = Client::new();
     // Define query and variables
-    let json = json!({"query": QUERY, "variables": {"id": 1}});
+    let json = json!({"query": QUERY, "variables": {"id": 15125}});
     // Make HTTP post request
     let resp = client.post("https://graphql.anilist.co/")
                 .header("Content-Type", "application/json")
@@ -239,20 +233,21 @@ async fn main() {
                 .await;
     // Get json
     let result: serde_json::Value = serde_json::from_str(&resp.unwrap()).unwrap();
-    println!("{:#?}", result);
+    println!("{:#}", result);
 }
 ```
 This request will return the following JSON response:
 
 ```text
-"data": {
+{
+  "data": {
     "Media": {
-        "id": 15125,
-        "title": {
-            "romaji": "Teekyuu",
-            "english": null,
-            "native": "てーきゅう"
-        }
+      "id": 15125,
+      "title": {
+        "english": "Teekyuu",
+        "native": "てーきゅう",
+        "romaji": "Teekyuu"
+      }
     }
   }
 }
