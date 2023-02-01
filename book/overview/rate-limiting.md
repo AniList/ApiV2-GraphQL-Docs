@@ -40,9 +40,9 @@ X-RateLimit-Reset: 1502035959
 
 ## Rate Limit Raise
 
-For applications running on a server \(such as a discord bot\) the current rate limit may be too restrictive to allow your application to function consistently. If this is the case for your application you may request a manual rate limit raise for a specific IP address.
+__Due to server limitations we are not currently offering rate limit raises.__
 
-To do this send an email joshstar \[a-t\] mail \[do-t\] com with the follow details:
+For applications running on a server \(such as a discord bot\) the current rate limit may be too restrictive to allow your application to function consistently. If this is the case for your application you may request a manual rate limit raise for a specific IP address.
 
 Title: Rate Limit Raise {App Name}
 
