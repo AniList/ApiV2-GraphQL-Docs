@@ -80,5 +80,25 @@ $response = $http->request('POST', 'https://graphql.anilist.co', [
 ]);
 ```
 {% endtab %}
+
+{% tab title="C#" %}
+```cs
+using Flurl;
+using Flurl.Http;
+
+public static async Task<string> GetQueryResult()
+{
+    var result = await "https://graphql.anilist.co"
+        .WithOAuthBearerToken({YOUR BEARER TOKEN HERE})
+        .PostJsonAsync(new
+        {
+            query = "{YOUR QUERY STRING HERE}"
+        })
+        .ReceiveString(); // For demo purposes, I will use ReceiveString method. But you should use ReceiveJson method to access the data
+
+    return result;
+}
+```
+{% endtab %}
 {% endtabs %}
 
