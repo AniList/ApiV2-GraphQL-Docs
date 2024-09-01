@@ -42,11 +42,11 @@ The request in the above example will return the following JSON response:
     "Media": {
       "id": 15125,
       "title": {
-				"romaji": "Teekyuu",
-				"english": "Teekyuu",
-				"native": "てーきゅう"
-			}
-		}
+        "romaji": "Teekyuu",
+        "english": "Teekyuu",
+        "native": "てーきゅう"
+      }
+    }
 	}
 }
 ```
