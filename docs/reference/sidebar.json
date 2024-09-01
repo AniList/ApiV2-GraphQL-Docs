@@ -1,0 +1,730 @@
+[
+  {
+    "text": "Query",
+    "link": "/reference/query"
+  },
+  {
+    "text": "Mutation",
+    "link": "/reference/mutation"
+  },
+  {
+    "text": "Object",
+    "items": [
+      {
+        "text": "ActivityLikeNotification",
+        "link": "/reference/object/activitylikenotification"
+      },
+      {
+        "text": "ActivityMentionNotification",
+        "link": "/reference/object/activitymentionnotification"
+      },
+      {
+        "text": "ActivityMessageNotification",
+        "link": "/reference/object/activitymessagenotification"
+      },
+      {
+        "text": "ActivityReply",
+        "link": "/reference/object/activityreply"
+      },
+      {
+        "text": "ActivityReplyLikeNotification",
+        "link": "/reference/object/activityreplylikenotification"
+      },
+      {
+        "text": "ActivityReplyNotification",
+        "link": "/reference/object/activityreplynotification"
+      },
+      {
+        "text": "ActivityReplySubscribedNotification",
+        "link": "/reference/object/activityreplysubscribednotification"
+      },
+      {
+        "text": "AiringNotification",
+        "link": "/reference/object/airingnotification"
+      },
+      {
+        "text": "AiringProgression",
+        "link": "/reference/object/airingprogression"
+      },
+      {
+        "text": "AiringSchedule",
+        "link": "/reference/object/airingschedule"
+      },
+      {
+        "text": "AiringScheduleConnection",
+        "link": "/reference/object/airingscheduleconnection"
+      },
+      {
+        "text": "AiringScheduleEdge",
+        "link": "/reference/object/airingscheduleedge"
+      },
+      {
+        "text": "AniChartUser",
+        "link": "/reference/object/anichartuser"
+      },
+      {
+        "text": "Character",
+        "link": "/reference/object/character"
+      },
+      {
+        "text": "CharacterConnection",
+        "link": "/reference/object/characterconnection"
+      },
+      {
+        "text": "CharacterEdge",
+        "link": "/reference/object/characteredge"
+      },
+      {
+        "text": "CharacterImage",
+        "link": "/reference/object/characterimage"
+      },
+      {
+        "text": "CharacterName",
+        "link": "/reference/object/charactername"
+      },
+      {
+        "text": "CharacterSubmission",
+        "link": "/reference/object/charactersubmission"
+      },
+      {
+        "text": "CharacterSubmissionConnection",
+        "link": "/reference/object/charactersubmissionconnection"
+      },
+      {
+        "text": "CharacterSubmissionEdge",
+        "link": "/reference/object/charactersubmissionedge"
+      },
+      {
+        "text": "Deleted",
+        "link": "/reference/object/deleted"
+      },
+      {
+        "text": "Favourites",
+        "link": "/reference/object/favourites"
+      },
+      {
+        "text": "FollowingNotification",
+        "link": "/reference/object/followingnotification"
+      },
+      {
+        "text": "FormatStats",
+        "link": "/reference/object/formatstats"
+      },
+      {
+        "text": "FuzzyDate",
+        "link": "/reference/object/fuzzydate"
+      },
+      {
+        "text": "GenreStats",
+        "link": "/reference/object/genrestats"
+      },
+      {
+        "text": "InternalPage",
+        "link": "/reference/object/internalpage"
+      },
+      {
+        "text": "ListActivity",
+        "link": "/reference/object/listactivity"
+      },
+      {
+        "text": "ListActivityOption",
+        "link": "/reference/object/listactivityoption"
+      },
+      {
+        "text": "ListScoreStats",
+        "link": "/reference/object/listscorestats"
+      },
+      {
+        "text": "Media",
+        "link": "/reference/object/media"
+      },
+      {
+        "text": "MediaCharacter",
+        "link": "/reference/object/mediacharacter"
+      },
+      {
+        "text": "MediaConnection",
+        "link": "/reference/object/mediaconnection"
+      },
+      {
+        "text": "MediaCoverImage",
+        "link": "/reference/object/mediacoverimage"
+      },
+      {
+        "text": "MediaDataChangeNotification",
+        "link": "/reference/object/mediadatachangenotification"
+      },
+      {
+        "text": "MediaDeletionNotification",
+        "link": "/reference/object/mediadeletionnotification"
+      },
+      {
+        "text": "MediaEdge",
+        "link": "/reference/object/mediaedge"
+      },
+      {
+        "text": "MediaExternalLink",
+        "link": "/reference/object/mediaexternallink"
+      },
+      {
+        "text": "MediaList",
+        "link": "/reference/object/medialist"
+      },
+      {
+        "text": "MediaListCollection",
+        "link": "/reference/object/medialistcollection"
+      },
+      {
+        "text": "MediaListGroup",
+        "link": "/reference/object/medialistgroup"
+      },
+      {
+        "text": "MediaListOptions",
+        "link": "/reference/object/medialistoptions"
+      },
+      {
+        "text": "MediaListTypeOptions",
+        "link": "/reference/object/medialisttypeoptions"
+      },
+      {
+        "text": "MediaMergeNotification",
+        "link": "/reference/object/mediamergenotification"
+      },
+      {
+        "text": "MediaRank",
+        "link": "/reference/object/mediarank"
+      },
+      {
+        "text": "MediaStats",
+        "link": "/reference/object/mediastats"
+      },
+      {
+        "text": "MediaStreamingEpisode",
+        "link": "/reference/object/mediastreamingepisode"
+      },
+      {
+        "text": "MediaSubmission",
+        "link": "/reference/object/mediasubmission"
+      },
+      {
+        "text": "MediaSubmissionComparison",
+        "link": "/reference/object/mediasubmissioncomparison"
+      },
+      {
+        "text": "MediaSubmissionEdge",
+        "link": "/reference/object/mediasubmissionedge"
+      },
+      {
+        "text": "MediaTag",
+        "link": "/reference/object/mediatag"
+      },
+      {
+        "text": "MediaTitle",
+        "link": "/reference/object/mediatitle"
+      },
+      {
+        "text": "MediaTrailer",
+        "link": "/reference/object/mediatrailer"
+      },
+      {
+        "text": "MediaTrend",
+        "link": "/reference/object/mediatrend"
+      },
+      {
+        "text": "MediaTrendConnection",
+        "link": "/reference/object/mediatrendconnection"
+      },
+      {
+        "text": "MediaTrendEdge",
+        "link": "/reference/object/mediatrendedge"
+      },
+      {
+        "text": "MessageActivity",
+        "link": "/reference/object/messageactivity"
+      },
+      {
+        "text": "ModAction",
+        "link": "/reference/object/modaction"
+      },
+      {
+        "text": "NotificationOption",
+        "link": "/reference/object/notificationoption"
+      },
+      {
+        "text": "Page",
+        "link": "/reference/object/page"
+      },
+      {
+        "text": "PageInfo",
+        "link": "/reference/object/pageinfo"
+      },
+      {
+        "text": "ParsedMarkdown",
+        "link": "/reference/object/parsedmarkdown"
+      },
+      {
+        "text": "Recommendation",
+        "link": "/reference/object/recommendation"
+      },
+      {
+        "text": "RecommendationConnection",
+        "link": "/reference/object/recommendationconnection"
+      },
+      {
+        "text": "RecommendationEdge",
+        "link": "/reference/object/recommendationedge"
+      },
+      {
+        "text": "RelatedMediaAdditionNotification",
+        "link": "/reference/object/relatedmediaadditionnotification"
+      },
+      {
+        "text": "Report",
+        "link": "/reference/object/report"
+      },
+      {
+        "text": "Review",
+        "link": "/reference/object/review"
+      },
+      {
+        "text": "ReviewConnection",
+        "link": "/reference/object/reviewconnection"
+      },
+      {
+        "text": "ReviewEdge",
+        "link": "/reference/object/reviewedge"
+      },
+      {
+        "text": "RevisionHistory",
+        "link": "/reference/object/revisionhistory"
+      },
+      {
+        "text": "ScoreDistribution",
+        "link": "/reference/object/scoredistribution"
+      },
+      {
+        "text": "SiteStatistics",
+        "link": "/reference/object/sitestatistics"
+      },
+      {
+        "text": "SiteTrend",
+        "link": "/reference/object/sitetrend"
+      },
+      {
+        "text": "SiteTrendConnection",
+        "link": "/reference/object/sitetrendconnection"
+      },
+      {
+        "text": "SiteTrendEdge",
+        "link": "/reference/object/sitetrendedge"
+      },
+      {
+        "text": "Staff",
+        "link": "/reference/object/staff"
+      },
+      {
+        "text": "StaffConnection",
+        "link": "/reference/object/staffconnection"
+      },
+      {
+        "text": "StaffEdge",
+        "link": "/reference/object/staffedge"
+      },
+      {
+        "text": "StaffImage",
+        "link": "/reference/object/staffimage"
+      },
+      {
+        "text": "StaffName",
+        "link": "/reference/object/staffname"
+      },
+      {
+        "text": "StaffRoleType",
+        "link": "/reference/object/staffroletype"
+      },
+      {
+        "text": "StaffStats",
+        "link": "/reference/object/staffstats"
+      },
+      {
+        "text": "StaffSubmission",
+        "link": "/reference/object/staffsubmission"
+      },
+      {
+        "text": "StatusDistribution",
+        "link": "/reference/object/statusdistribution"
+      },
+      {
+        "text": "Studio",
+        "link": "/reference/object/studio"
+      },
+      {
+        "text": "StudioConnection",
+        "link": "/reference/object/studioconnection"
+      },
+      {
+        "text": "StudioEdge",
+        "link": "/reference/object/studioedge"
+      },
+      {
+        "text": "StudioStats",
+        "link": "/reference/object/studiostats"
+      },
+      {
+        "text": "TagStats",
+        "link": "/reference/object/tagstats"
+      },
+      {
+        "text": "TextActivity",
+        "link": "/reference/object/textactivity"
+      },
+      {
+        "text": "Thread",
+        "link": "/reference/object/thread"
+      },
+      {
+        "text": "ThreadCategory",
+        "link": "/reference/object/threadcategory"
+      },
+      {
+        "text": "ThreadComment",
+        "link": "/reference/object/threadcomment"
+      },
+      {
+        "text": "ThreadCommentLikeNotification",
+        "link": "/reference/object/threadcommentlikenotification"
+      },
+      {
+        "text": "ThreadCommentMentionNotification",
+        "link": "/reference/object/threadcommentmentionnotification"
+      },
+      {
+        "text": "ThreadCommentReplyNotification",
+        "link": "/reference/object/threadcommentreplynotification"
+      },
+      {
+        "text": "ThreadCommentSubscribedNotification",
+        "link": "/reference/object/threadcommentsubscribednotification"
+      },
+      {
+        "text": "ThreadLikeNotification",
+        "link": "/reference/object/threadlikenotification"
+      },
+      {
+        "text": "User",
+        "link": "/reference/object/user"
+      },
+      {
+        "text": "UserActivityHistory",
+        "link": "/reference/object/useractivityhistory"
+      },
+      {
+        "text": "UserAvatar",
+        "link": "/reference/object/useravatar"
+      },
+      {
+        "text": "UserCountryStatistic",
+        "link": "/reference/object/usercountrystatistic"
+      },
+      {
+        "text": "UserFormatStatistic",
+        "link": "/reference/object/userformatstatistic"
+      },
+      {
+        "text": "UserGenreStatistic",
+        "link": "/reference/object/usergenrestatistic"
+      },
+      {
+        "text": "UserLengthStatistic",
+        "link": "/reference/object/userlengthstatistic"
+      },
+      {
+        "text": "UserModData",
+        "link": "/reference/object/usermoddata"
+      },
+      {
+        "text": "UserOptions",
+        "link": "/reference/object/useroptions"
+      },
+      {
+        "text": "UserPreviousName",
+        "link": "/reference/object/userpreviousname"
+      },
+      {
+        "text": "UserReleaseYearStatistic",
+        "link": "/reference/object/userreleaseyearstatistic"
+      },
+      {
+        "text": "UserScoreStatistic",
+        "link": "/reference/object/userscorestatistic"
+      },
+      {
+        "text": "UserStaffStatistic",
+        "link": "/reference/object/userstaffstatistic"
+      },
+      {
+        "text": "UserStartYearStatistic",
+        "link": "/reference/object/userstartyearstatistic"
+      },
+      {
+        "text": "UserStatisticTypes",
+        "link": "/reference/object/userstatistictypes"
+      },
+      {
+        "text": "UserStatistics",
+        "link": "/reference/object/userstatistics"
+      },
+      {
+        "text": "UserStats",
+        "link": "/reference/object/userstats"
+      },
+      {
+        "text": "UserStatusStatistic",
+        "link": "/reference/object/userstatusstatistic"
+      },
+      {
+        "text": "UserStudioStatistic",
+        "link": "/reference/object/userstudiostatistic"
+      },
+      {
+        "text": "UserTagStatistic",
+        "link": "/reference/object/usertagstatistic"
+      },
+      {
+        "text": "UserVoiceActorStatistic",
+        "link": "/reference/object/uservoiceactorstatistic"
+      },
+      {
+        "text": "YearStats",
+        "link": "/reference/object/yearstats"
+      }
+    ]
+  },
+  {
+    "text": "Input",
+    "items": [
+      {
+        "text": "AiringScheduleInput",
+        "link": "/reference/input/airingscheduleinput"
+      },
+      {
+        "text": "AniChartHighlightInput",
+        "link": "/reference/input/anicharthighlightinput"
+      },
+      {
+        "text": "CharacterNameInput",
+        "link": "/reference/input/characternameinput"
+      },
+      {
+        "text": "FuzzyDateInput",
+        "link": "/reference/input/fuzzydateinput"
+      },
+      {
+        "text": "ListActivityOptionInput",
+        "link": "/reference/input/listactivityoptioninput"
+      },
+      {
+        "text": "MediaExternalLinkInput",
+        "link": "/reference/input/mediaexternallinkinput"
+      },
+      {
+        "text": "MediaListOptionsInput",
+        "link": "/reference/input/medialistoptionsinput"
+      },
+      {
+        "text": "MediaTitleInput",
+        "link": "/reference/input/mediatitleinput"
+      },
+      {
+        "text": "NotificationOptionInput",
+        "link": "/reference/input/notificationoptioninput"
+      },
+      {
+        "text": "StaffNameInput",
+        "link": "/reference/input/staffnameinput"
+      }
+    ]
+  },
+  {
+    "text": "Enum",
+    "items": [
+      {
+        "text": "ActivitySort",
+        "link": "/reference/enum/activitysort"
+      },
+      {
+        "text": "ActivityType",
+        "link": "/reference/enum/activitytype"
+      },
+      {
+        "text": "AiringSort",
+        "link": "/reference/enum/airingsort"
+      },
+      {
+        "text": "CharacterRole",
+        "link": "/reference/enum/characterrole"
+      },
+      {
+        "text": "CharacterSort",
+        "link": "/reference/enum/charactersort"
+      },
+      {
+        "text": "ExternalLinkMediaType",
+        "link": "/reference/enum/externallinkmediatype"
+      },
+      {
+        "text": "ExternalLinkType",
+        "link": "/reference/enum/externallinktype"
+      },
+      {
+        "text": "LikeableType",
+        "link": "/reference/enum/likeabletype"
+      },
+      {
+        "text": "MediaFormat",
+        "link": "/reference/enum/mediaformat"
+      },
+      {
+        "text": "MediaListSort",
+        "link": "/reference/enum/medialistsort"
+      },
+      {
+        "text": "MediaListStatus",
+        "link": "/reference/enum/medialiststatus"
+      },
+      {
+        "text": "MediaRankType",
+        "link": "/reference/enum/mediaranktype"
+      },
+      {
+        "text": "MediaRelation",
+        "link": "/reference/enum/mediarelation"
+      },
+      {
+        "text": "MediaSeason",
+        "link": "/reference/enum/mediaseason"
+      },
+      {
+        "text": "MediaSort",
+        "link": "/reference/enum/mediasort"
+      },
+      {
+        "text": "MediaSource",
+        "link": "/reference/enum/mediasource"
+      },
+      {
+        "text": "MediaStatus",
+        "link": "/reference/enum/mediastatus"
+      },
+      {
+        "text": "MediaTrendSort",
+        "link": "/reference/enum/mediatrendsort"
+      },
+      {
+        "text": "MediaType",
+        "link": "/reference/enum/mediatype"
+      },
+      {
+        "text": "ModActionType",
+        "link": "/reference/enum/modactiontype"
+      },
+      {
+        "text": "ModRole",
+        "link": "/reference/enum/modrole"
+      },
+      {
+        "text": "NotificationType",
+        "link": "/reference/enum/notificationtype"
+      },
+      {
+        "text": "RecommendationRating",
+        "link": "/reference/enum/recommendationrating"
+      },
+      {
+        "text": "RecommendationSort",
+        "link": "/reference/enum/recommendationsort"
+      },
+      {
+        "text": "ReviewRating",
+        "link": "/reference/enum/reviewrating"
+      },
+      {
+        "text": "ReviewSort",
+        "link": "/reference/enum/reviewsort"
+      },
+      {
+        "text": "RevisionHistoryAction",
+        "link": "/reference/enum/revisionhistoryaction"
+      },
+      {
+        "text": "ScoreFormat",
+        "link": "/reference/enum/scoreformat"
+      },
+      {
+        "text": "SiteTrendSort",
+        "link": "/reference/enum/sitetrendsort"
+      },
+      {
+        "text": "StaffLanguage",
+        "link": "/reference/enum/stafflanguage"
+      },
+      {
+        "text": "StaffSort",
+        "link": "/reference/enum/staffsort"
+      },
+      {
+        "text": "StudioSort",
+        "link": "/reference/enum/studiosort"
+      },
+      {
+        "text": "SubmissionSort",
+        "link": "/reference/enum/submissionsort"
+      },
+      {
+        "text": "SubmissionStatus",
+        "link": "/reference/enum/submissionstatus"
+      },
+      {
+        "text": "ThreadCommentSort",
+        "link": "/reference/enum/threadcommentsort"
+      },
+      {
+        "text": "ThreadSort",
+        "link": "/reference/enum/threadsort"
+      },
+      {
+        "text": "UserSort",
+        "link": "/reference/enum/usersort"
+      },
+      {
+        "text": "UserStaffNameLanguage",
+        "link": "/reference/enum/userstaffnamelanguage"
+      },
+      {
+        "text": "UserStatisticsSort",
+        "link": "/reference/enum/userstatisticssort"
+      },
+      {
+        "text": "UserTitleLanguage",
+        "link": "/reference/enum/usertitlelanguage"
+      }
+    ]
+  },
+  {
+    "text": "Union",
+    "items": [
+      {
+        "text": "ActivityUnion",
+        "link": "/reference/union/activityunion"
+      },
+      {
+        "text": "LikeableUnion",
+        "link": "/reference/union/likeableunion"
+      },
+      {
+        "text": "NotificationUnion",
+        "link": "/reference/union/notificationunion"
+      }
+    ]
+  }
+]

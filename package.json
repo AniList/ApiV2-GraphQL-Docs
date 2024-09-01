@@ -1,0 +1,22 @@
+{
+  "name": "anilist-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview",
+    "generate:reference": "node scripts/generate-reference.js",
+    "postinstall": "patch-package"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "graphql-markdown": "^7.0.0",
+    "patch-package": "^8.0.0",
+    "radash": "^12.1.0",
+    "vitepress": "^1.3.1"
+  }
+}
