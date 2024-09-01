@@ -40,7 +40,7 @@ Notice how it is now wrapped in a `Page` object. This allows it to return multip
 
 We've also hardcoded the `type` argument to `ANIME` to only return anime entries. This could be a variable as well, but this shows how you can mix and match as needed.
 
-::: note
+::: info
 "Getting an anime by name" is not something you can do. Titles are not unique, so there is no 1:1 relationship between a title and a media entry.
 The best you can do is search for the title and hope the first result is the correct one.
 :::
