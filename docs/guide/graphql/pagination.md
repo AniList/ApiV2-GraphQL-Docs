@@ -14,6 +14,54 @@ In most cases, you can simply wrap your query in a `Page` object with minimal ot
 If you want a page of characters, the normal query would be `Character`. To receive a paginated list of characters, you would wrap your `Character` query with `Page` and rename `Character` to `characters`.
 :::
 
+## `Page` field limitations
+
+The schema for `Page` shows that it has many data fields available. ie: `media`, `characters`, `staff`, etc.
+
+Only one of these fields can be used in a single `Page` query. This means that a single `Page` query cannot return paginated data for multiple types of data.
+
+The `pageInfo` field is exempt from this rule.
+
+::: tip :heavy_check_mark: Valid
+
+  The `Page` query only has one data field along with the optional `pageInfo` field.
+
+  ```graphql
+  {
+    Page {
+      pageInfo {
+        hasNextPage
+      }
+      media {
+        id
+      }
+    }
+  }
+  ```
+:::
+
+
+::: danger :x: Invalid
+
+  The `Page` query has multiple data fields, but only one of them can be used in a single query.
+
+  ```graphql
+  {
+    Page {
+      pageInfo {
+        hasNextPage
+      }
+      media {
+        id
+      }
+      characters {
+        id
+      }
+    }
+  }
+  ```
+:::
+
 ## PageInfo
 
 The `Page` query also provides the `pageInfo` field, which contains information about the current page and the total number of pages.
