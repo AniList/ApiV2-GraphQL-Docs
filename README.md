@@ -1,21 +1,25 @@
-<img align="center" src='https://raw.githubusercontent.com/AniList/ApiV2-GraphQL-Docs/master/al-graphql.jpg'>
+<img align="center" src='./.github/img/al-graphql.jpg'>
 
-## AniList Api v2 GraphQL Docs
+## AniList API Docs
 
-The AniList [GraphQL](http://graphql.org/) Api provides quick and powerful access to over 500k anime and manga entries, including character, staff, and live airing data. The [AniList](https://anilist.co) & [AniChart](http://anichart.net) websites themselves run on the Api, so everything you can do on the sites, you can do via the Api.
+The AniList [GraphQL](http://graphql.org/) API provides quick and powerful access to over 500k anime and manga entries, including character, staff, and live airing data. The [AniList](https://anilist.co) & [AniChart](http://anichart.net) websites themselves run on the API, so almost everything you can do on the sites, you can do via the API.
 
-### <a href='https://anilist.gitbook.io/anilist-apiv2-docs/'>Api Documentation</a>
-> Written documentation for getting started with the Api.
+### <a href='https://docs.anilist.co/'>API Documentation</a>
 
+Written documentation for getting started with the API.
 
-### <a href='https://anilist.github.io/ApiV2-GraphQL-Docs/'>GraphQL Api Reference Docs</a>
-> Documentation for all queries, mutations, types, and objects the Api provides.
+### <a href='https://anilist.github.io/ApiV2-GraphQL-Docs/'>GraphQL API Reference Docs</a>
+
+Documentation for all queries, mutations, types, and objects the API provides.
+
+> [!Note]
+> Deprecated, try [Apollo Studio](https://studio.apollographql.com/sandbox/explorer?endpoint=https%3A%2F%2Fgraphql.anilist.co) instead.
+>
+> You can find statically rendered reference docs [here](https://docs.anilist.co/reference/query), however these are updated manually and may not always be up to date.
 
 ### <a href='https://anilist.co/graphiql'>GraphiQL Interactive Editor</a>
-> Easily explore and test out GraphQL queries against the AniList Api. (AniList login required)
 
-<hr>
+Easily explore and test out GraphQL queries against the AniList API.
 
-Please post bugs, issues, or help requests here as GitHub issues. 
-
-Please do not use the AniList forums for developer questions or Api bug reports.
+> [!Note]
+> Deprecated, try [Apollo Studio](https://studio.apollographql.com/sandbox/explorer?endpoint=https%3A%2F%2Fgraphql.anilist.co) instead.
