@@ -1,5 +1,9 @@
 [
   {
+    "text": "API Reference",
+    "link": "/reference/"
+  },
+  {
     "text": "Query",
     "link": "/reference/query"
   },

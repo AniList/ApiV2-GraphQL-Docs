@@ -41,21 +41,27 @@ async function main() {
 
 			typeStringBuilder += line + "\n";
 
-			// If we've reached the end of the table, add it to the documentation and start a new one
+			// If we've reached the end of the table, add it to the documentation and start a new page
 			if (line.includes("</table>")) {
 				builtDocumentation.push({ section: currentSection, type: currentType, content: typeStringBuilder.trim(), });
 				typeStringBuilder = "";
 			}
 		},
+		// We patch this in to rewrite links from anchors to unique pages
+		// We do this because the library generates everything as a single page, but we split it into multiple pages
+		// See graphql-markdown+7.0.0.patch in the patches directory 
 		typeUrl: (type) => {
 			return `/reference/${type.kind.toLowerCase()}/${type.name.toLowerCase()}`;
 		}
 	});
 
+	// Clear out old files
 	await fs.rm(path.join(process.cwd(), "docs", "reference"), { recursive: true });
 	await fs.mkdir(path.join(process.cwd(), "docs", "reference"), { recursive: true });
 
 	// Build the sidebar
+	// TODO(Nick) Look into nesting object types under their common prefix
+	// ie: Character -> [CharacterConnection, CharacterName, CharacterImage, ...]
 	let sidebar = group(builtDocumentation, ({ section }) => section);
 	sidebar = Object.entries(sidebar).map(([k, v]) => {
 		if (k === "Query" || k === "Mutation") {
@@ -74,10 +80,25 @@ async function main() {
 		}
 	});
 
+	sidebar = [
+		{
+			text: "API Reference",
+			link: "/reference/"
+		},
+		...sidebar,
+	];
+
 	await fs.writeFile(path.join(process.cwd(), "docs", "reference", "sidebar.json"), JSON.stringify(sidebar, null, 2));
+
+	// Create the index page
+	const filePath = path.join(process.cwd(), "docs", "reference", "index.md");
+	fs.mkdir(filePath.split(path.sep).slice(0, -1).join(path.sep), { recursive: true });
+	const fileContent = `---\ntitle: API Reference\n---\n\n${indexContent}`;
+	await fs.writeFile(filePath, fileContent);
 
 	// Print the documentation
 	await Promise.all(builtDocumentation.map(async ({ section, type, content }) => {
+		// Split root query and mutation types into the top level sidebar section
 		if (section === "Query" || section === "Mutation") {
 			const filePath = path.join(process.cwd(), "docs", "reference", section.toLowerCase() + ".md");
 			fs.mkdir(filePath.split(path.sep).slice(0, -1).join(path.sep), { recursive: true });
@@ -94,3 +115,14 @@ async function main() {
 }
 
 main();
+
+const indexContent = `# API Reference
+
+While we recommend using [Apollo Studio](https://studio.apollographql.com/sandbox/explorer?endpoint=https%3A%2F%2Fgraphql.anilist.co) to explore the API, we also provide these reference pages for quickly finding information.
+
+These pages are manually generated and may not always be up to date.
+
+::: warning
+There is a known issue where Scalar types do not get generated. Links for these types will lead to a 404 page.
+:::
+`

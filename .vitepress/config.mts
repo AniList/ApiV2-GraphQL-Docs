@@ -24,7 +24,7 @@ export default defineConfig({
       },
       {
         text: "Reference",
-        link: "/reference/query",
+        link: "/reference/",
         activeMatch: "^/reference/"
       },
       {
