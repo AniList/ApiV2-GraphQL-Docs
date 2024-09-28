@@ -45,7 +45,7 @@ The request in the above example will return the following JSON response:
 
 ```json
 {
-	"data": {
+  "data": {
     "SaveMediaListEntry": {
         "id": 4,
         "status": "CURRENT"

@@ -5,7 +5,7 @@ description: Pagination in the AniList GraphQL API.
 
 # Pagination
 
-You might have noticed that all the top level queries ([`Media`](https://studio.apollographql.com/sandbox/schema/reference/objects/Query?query=Media), [`Character`](https://studio.apollographql.com/sandbox/schema/reference/objects/Query?query=Character), [`Staff`](https://studio.apollographql.com/sandbox/schema/reference/objects/Query?query=Staff), etc) return single object.
+You might have noticed that all the top level queries ([`Media`](https://studio.apollographql.com/sandbox/schema/reference/objects/Query?query=Media), [`Character`](https://studio.apollographql.com/sandbox/schema/reference/objects/Query?query=Character), [`Staff`](https://studio.apollographql.com/sandbox/schema/reference/objects/Query?query=Staff), etc) return a single object.
 If you want to get multiple objects, you will need to use the [`Page`](https://studio.apollographql.com/sandbox/schema/reference/objects/Query?query=Page) top level query.
 
 In most cases, you can simply wrap your query in a `Page` object with minimal other changes.

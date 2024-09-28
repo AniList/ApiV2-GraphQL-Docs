@@ -34,7 +34,7 @@ echo "<a href='$url'>Login with Anilist</a>";
 * `redirect_uri` - The redirect URI of your application.
 
 ::: warning
-The redirect URI you use in your authorization request must match exactly the redirect URI you used in your application settings.
+The redirect URI you use in your authorization request must exactly match the redirect URI you used in your application settings.
 :::
 
 ## User Approval

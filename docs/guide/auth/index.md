@@ -18,17 +18,19 @@ Important things to note about AniList's OAuth2 implementation:
 Before getting started with authentication, consider if you actually need it. If you are just using the AniList API to get publicly available data, you do not need to deal with authentication.
 However, if you are building an application that requires access to private data or requires mutating data, you will need to authenticate.
 
-Things you can do without authentication:
+::: tip Things you can do without authentication
 
 * Get anime and manga data
 * Search characters
 * View data of public and unlisted users
+:::
 
-Things that require authentication:
+::: warning Things that require authentication
 
 * Modify user lists
 * View data of private users (only for the currently authenticated user)
 * Fetch user-specific data from fields on other objects. For example, the `mediaListEntry` field on `Media`.
+:::
 
 ## Creating an application
 

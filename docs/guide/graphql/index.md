@@ -47,7 +47,7 @@ The request in the above example will return the following JSON response:
         "native": "てーきゅう"
       }
     }
-	}
+  }
 }
 ```
 
