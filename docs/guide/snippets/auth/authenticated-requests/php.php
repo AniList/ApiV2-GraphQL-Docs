@@ -16,4 +16,9 @@ $response = $http->request('POST', 'https://graphql.anilist.co', [
         'Accept' => 'application/json',
         'Content-Type' => 'application/json',
     ],
+    'json' => [
+        'query' => $query,
+    ]
 ]);
+
+$result = json_decode($response->getBody(), true);
